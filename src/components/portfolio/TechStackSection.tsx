@@ -232,6 +232,15 @@ const techStackData: Record<string, TechItem[]> = {
       description: "Payment processing integration",
       yearsUsed: 2
     },
+    {
+      // vector database
+      name: "Vector Database",
+      icon: "ph:vector-three-duotone",
+      level: "Intermediate",
+      category: "AI & Integration",
+      description: "Vector database for storing and querying embeddings",
+      yearsUsed: 1
+    }
   ],
 };
 

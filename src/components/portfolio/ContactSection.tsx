@@ -5,6 +5,7 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
+import SectionHeader from './SectionHeader';
 
 export default function ContactSection() {
   const [formData, setFormData] = useState({
@@ -69,29 +70,16 @@ export default function ContactSection() {
       className="mb-16"
     >
       <div className="max-w-4xl mx-auto">
-        <div className="text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              Let&apos;s Work Together
-            </h2>
-          </motion.div>
 
-          <motion.p
-            className="text-gray-700 dark:text-gray-400 mb-8 max-w-2xl mx-auto text-lg"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            Ready to bring your ideas to life? I&apos;m always excited to work on interesting projects
-            and collaborate with amazing people. Let&apos;s create something extraordinary together.
-          </motion.p>
-        </div>
+
+        <SectionHeader
+          heading="Let's Work Together"
+          description="Ready to bring your ideas to life? I'm always excited to work on interesting projects and collaborate with amazing people. Let's create something extraordinary together."
+          tagIcon='solar:chat-line-bold'
+          tagText='Contact'
+          centered={true}
+
+        />
 
         {/* Contact Form */}
         <motion.div
@@ -266,7 +254,7 @@ export default function ContactSection() {
                 href="mailto:lightify6@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
               >
-                <Icon icon="solar:email-outline" width={18} height={18} />
+                <Icon icon="solar:mailbox-bold-duotone" width={18} height={18} />
                 Send Email
               </Link>
             </motion.div>

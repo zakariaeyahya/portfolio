@@ -113,7 +113,8 @@ export default function OverviewSection() {
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
                       A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Full Stack Developer</span> and
-                      <span className="font-bold text-purple-600 dark:text-purple-400"> UI/UX enthusiast</span> with
+                      <span className="font-bold text-purple-600 dark:text-purple-400">
+                        &nbsp; AI enthusiast</span> with
                       <span className="font-bold text-green-600 dark:text-green-400"> 5+ years</span> of experience crafting
                       digital experiences that users love.
                     </p>
@@ -244,7 +245,7 @@ export default function OverviewSection() {
                     <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">ramazan.dev</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">mramazan.dev</div>
                   </div>
                 </motion.div>
 

@@ -127,9 +127,11 @@ export default function HeroSection() {
             animate={{ scale: [1, 1.4, 1] }}
             transition={{ duration: 2, repeat: Infinity }}
           />
-          <span className="text-green-700 dark:text-green-300 text-sm font-medium">
-            Available for projects
-          </span>
+          <Link href="#contact">
+            <span className="text-green-700 dark:text-green-300 text-sm font-medium">
+              Available for projects
+            </span>
+          </Link>
         </motion.div>
       </motion.section>
 
