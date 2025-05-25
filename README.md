@@ -12,7 +12,7 @@ A stunning, modern portfolio website built with cutting-edge technologies and be
 
 ### 🎨 **Stunning Visual Design**
 
-- **Dark Theme**: Modern dark theme with beautiful gradients
+- **Dark & Light Theme**: Modern dark & light themes with beautiful gradients
 - **Animated Background**: Floating particles and gradient effects
 - **Glass Morphism**: Beautiful glass effects and backdrop blur
 - **Gradient Text**: Eye-catching gradient text effects
@@ -59,9 +59,8 @@ A stunning, modern portfolio website built with cutting-edge technologies and be
 
 ### **Icons & Assets**
 
-- **Lucide React** - Beautiful, customizable icons
-- **Google Fonts (Inter)** - Modern typography
-- **Emoji Icons** - Fun project representations
+- **Iconifyt** - Beautiful, customizable icons
+- **Google Fonts (Space Grotesk)** - Modern typography
 
 ### **Development Tools**
 
@@ -81,7 +80,7 @@ A stunning, modern portfolio website built with cutting-edge technologies and be
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/muhammad-ramazan/portfolio.git
+   git clone https://github.com/lightify97/portfolio.git
    cd portfolio
    ```
 
@@ -124,7 +123,7 @@ Update the following in `src/app/page.tsx`:
 
 ### **Projects**
 
-Modify the `projects` array in `src/components/ProjectsSection.tsx`:
+Modify the `projects` array in `src/components/portfolio/ProjectsSection.tsx`:
 
 ```typescript
 {
@@ -140,7 +139,7 @@ Modify the `projects` array in `src/components/ProjectsSection.tsx`:
 
 ### **Skills**
 
-Update skills in the skills section of `src/app/page.tsx`:
+Update skills in the skills section of `src/components/portfolio/TechStackSection.tsx`:
 
 ```typescript
 {
@@ -151,7 +150,7 @@ Update skills in the skills section of `src/app/page.tsx`:
 
 ### **Experience**
 
-Modify the experience array in `src/app/page.tsx`:
+Modify the experience array in `src/components/portfolio/ExperienceSection.tsx`:
 
 ```typescript
 {
@@ -177,33 +176,56 @@ portfolio/
 │   ├── app/
 │   │   ├── globals.css         # Global styles and animations
 │   │   ├── layout.tsx          # Root layout with metadata
-│   │   └── page.tsx            # Main portfolio page
+│   │   ├── page.tsx            # Main portfolio page
+│   │   ├── favicon.ico         # Site favicon
+│   │   └── favicon.png         # PNG favicon
 │   ├── components/
-│   │   └── ProjectsSection.tsx # Projects showcase component
-│   └── lib/
-│       └── utils.ts            # Utility functions
-├── public/                     # Static assets
-├── package.json               # Dependencies and scripts
-└── README.md                  # This file
+│   │   ├── portfolio/          # Portfolio-specific components
+│   │   │   ├── AboutSection.tsx
+│   │   │   ├── Background.tsx
+│   │   │   ├── CertificationsSection.tsx
+│   │   │   ├── ContactSection.tsx
+│   │   │   ├── ExperienceSection.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── Navigation.tsx
+│   │   │   ├── OverviewSection.tsx
+│   │   │   ├── ProjectsSection.tsx
+│   │   │   ├── SectionHeader.tsx
+│   │   │   ├── TechStackSection.tsx
+│   │   │   ├── TestimonialsSection.tsx
+│   │   │   ├── TypewriterRole.tsx
+│   │   │   └── index.ts        # Component exports
+│   │   ├── AnimatedBackground.tsx
+│   │   ├── PostHogProvider.tsx # Analytics provider
+│   │   ├── SocketioIcon.tsx
+│   │   ├── ThemeProvider.tsx   # Theme context provider
+│   │   └── ThemeToggle.tsx     # Dark/light theme toggle
+├── lib/
+│   ├── posthog.ts             # PostHog analytics configuration
+│   └── utils.ts               # Utility functions
+├── public/
+│   ├── certificates/          # Certificate images
+│   ├── CV.pdf                # Resume/CV file
+│   ├── globe.svg             # SVG icons
+│   ├── next.svg
+│   ├── vercel.svg
+│   ├── window.svg
+│   └── file.svg
+├── .env                      # Environment variables
+├── .gitignore               # Git ignore rules
+├── eslint.config.mjs        # ESLint configuration
+├── next.config.ts           # Next.js configuration
+├── next-env.d.ts           # Next.js TypeScript declarations
+├── package.json            # Dependencies and scripts
+├── package-lock.json       # Locked dependency versions
+├── postcss.config.mjs      # PostCSS configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+├── tsconfig.json          # TypeScript configuration
+└── README.md              # This file
 ```
 
-## 🎯 Performance Features
-
-- **Static Generation**: Pre-rendered for optimal performance
-- **Image Optimization**: Automatic image optimization
-- **Code Splitting**: Automatic code splitting for faster loads
-- **Lazy Loading**: Components load as needed
-- **Optimized Animations**: 60fps smooth animations
-- **Minimal Bundle Size**: Optimized build output
-
-## 🌟 Key Features Inspired by Aceternity UI
-
-- **Beautiful Gradients**: Multiple gradient combinations
-- **Smooth Transitions**: Fluid animations between states
-- **Interactive Elements**: Hover effects and micro-interactions
-- **Modern Typography**: Clean, readable font choices
-- **Glass Effects**: Subtle backdrop blur effects
-- **Particle Animations**: Dynamic background elements
+=
 
 ## 📱 Browser Support
 
@@ -226,24 +248,23 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/muhammad-ramazan/portfolio/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/lightify97/portfolio/issues).
 
 ## 👨‍💻 Author
 
 **Muhammad Ramazan**
 
-- Portfolio: [Your Portfolio URL]
-- GitHub: [@muhammad-ramazan](https://github.com/muhammad-ramazan)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/your-profile)
-- Email: ramazan@example.com
+- Portfolio: [https://mramazan.dev](https://mramazan.dev)
+- GitHub: [@lightify97](https://github.com/lightify97)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/m-ramazan)
+- Email: mramazan1@yahoo.com
 
 ## 🙏 Acknowledgments
 
-- **Aceternity UI** - Design inspiration for modern web components
 - **Framer Motion** - Amazing animation library
 - **Tailwind CSS** - Utility-first CSS framework
 - **Next.js Team** - Excellent React framework
-- **Lucide Icons** - Beautiful icon library
+- **Iconify** - Beautiful icon library
 
 ---
 
