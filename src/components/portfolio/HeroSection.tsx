@@ -7,7 +7,7 @@ import TypewriterRole from "./TypewriterRole";
 
 export default function HeroSection() {
   return (
-    <div className="relative min-h-[75vh] flex items-center justify-center">
+    <div className="relative min-h-[100dvh] flex items-center justify-center">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 dark:bg-blue-400/10 rounded-full blur-3xl" />
@@ -35,10 +35,8 @@ export default function HeroSection() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.8 }}
-        className="relative z-10 max-w-4xl mx-auto px-6 text-center"
+        className="relative z-10 max-w-4xl mx-auto px-6 text-center -mb-8"
       >
-        {/* Avatar */}
-
 
         {/* Name */}
         <motion.h1
@@ -134,6 +132,44 @@ export default function HeroSection() {
           </span>
         </motion.div>
       </motion.section>
+
+      {/* Scroll for more indicator */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.6, duration: 0.6 }}
+        className="hidden md:flex absolute bottom-20 left-0 right-0 justify-center pb-8 z-10"
+      >
+        <motion.button
+          onClick={() => {
+            const overviewSection = document.getElementById('overview');
+            if (overviewSection) {
+              overviewSection.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+              });
+            }
+          }}
+          className="flex flex-col items-center gap-2 text-gray-500 dark:text-gray-400 cursor-pointer hover:text-gray-700 dark:hover:text-gray-200 transition-colors duration-300"
+          animate={{ y: [0, -8, 0] }}
+          transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <span className="text-sm font-medium tracking-wide">Scroll for more</span>
+          <motion.div
+            animate={{ y: [0, 4, 0] }}
+            transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <Icon
+              icon="mdi:chevron-down"
+              width={24}
+              height={24}
+              className="text-gray-400 dark:text-gray-500"
+            />
+          </motion.div>
+        </motion.button>
+      </motion.div>
     </div>
   );
 } 

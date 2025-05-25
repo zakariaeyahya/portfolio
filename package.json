@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@emailjs/browser": "^4.4.1",
 		"@iconify/react": "^6.0.0",
 		"@radix-ui/react-separator": "^1.1.7",
 		"@radix-ui/react-slot": "^1.2.3",
@@ -18,6 +19,8 @@
 		"framer-motion": "^12.12.1",
 		"lucide-react": "^0.511.0",
 		"next": "15.3.2",
+		"posthog-js": "^1.246.0",
+		"posthog-node": "^4.17.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-icons": "^5.5.0",

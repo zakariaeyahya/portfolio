@@ -3,6 +3,7 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import SectionHeader from "./SectionHeader";
 
 interface TechItem {
   name: string;
@@ -252,13 +253,15 @@ export default function TechStackSection() {
       viewport={{ once: true }}
       className="mb-16"
     >
+      <SectionHeader
+        tagText="Tech Arsenal"
+        tagIcon="solar:settings-bold"
+        heading="Technology Stack"
+        description="Technologies I use to bring ideas to life"
+        showUnderline={false}
+        centered={true}
+      />
       <div className="mb-8">
-        <h2 className="text-3xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-          Technology Stack
-        </h2>
-        <p className="text-gray-600 dark:text-gray-400 mb-6">
-          Technologies I use to bring ideas to life
-        </p>
 
         {/* Category Filter */}
         <div className="flex flex-wrap gap-2 mb-6">

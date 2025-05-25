@@ -2,6 +2,7 @@
 
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import SectionHeader from "./SectionHeader";
 
 export default function OverviewSection() {
   const containerVariants = {
@@ -77,30 +78,15 @@ export default function OverviewSection() {
         viewport={{ once: true }}
         className="relative z-10"
       >
-        {/* Stunning Header */}
-        <motion.div variants={itemVariants} className="text-center mb-12 md:mb-16 lg:mb-20 px-4">
-          <motion.h2
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 md:mb-6"
-            whileHover={{ scale: 1.05 }}
-            transition={{ type: "spring", stiffness: 300 }}
-          >
-            <span className="bg-gradient-to-r from-emerald-400 via-cyan-500 to-blue-600 bg-clip-text text-transparent">
-              About Me
-            </span>
-          </motion.h2>
-          <motion.div
-            className="h-1.5 md:h-2 bg-gradient-to-r from-emerald-400 via-cyan-500 to-blue-600 rounded-full mx-auto mb-4 md:mb-6"
-            initial={{ width: 0 }}
-            whileInView={{ width: 96 }}
-            transition={{ duration: 1.5, delay: 0.5 }}
-          />
-          <motion.p
-            className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto px-4"
-            variants={itemVariants}
-          >
-            Crafting digital experiences with passion, precision, and purpose
-          </motion.p>
-        </motion.div>
+        {/* Section Header */}
+        <SectionHeader
+          tagText="Get To Know Me"
+          tagIcon="solar:user-heart-bold"
+          heading="About Me"
+          description="Crafting digital experiences with passion, precision, and purpose"
+          showUnderline={true}
+          centered={true}
+        />
 
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
@@ -293,7 +279,7 @@ export default function OverviewSection() {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.5 + index * 0.2 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-amber-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                   >
                     <Icon icon={achievement.icon} className={`${achievement.color} w-5 h-5`} width={20} height={20} />
                     <span className="text-sm font-medium text-gray-800 dark:text-gray-300">{achievement.text}</span>
@@ -313,7 +299,7 @@ export default function OverviewSection() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.0 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:check-circle-bold" className="text-green-600 w-5 h-5" width={20} height={20} />
                   <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to New Opportunities</span>
@@ -322,7 +308,7 @@ export default function OverviewSection() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.2 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:planet-2-bold" className="text-cyan-600 w-5 h-5" width={20} height={20} />
                   <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to Relocation</span>
@@ -331,7 +317,7 @@ export default function OverviewSection() {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:clock-circle-bold" className="text-blue-600 w-5 h-5" width={20} height={20} />
                   <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Remote & On-site Available</span>

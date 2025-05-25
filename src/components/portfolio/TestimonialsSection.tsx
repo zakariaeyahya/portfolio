@@ -3,6 +3,7 @@
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import SectionHeader from "./SectionHeader";
 
 interface Testimonial {
   content: string;
@@ -39,18 +40,18 @@ const testimonials = [
   },
   {
     content: "Ramzan produced some really amazing work on the backend. He demonstrated his proficiency and efficiency by using Node.js and Javascript to successfully import a very large dataset into a MySQL database.",
-    author: "Sarah Johnson",
+    author: "Arnel Bisnar",
     role: "Product Manager",
-    company: "DataFlow Inc",
+    company: "Solid Lift Parts Inc",
     rating: 5,
     project: "Backend Development",
-    avatar: "SJ"
+    avatar: "AB"
   },
   {
     content: "It's been great to work with him! Fast, active and hardworking! He ",
-    author: "Michael Rodriguez",
-    role: "CTO",
-    company: "TechStart Labs",
+    author: "Gilberto Cisneros",
+    role: "CEO",
+    company: "Checkersvip.com",
     rating: 5,
     project: "JavaScript Applications",
     avatar: "MR"
@@ -151,8 +152,6 @@ const TestimonialCard = ({ testimonial, index, isHovered, onHover }: Testimonial
                 <div className={`w-14 h-14 bg-gradient-to-br ${borderGradient} rounded-xl flex items-center justify-center shadow-lg`}>
                   <span className="text-white font-bold text-lg">{testimonial.avatar}</span>
                 </div>
-                {/* Online Status Indicator */}
-                <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-green-500 rounded-full border-2 border-white dark:border-gray-800" />
               </div>
 
               <div className="flex-1">
@@ -168,19 +167,6 @@ const TestimonialCard = ({ testimonial, index, isHovered, onHover }: Testimonial
               </div>
             </div>
 
-            {/* Project Tag with Gradient */}
-            <div className="flex justify-between items-center">
-              <span className={`inline-flex items-center px-4 py-2 bg-gradient-to-r ${borderGradient} text-white text-xs font-semibold rounded-full shadow-md`}>
-                <Icon icon="solar:code-outline" className="mr-1" width={14} height={14} />
-                {testimonial.project}
-              </span>
-
-              {/* Verified Badge */}
-              <div className="flex items-center gap-1 text-xs text-green-600 dark:text-green-400 font-medium">
-                <Icon icon="solar:verified-check-bold" width={16} height={16} />
-                Verified
-              </div>
-            </div>
           </div>
         </div>
       </motion.div>
@@ -196,18 +182,18 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
     viewport={{ once: true }}
     className="relative max-w-3xl mx-auto"
   >
-    <div className="bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-blue-900/20 dark:to-indigo-900/20 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 dark:border-gray-700/50">
+    <div className="bg-gradient-to-br from-amber-50 to-sky-100 dark:from-amber-800/20 dark:to-sky-900/20 backdrop-blur-sm rounded-2xl p-8 shadow-lg border border-white/20 dark:border-gray-700/50">
       {/* Simple Featured Badge */}
 
       <div className="relative mb-2 flex items-center justify-between">
-        <div className={`w-12 h-12 bg-gradient-to-br from-green-400 to-emerald-500 rounded-2xl flex items-center justify-center mb-4 shadow-lg`}>
+        <div className={`w-12 h-12 bg-gradient-to-br from-amber-400 to-sky-500 rounded-2xl flex items-center justify-center mb-4 shadow-lg`}>
           <Icon
             icon="gravity-ui:quote-open"
             className="text-white text-3xl"
           />
         </div>
         <div className="text-center mb-6">
-          <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-sm font-medium">
+          <span className="inline-flex items-center gap-2 px-4 py-2 bg-sky-100 dark:bg-blue-900/30 text-sky-700 dark:text-blue-400 rounded-full text-sm font-medium">
             <Icon icon="solar:star-bold" width={16} height={16} />
             Featured Review
           </span>
@@ -253,9 +239,7 @@ const FeaturedTestimonial = ({ testimonial }: FeaturedTestimonialProps) => (
           <div className="text-gray-600 dark:text-gray-400">
             {testimonial.role} at {testimonial.company}
           </div>
-          <div className="text-blue-600 dark:text-blue-400 text-sm font-medium mt-1">
-            {testimonial.project}
-          </div>
+
         </div>
       </div>
     </div>
@@ -278,7 +262,7 @@ export default function TestimonialsSection() {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
-      className="mb-16 relative overflow-hidden"
+      className="mb-20 relative overflow-hidden"
     >
       {/* Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
@@ -289,30 +273,14 @@ export default function TestimonialsSection() {
 
       <div className="relative z-10">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-20"
-        >
-          <motion.div
-            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-500/10 border border-blue-500/20 rounded-full mb-6"
-            whileHover={{ scale: 1.05 }}
-          >
-            <Icon icon="solar:users-group-rounded-outline" className="text-blue-500" width={20} height={20} />
-            <span className="text-blue-600 dark:text-blue-400 text-sm font-medium">
-              Client Stories
-            </span>
-          </motion.div>
-
-          <h2 className="text-5xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300 bg-clip-text text-transparent">
-            Testimonials Wall
-          </h2>
-          <p className="text-gray-700 dark:text-gray-400 max-w-2xl mx-auto text-lg">
-            Real feedback from real clients who trusted me with their projects
-          </p>
-        </motion.div>
+        <SectionHeader
+          tagText="Client Stories"
+          tagIcon="solar:users-group-rounded-outline"
+          heading="Testimonials Wall"
+          description="Real feedback from real clients who trusted me with their projects"
+          showUnderline={false}
+          centered={true}
+        />
 
         {/* Featured Testimonial */}
         <div className="mb-16">
@@ -330,7 +298,7 @@ export default function TestimonialsSection() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             {otherTestimonials.map((testimonial, index) => (
               <TestimonialCard
                 key={index}
@@ -343,40 +311,7 @@ export default function TestimonialsSection() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          viewport={{ once: true }}
-          className="mt-20 text-center"
-        >
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
-            <motion.div
-              className="p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/30 dark:border-gray-700/30"
-              whileHover={{ scale: 1.05, y: -5 }}
-            >
-              <div className="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-2">87%</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Upwork Success</div>
-            </motion.div>
 
-            <motion.div
-              className="p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/30 dark:border-gray-700/30"
-              whileHover={{ scale: 1.05, y: -5 }}
-            >
-              <div className="text-3xl font-bold text-green-600 dark:text-green-400 mb-2">5.0</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Average Rating</div>
-            </motion.div>
-
-            <motion.div
-              className="p-6 bg-white/60 dark:bg-gray-800/60 backdrop-blur-lg rounded-2xl border border-gray-200/30 dark:border-gray-700/30"
-              whileHover={{ scale: 1.05, y: -5 }}
-            >
-              <div className="text-3xl font-bold text-purple-600 dark:text-purple-400 mb-2">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 text-sm">Happy Clients</div>
-            </motion.div>
-          </div>
-        </motion.div>
       </div>
     </motion.section>
   );
