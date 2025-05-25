@@ -1,10 +1,10 @@
 import AnimatedBackground from "@/components/AnimatedBackground";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"] });
 
 export const metadata: Metadata = {
   title: "Muhammad Ramazan - Full Stack Developer",
