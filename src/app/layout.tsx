@@ -1,4 +1,3 @@
-import AnimatedBackground from "@/components/AnimatedBackground";
 import { PostHogProvider } from "@/components/PostHogProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
@@ -29,7 +28,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <PostHogProvider>
           <ThemeProvider>
-            <AnimatedBackground />
+            {/* <AnimatedBackground /> */}
             {children}
           </ThemeProvider>
         </PostHogProvider>

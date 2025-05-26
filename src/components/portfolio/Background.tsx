@@ -10,7 +10,7 @@ export default function Background() {
 
       {/* Animated gradient orbs */}
       <motion.div
-        className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-500/20 dark:from-blue-500/30 dark:to-purple-600/30 rounded-full blur-3xl"
+        className="absolute top-1/4 left-1/4 w-96 h-96 bg-gradient-to-r from-blue-400/20 to-purple-500/20 dark:from-blue-500/30 dark:to-purple-600/30 rounded-full blur-3xl -z-10"
         animate={{
           x: [0, 100, 0],
           y: [0, -50, 0],
@@ -55,7 +55,7 @@ export default function Background() {
       {Array.from({ length: 20 }).map((_, i) => (
         <motion.div
           key={i}
-          className="absolute w-1 h-1 bg-blue-400/40 rounded-full"
+          className="absolute w-1 h-1 bg-blue-400 rounded-full"
           style={{
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
@@ -90,8 +90,8 @@ export default function Background() {
       <div className="absolute inset-0 bg-gradient-radial from-transparent via-transparent to-white/30 dark:to-black/20" />
 
       {/* Animated beam of light */}
-      <motion.div
-        className="absolute top-0 left-1/2 w-px h-full bg-gradient-to-b from-blue-500/50 via-transparent to-transparent"
+      {/* <motion.div
+        className="absolute top-0 left-1/2 animate-rotate w-px h-full bg-gradient-to-b from-blue-500/50 via-transparent to-transparent"
         animate={{
           opacity: [0.3, 0.8, 0.3],
           scaleY: [0.8, 1.2, 0.8],
@@ -101,7 +101,7 @@ export default function Background() {
           repeat: Infinity,
           repeatType: "reverse",
         }}
-      />
+      /> */}
 
       {/* Noise texture overlay */}
       <div

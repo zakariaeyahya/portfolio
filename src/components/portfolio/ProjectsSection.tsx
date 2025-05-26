@@ -127,7 +127,7 @@ export default function ProjectsSection() {
         <motion.div
           variants={floatVariants}
           animate="animate"
-          className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-purple-400/15 md:from-purple-400/20 to-pink-400/15 md:to-pink-400/20 rounded-full blur-xl md:blur-2xl"
+          className="absolute top-5 md:top-20 right-2 md:right-16 w-12 sm:w-16 md:w-32 h-12 sm:h-16 md:h-32 bg-gradient-to-br from-purple-400/15 md:from-purple-400/20 to-pink-400/15 md:to-pink-400/20 rounded-full blur-xl md:blur-4xl"
         />
         <motion.div
           variants={floatVariants}
@@ -377,19 +377,25 @@ export default function ProjectsSection() {
         </div>
 
         {/* Call to Action */}
+
         <motion.div
           variants={itemVariants}
           className="text-center mt-12 md:mt-16 lg:mt-20 px-4 mb-12"
         >
-          <motion.div
-            className="inline-flex items-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 dark:border-purple-500/20 rounded-xl md:rounded-2xl"
-            whileHover={{ scale: 1.05 }}
+          <Link
+            href="#contact"
           >
-            <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
-            <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
-              Interested in working together? Let&apos;s create something amazing!
-            </span>
-          </motion.div>
+
+            <motion.div
+              className="inline-flex items-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 dark:border-purple-500/20 rounded-xl md:rounded-2xl"
+              whileHover={{ scale: 1.05 }}
+            >
+              <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
+              <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
+                Interested in working together? Let&apos;s create something amazing!
+              </span>
+            </motion.div>
+          </Link>
         </motion.div>
       </motion.div>
     </motion.section>
