@@ -48,7 +48,7 @@ const testimonials = [
     avatar: "AB"
   },
   {
-    content: "It's been great to work with him! Fast, active and hardworking! He ",
+    content: "It's been great to work with him! Fast, active and hardworking! Ramzan architected checkersvip.com from ground up with great attention to detail and great design. He is a great team player and a great developer.",
     author: "Gilberto Cisneros",
     role: "CEO",
     company: "Checkersvip.com",
