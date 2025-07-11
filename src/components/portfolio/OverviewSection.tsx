@@ -113,10 +113,10 @@ export default function OverviewSection() {
                   {/* Expanded About Content */}
                   <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Je me spécialise dans le domaine du Big Data et de l'Intelligence Artificielle, en utilisant des technologies modernes pour développer des solutions innovantes. J'aime transformer des problèmes complexes en solutions élégantes et efficaces qui apportent une réelle valeur ajoutée.
+                      Je me spécialise dans le domaine du Big Data et de l&apos;Intelligence Artificielle, en utilisant des technologies modernes pour développer des solutions innovantes. J&apos;aime transformer des problèmes complexes en solutions élégantes et efficaces qui apportent une réelle valeur ajoutée.
                     </p>
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      En dehors du travail, j'aime explorer les technologies émergentes, contribuer à des projets open-source, et partager mes connaissances avec des développeurs en herbe. Je crois en l'apprentissage continu et en restant à la pointe de l'innovation technologique.
+                      En dehors du travail, j&apos;aime explorer les technologies émergentes, contribuer à des projets open-source, et partager mes connaissances avec des développeurs en herbe. Je crois en l&apos;apprentissage continu et en restant à la pointe de l&apos;innovation technologique.
                     </p>
                   </div>
 
@@ -182,7 +182,7 @@ export default function OverviewSection() {
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.
+                    Conception et déploiement d&apos;un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l&apos;interaction client dans un contexte multilingue.
                   </p>
                 </motion.div>
               </div>

@@ -377,7 +377,7 @@ export default function ProjectsSection() {
             >
               <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
               <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
-                Intéressé à travailler ensemble ? Créons quelque chose d'incroyable !
+                Intéressé à travailler ensemble ? Créons quelque chose d&apos;incroyable !
               </span>
             </motion.div>
           </Link>
