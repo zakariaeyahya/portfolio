@@ -7,7 +7,7 @@ const experience = [
   {
     role: "Développeur Fullstack IA – Projet BrainBoost (Alternance)",
     company: "Marketing Confort",
-    period: "Février 2025 — Juillet 2025",
+    period: "Février 2025 — Août 2025",
     type: "Stage",
     companyIcon: "mdi:briefcase",
     companyColor: "from-blue-500 to-blue-600",

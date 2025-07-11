@@ -69,6 +69,7 @@ export default function OverviewSection() {
           className="hidden md:block absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-br from-pink-400/25 to-orange-400/25 rounded-full blur-xl"
         />
       </div>
+
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -85,6 +86,7 @@ export default function OverviewSection() {
           showUnderline={true}
           centered={true}
         />
+
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
           {/* Main Profile Section */}
@@ -96,6 +98,7 @@ export default function OverviewSection() {
                 <div className="absolute top-4 md:top-6 right-4 md:right-6 w-3 md:w-4 h-3 md:h-4 bg-green-400 rounded-full animate-pulse"></div>
                 <div className="absolute top-4 md:top-6 right-10 md:right-14 w-2 md:w-3 h-2 md:h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
                 <div className="hidden md:block absolute top-6 right-20 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-500"></div>
+
                 <div className="space-y-4 md:space-y-6">
                   <div>
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white flex items-center gap-2 md:gap-3">
@@ -103,21 +106,20 @@ export default function OverviewSection() {
                       Bonjour, je suis Zakariae Yahya
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      Un étudiant passionné en <span className="font-bold text-blue-600 dark:text-blue-400">Science des Données</span> et
-                      <span className="font-bold text-purple-600 dark:text-purple-400">
-                        &nbsp; Intelligence Artificielle</span> avec
-                      <span className="font-bold text-green-600 dark:text-green-400"> une expérience en développement full-stack</span> et en science des données.
+                      Étudiant en <span className="font-bold text-blue-600 dark:text-blue-400">cinquième année spécialisé en Big Data et Intelligence Artificielle</span>, passionné par le <span className="font-bold text-purple-600 dark:text-purple-400">sport</span>, les <span className="font-bold text-green-600 dark:text-green-400">échecs</span> et les <span className="font-bold text-green-600 dark:text-green-400">nouvelles technologies en IA</span>.
                     </p>
                   </div>
+
                   {/* Expanded About Content */}
                   <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Je me spécialise dans le développement d&apos;applications web et mobiles évolutives en utilisant React, Next.js, TypeScript, et les technologies modernes de développement. J&apos;aime transformer des problèmes complexes en solutions élégantes que les utilisateurs adorent.
+                      Je me spécialise dans le domaine du Big Data et de l'Intelligence Artificielle, en utilisant des technologies modernes pour développer des solutions innovantes. J'aime transformer des problèmes complexes en solutions élégantes et efficaces qui apportent une réelle valeur ajoutée.
                     </p>
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      En dehors du travail, j&apos;aime explorer les technologies émergentes, contribuer à des projets open-source, et encadrer des développeurs en herbe. Je crois en l&apos;apprentissage continu et en restant à la pointe de l&apos;innovation technologique.
+                      En dehors du travail, j'aime explorer les technologies émergentes, contribuer à des projets open-source, et partager mes connaissances avec des développeurs en herbe. Je crois en l'apprentissage continu et en restant à la pointe de l'innovation technologique.
                     </p>
                   </div>
+
                   {/* Skills Highlight */}
                   <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
@@ -125,7 +127,7 @@ export default function OverviewSection() {
                       Technologies Clés
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["Intégration IA", "React","TypeScript", "Python", "AWS"].map((skill, index) => (
+                      {["Intégration IA", "React", "TypeScript", "Python", "AWS"].map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -142,6 +144,7 @@ export default function OverviewSection() {
                   </div>
                 </div>
               </div>
+
               {/* Professional Roles Grid */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                 <motion.div
@@ -179,12 +182,13 @@ export default function OverviewSection() {
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Conception et déploiement d&apos;un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l&apos;interaction client dans un contexte multilingue.
+                    Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.
                   </p>
                 </motion.div>
               </div>
             </div>
           </motion.div>
+
           {/* Enhanced Sidebar */}
           <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6 mt-6 lg:mt-0">
             {/* Contact Card */}
@@ -231,6 +235,7 @@ export default function OverviewSection() {
                 </motion.div>
               </div>
             </div>
+
             {/* Achievement Highlights */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-50/90 to-yellow-50/90 dark:from-amber-950/30 dark:to-yellow-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
@@ -256,6 +261,7 @@ export default function OverviewSection() {
                 ))}
               </div>
             </div>
+
             {/* Available for Hire */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50/90 to-cyan-50/90 dark:from-emerald-950/30 dark:to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">

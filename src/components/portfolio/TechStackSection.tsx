@@ -21,7 +21,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Databases",
       description: "Structured Query Language for relational databases",
-      yearsUsed: 5
+      yearsUsed: 2
     },
     {
       name: "MySQL",
@@ -29,7 +29,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Databases",
       description: "Popular open-source relational database",
-      yearsUsed: 4
+      yearsUsed: 2
     },
     {
       name: "Oracle",
@@ -37,7 +37,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Databases",
       description: "Multimodel database management system",
-      yearsUsed: 3
+      yearsUsed: 1
     },
     {
       name: "NoSQL",
@@ -45,7 +45,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Databases",
       description: "Non-relational database systems",
-      yearsUsed: 4
+      yearsUsed: 2
     },
   ],
   "Big Data & Storage": [
@@ -55,7 +55,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Big Data & Storage",
       description: "Framework for distributed storage and processing",
-      yearsUsed: 3
+      yearsUsed: 2
     },
     {
       name: "Apache Spark",
@@ -63,7 +63,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Big Data & Storage",
       description: "Analytics engine for large-scale data processing",
-      yearsUsed: 3
+      yearsUsed: 2
     },
     {
       name: "Snowflake",
@@ -71,7 +71,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Big Data & Storage",
       description: "Cloud-based data warehousing",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "Amazon S3",
@@ -79,7 +79,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Big Data & Storage",
       description: "Scalable storage in the cloud",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "AWS Glue",
@@ -87,7 +87,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Big Data & Storage",
       description: "Serverless data integration service",
-      yearsUsed: 2
+      yearsUsed: 1
     },
   ],
   "Orchestration & Indexing": [
@@ -97,7 +97,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Orchestration & Indexing",
       description: "Platform to programmatically author, schedule, and monitor workflows",
-      yearsUsed: 3
+      yearsUsed: 2
     },
     {
       name: "Qdrant",
@@ -105,7 +105,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Orchestration & Indexing",
       description: "Vector similarity search engine",
-      yearsUsed: 1
+      yearsUsed: 2
     },
     {
       name: "ChromaDB",
@@ -113,7 +113,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Orchestration & Indexing",
       description: "AI-native open-source vector database",
-      yearsUsed: 1
+      yearsUsed: 2
     },
   ],
   "Machine Learning": [
@@ -123,7 +123,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Machine Learning",
       description: "Machine learning models with labeled data",
-      yearsUsed: 4
+      yearsUsed: 3
     },
     {
       name: "Unsupervised Learning",
@@ -189,7 +189,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Data Visualization",
       description: "Plotting library for the Python programming language",
-      yearsUsed: 4
+      yearsUsed: 3
     },
     {
       name: "Seaborn",
@@ -207,7 +207,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Programming Languages",
       description: "High-level programming language",
-      yearsUsed: 5
+      yearsUsed: 4
     },
     {
       name: "SQL",
@@ -215,7 +215,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Programming Languages",
       description: "Standard language for relational database management",
-      yearsUsed: 5
+      yearsUsed: 3
     },
     {
       name: "Java",
@@ -223,7 +223,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Programming Languages",
       description: "Object-oriented programming language",
-      yearsUsed: 3
+      yearsUsed: 1
     },
     {
       name: "TypeScript",
@@ -231,7 +231,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Programming Languages",
       description: "Typed superset of JavaScript",
-      yearsUsed: 2
+      yearsUsed: 1
     },
   ],
   "Frameworks": [
@@ -241,7 +241,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Expert",
       category: "Frameworks",
       description: "Modern, fast web framework for building APIs",
-      yearsUsed: 3
+      yearsUsed: 2
     },
     {
       name: "Django",
@@ -249,7 +249,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Frameworks",
       description: "High-level Python web framework",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "Spring Boot",
@@ -257,7 +257,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Frameworks",
       description: "Java-based framework for building microservices",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "React",
@@ -265,7 +265,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Frameworks",
       description: "JavaScript library for building user interfaces",
-      yearsUsed: 2
+      yearsUsed: 1
     },
   ],
   "Cloud & DevOps": [
@@ -275,7 +275,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Cloud & DevOps",
       description: "Comprehensive cloud computing platform",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "Docker",
@@ -291,7 +291,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Cloud & DevOps",
       description: "Container orchestration platform",
-      yearsUsed: 2
+      yearsUsed: 1
     },
     {
       name: "GitLab CI/CD",
@@ -317,7 +317,7 @@ const techStackData: Record<string, TechItem[]> = {
       level: "Intermediate",
       category: "Tools & Techniques",
       description: "Data framework for LLM applications",
-      yearsUsed: 1
+      yearsUsed: 2
     },
     {
       name: "MLflow",
