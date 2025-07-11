@@ -115,7 +115,7 @@ export default function OverviewSection() {
                       Je me spécialise dans le développement d&apos;applications web et mobiles évolutives en utilisant React, Next.js, TypeScript, et les technologies modernes de développement. J&apos;aime transformer des problèmes complexes en solutions élégantes que les utilisateurs adorent.
                     </p>
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      En dehors du travail, j&apos;aime explorer les technologies émergentes, contribuer à des projets open-source, et encadrer des développeurs en herbe. Je crois en l'&apos;pprentissage continu et en restant à la pointe de l'innovation technologique.
+                      En dehors du travail, j&apos;aime explorer les technologies émergentes, contribuer à des projets open-source, et encadrer des développeurs en herbe. Je crois en l&apos;apprentissage continu et en restant à la pointe de l&apos;innovation technologique.
                     </p>
                   </div>
                   {/* Skills Highlight */}
