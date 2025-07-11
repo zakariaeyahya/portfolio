@@ -1,5 +1,4 @@
 "use client";
-
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
@@ -70,7 +69,6 @@ export default function OverviewSection() {
           className="hidden md:block absolute top-1/2 left-1/3 w-16 h-16 bg-gradient-to-br from-pink-400/25 to-orange-400/25 rounded-full blur-xl"
         />
       </div>
-
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -80,68 +78,54 @@ export default function OverviewSection() {
       >
         {/* Section Header */}
         <SectionHeader
-          tagText="Get To Know Me"
+          tagText="Faites ma connaissance"
           tagIcon="solar:user-heart-bold"
-          heading="About Me"
-          description="Crafting digital experiences with passion, precision, and purpose"
+          heading="À propos de moi"
+          description="Création d'expériences numériques avec passion, précision et but"
           showUnderline={true}
           centered={true}
         />
-
         {/* Main Content Grid */}
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
-
           {/* Main Profile Section */}
-          <motion.div
-            variants={itemVariants}
-            className="lg:col-span-8"
-          >
+          <motion.div variants={itemVariants} className="lg:col-span-8">
             <div className="space-y-6 md:space-y-8">
-
               {/* Introduction Card */}
               <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-white/90 to-white/50 dark:from-gray-800/90 dark:to-gray-900/50 backdrop-blur-xl border border-white/30 dark:border-gray-700/40 shadow-2xl">
                 {/* Decorative Elements */}
                 <div className="absolute top-4 md:top-6 right-4 md:right-6 w-3 md:w-4 h-3 md:h-4 bg-green-400 rounded-full animate-pulse"></div>
                 <div className="absolute top-4 md:top-6 right-10 md:right-14 w-2 md:w-3 h-2 md:h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
                 <div className="hidden md:block absolute top-6 right-20 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-500"></div>
-
                 <div className="space-y-4 md:space-y-6">
                   <div>
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white flex items-center gap-2 md:gap-3">
                       <span className="text-2xl sm:text-3xl md:text-4xl">👋</span>
-                      Hello, I&apos;m Muhammad Ramazan
+                      Bonjour, je suis Zakariae Yahya
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      A passionate <span className="font-bold text-blue-600 dark:text-blue-400">Full Stack Developer</span> and
+                      Un étudiant passionné en <span className="font-bold text-blue-600 dark:text-blue-400">Science des Données</span> et
                       <span className="font-bold text-purple-600 dark:text-purple-400">
-                        &nbsp; AI enthusiast</span> with
-                      <span className="font-bold text-green-600 dark:text-green-400"> 5+ years</span> of experience crafting
-                      digital experiences that users love.
+                        &nbsp; Intelligence Artificielle</span> avec
+                      <span className="font-bold text-green-600 dark:text-green-400"> une expérience en développement full-stack</span> et en science des données.
                     </p>
                   </div>
-
                   {/* Expanded About Content */}
                   <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      I specialize in building scalable web and mobile applications using React, Next.js, TypeScript,
-                      and modern development technologies. I thrive on turning complex problems into elegant solutions
-                      that users love.
+                      Je me spécialise dans le développement d'applications web et mobiles évolutives en utilisant React, Next.js, TypeScript, et les technologies modernes de développement. J'aime transformer des problèmes complexes en solutions élégantes que les utilisateurs adorent.
                     </p>
                     <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Beyond work, I love exploring emerging technologies, contributing to open-source projects, and
-                      mentoring aspiring developers. I believe in continuous learning and staying at the forefront of
-                      technological innovation.
+                      En dehors du travail, j'aime explorer les technologies émergentes, contribuer à des projets open-source, et encadrer des développeurs en herbe. Je crois en l'apprentissage continu et en restant à la pointe de l'innovation technologique.
                     </p>
                   </div>
-
                   {/* Skills Highlight */}
                   <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
                       <Icon icon="solar:lightning-bold" className="text-yellow-500 w-4 md:w-5 h-4 md:h-5" width={20} height={20} />
-                      Core Technologies
+                      Technologies Clés
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["AI Integration", "React", "Next.js", "TypeScript", "Node.js", "Python", "AWS", "UI/UX Design", "Healthcare IT"].map((skill, index) => (
+                      {["Intégration IA", "React","TypeScript", "Python", "AWS"].map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -158,7 +142,6 @@ export default function OverviewSection() {
                   </div>
                 </div>
               </div>
-
               {/* Professional Roles Grid */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                 <motion.div
@@ -171,21 +154,15 @@ export default function OverviewSection() {
                       <Icon icon="solar:code-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Software Developer</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Upwork Freelancer</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2020 — Present</p>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Développeur Fullstack IA</h4>
+                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Marketing Confort</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Février 2025 — Juillet 2025</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Delivering high-quality projects across diverse domains, specializing in web applications,
-                    API development, and cloud integrations.
+                    Conception et développement des interfaces web et mobile dédiées aux parents (suivi de la progression des enfants) et aux administrateurs (configuration des assistants IA).
                   </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:star-bold" className="text-yellow-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-green-600 dark:text-green-400">Top Rated • 91% Success Score</span>
-                  </div>
                 </motion.div>
-
                 <motion.div
                   variants={itemVariants}
                   whileHover={{ scale: 1.02, y: -5 }}
@@ -196,35 +173,29 @@ export default function OverviewSection() {
                       <Icon icon="solar:hospital-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
                     </div>
                     <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">HIMS Master Trainer</h4>
-                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">Public Health Organization</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">2019 — Present</p>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Data Scientist</h4>
+                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">DIGITAL PLACE</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Juin 2024 — Septembre 2024</p>
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Leading digital transformation in healthcare, integrating 45+ radiology machines and
-                    training teams on modern HIMS and PACS systems.
+                    Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.
                   </p>
-                  <div className="flex items-center gap-2 text-xs md:text-sm mt-auto">
-                    <Icon icon="solar:shield-check-bold" className="text-blue-500 w-3 md:w-4 h-3 md:h-4" width={16} height={16} />
-                    <span className="font-semibold text-blue-600 dark:text-blue-400">Healthcare IT Specialist</span>
-                  </div>
                 </motion.div>
               </div>
             </div>
           </motion.div>
-
           {/* Enhanced Sidebar */}
           <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6 mt-6 lg:mt-0">
             {/* Contact Card */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:chat-round-dots-bold" className="text-purple-500 w-5 h-5" width={20} height={20} />
-                Let&apos;s Connect
+                Restons en contact
               </h4>
               <div className="space-y-3">
                 <motion.a
-                  href="mailto:mramazan1@yahoo.com"
+                  href="mailto:zakariae.yh@gmail.com"
                   whileHover={{ scale: 1.02, x: 4 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
@@ -233,10 +204,9 @@ export default function OverviewSection() {
                     <Icon icon="solar:letter-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">mramazan1@yahoo.com</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">zakariae.yh@gmail.com</div>
                   </div>
                 </motion.a>
-
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
@@ -245,10 +215,9 @@ export default function OverviewSection() {
                     <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">mramazan.dev</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">zakariaeyahya.ma</div>
                   </div>
                 </motion.div>
-
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30"
@@ -257,30 +226,29 @@ export default function OverviewSection() {
                     <Icon icon="solar:map-point-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">Islamabad, Pakistan</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">Mobilité nationale, Maroc</div>
                   </div>
                 </motion.div>
               </div>
             </div>
-
             {/* Achievement Highlights */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-50/90 to-yellow-50/90 dark:from-amber-950/30 dark:to-yellow-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:cup-star-bold" className="text-amber-600 w-5 h-5" width={20} height={20} />
-                Achievements
+                Réalisations
               </h4>
               <div className="space-y-4">
                 {[
-                  { icon: "solar:star-bold", text: "Top Rated on Upwork", color: "text-yellow-600" },
-                  { icon: "solar:cpu-bolt-bold-duotone", text: "Expert in AI Integration", color: "text-blue-600" },
-                  { icon: "solar:code-square-bold", text: "50+ Projects Delivered", color: "text-green-600" },
+                  { icon: "solar:star-bold", text: "Stage en Développement Fullstack IA", color: "text-yellow-600" },
+                  { icon: "solar:cpu-bolt-bold-duotone", text: "Expert en Intégration IA", color: "text-blue-600" },
+                  { icon: "solar:code-square-bold", text: "Projets en Data Science", color: "text-green-600" },
                 ].map((achievement, index) => (
                   <motion.div
                     key={index}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.5 + index * 0.2 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-amber-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                    className="flex items-center gap-3 p-3 rounded-lg bg-amber-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                   >
                     <Icon icon={achievement.icon} className={`${achievement.color} w-5 h-5`} width={20} height={20} />
                     <span className="text-sm font-medium text-gray-800 dark:text-gray-300">{achievement.text}</span>
@@ -288,40 +256,39 @@ export default function OverviewSection() {
                 ))}
               </div>
             </div>
-
             {/* Available for Hire */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50/90 to-cyan-50/90 dark:from-emerald-950/30 dark:to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:rocket-bold" className="text-emerald-600 w-5 h-5" width={20} height={20} />
-                Available for Hire
+                Disponible pour un stage
               </h4>
               <div className="space-y-3.5">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.0 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:check-circle-bold" className="text-green-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to New Opportunities</span>
+                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Ouvert aux nouvelles opportunités</span>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.2 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:planet-2-bold" className="text-cyan-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Open to Relocation</span>
+                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Disponible pour un déplacement</span>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 2.4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30  transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:clock-circle-bold" className="text-blue-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Remote & On-site Available</span>
+                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Disponible à distance et sur site</span>
                 </motion.div>
               </div>
             </div>
@@ -330,4 +297,4 @@ export default function OverviewSection() {
       </motion.div>
     </motion.section>
   );
-} 
+}

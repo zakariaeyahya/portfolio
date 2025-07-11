@@ -1,4 +1,3 @@
-import { PostHogProvider } from "@/components/PostHogProvider";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import type { Metadata } from "next";
 import { Space_Grotesk } from "next/font/google";
@@ -7,13 +6,13 @@ import "./globals.css";
 const inter = Space_Grotesk({ subsets: ["latin"], weight: ["500", "600", "700"] });
 
 export const metadata: Metadata = {
-  title: "Muhammad Ramazan - Full Stack Developer",
-  description: "Portfolio of Muhammad Ramazan, a passionate full-stack developer specializing in modern web technologies, React, Next.js, and innovative digital solutions.",
-  keywords: "Muhammad Ramazan, Full Stack Developer, React, Next.js, Web Development, Portfolio",
-  authors: [{ name: "Muhammad Ramazan" }],
+  title: "Yahya Zakariae - Data Science & AI Specialist",
+  description: "Portfolio of Yahya Zakariae, a Data Science and AI student specializing in modern data technologies, machine learning, and innovative data-driven solutions.",
+  keywords: "Yahya Zakariae, Data Science, Artificial Intelligence, Machine Learning, Data Engineering, Portfolio",
+  authors: [{ name: "Yahya Zakariae" }],
   openGraph: {
-    title: "Muhammad Ramazan - Full Stack Developer",
-    description: "Portfolio of Muhammad Ramazan, a passionate full-stack developer specializing in modern web technologies.",
+    title: "Yahya Zakariae - Data Science & AI Specialist",
+    description: "Portfolio of Yahya Zakariae, a passionate Data Science and AI student specializing in modern data technologies.",
     type: "website",
   },
 };
@@ -26,12 +25,9 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
-        <PostHogProvider>
-          <ThemeProvider>
-            {/* <AnimatedBackground /> */}
-            {children}
-          </ThemeProvider>
-        </PostHogProvider>
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );

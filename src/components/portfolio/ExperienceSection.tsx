@@ -1,43 +1,41 @@
 "use client";
-
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Software Developer",
-    company: "Upwork",
-    period: "January 2020 — Present",
-    type: "Freelance",
-    companyIcon: "fa6-brands:square-upwork",
-    companyColor: "from-green-500 to-green-600",
-    description: "Delivered high-quality projects across diverse domains, including web and mobile applications, API development, and cloud integrations (AWS, GCP).",
+    role: "Développeur Fullstack IA – Projet BrainBoost (Alternance)",
+    company: "Marketing Confort",
+    period: "Février 2025 — Juillet 2025",
+    type: "Stage",
+    companyIcon: "mdi:briefcase",
+    companyColor: "from-blue-500 to-blue-600",
+    description: "Conception et développement des interfaces web et mobile dédiées aux parents (suivi de la progression des enfants) et aux administrateurs (configuration des assistants IA).",
     achievements: [
-      "Achieved Top-Rated status with a 91% job success score",
-      "Completed 10+ projects focusing on scalable solutions",
-      "Consistently praised for skillfulness, quick learning, and strong communication",
-      "Earned repeated engagements through reliability and expertise"
+      "Développement du back-end pour la gestion des assistants IA, des utilisateurs et des contenus pédagogiques.",
+      "Intégration de l'intelligence artificielle générative pour fournir des réponses guidées, personnalisées et filtrées selon des règles éducatives précises.",
+      "Mise en place d'un système de vectorisation des contenus et de suivi des performances des modèles IA.",
+      "Participation active à une équipe agile pluridisciplinaire, avec des réunions techniques et fonctionnelles hebdomadaires aux côtés de développeurs seniors et de chefs de projet.",
+      "⭐ Meilleur Employé du Mois Juin ⭐."
     ],
-    technologies: ["JavaScript", "Python", "Node.js", "AWS", "GCP", "OpenAI API", "LangChain"]
+    technologies: ["Jira", "Agile", "Django", "LangChain", "LlamaIndex", "MLflow", "sentence-transformers", "TypeScript", "React", "React Native", "Spring Boot", "PostgreSQL", "Qdrant", "Docker", "Kubernetes", "GitLab CI/CD", "AWS", "Postman", "Apache Maven"]
   },
   {
-    role: "HIMS Master Trainer / PACS Specialist",
-    company: "Public Health Organization, Islamabad",
-    period: "July 2019 — Present",
-    type: "Full-time",
-    companyColor: "from-blue-500 to-blue-600",
-    companyIcon: "mdi:hospital-building",
-    description: "Spearheaded organizational transformation from paper-based manual systems to completely integrated HIMS and PACS (Picture Archiving and Communication System).",
+    role: "Data Scientist",
+    company: "DIGITAL PLACE",
+    period: "Juin 2024 — Septembre 2024",
+    type: "Stage",
+    companyIcon: "mdi:briefcase",
+    companyColor: "from-green-500 to-green-600",
+    description: "Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.",
     achievements: [
-      "Led integration of 45+ radiology machines (CT, MRI, X-Ray, Ultrasound)",
-      "Ensured active monitoring for integration issues",
-      "Acted as master trainer and led support team",
-      "Communicated issues and requirements to backend teams"
+      "Participation active aux réunions fonctionnelles et techniques avec l'équipe de développement et les interlocuteurs métier du client bancaire, afin d'adapter l'assistant aux besoins réels des utilisateurs."
     ],
-    technologies: ["HIMS", "PACS", "System Integration", "Healthcare IT", "Training & Support"]
+    technologies: ["Agile", "Slack", "LLM", "RAG", "LangChain", "Groq API", "FastAPI", "Transformers", "PyTorch", "TensorFlow", "sentence-transformers"]
   }
 ];
+
 
 export default function ExperienceSection() {
   const containerVariants = {
@@ -92,7 +90,6 @@ export default function ExperienceSection() {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-green-500/3 to-blue-500/3 rounded-full blur-3xl" />
       </div>
-
       <div className="relative z-10">
         <SectionHeader
           tagText="Professional Journey"
@@ -102,7 +99,6 @@ export default function ExperienceSection() {
           description="My professional journey and the impact I've made across different domains"
           centered={true}
         />
-
         <motion.div
           variants={containerVariants}
           initial="hidden"
@@ -125,7 +121,7 @@ export default function ExperienceSection() {
                     className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
                   >
                     <Icon
-                      icon={exp.companyIcon!}
+                      icon={exp.companyIcon}
                       className="text-white w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 relative z-10"
                       width={40}
                       height={40}
@@ -134,7 +130,6 @@ export default function ExperienceSection() {
                     <div className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
                   </motion.div>
                 </div>
-
                 {/* Content */}
                 <div className="flex-1 space-y-4 md:space-y-6 min-w-0">
                   {/* Header */}
@@ -148,7 +143,6 @@ export default function ExperienceSection() {
                       <Icon icon="solar:calendar-outline" width={14} height={14} className="md:w-4 md:h-4" />
                       <span>{exp.period}</span>
                     </motion.div>
-
                     <motion.h3
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -157,7 +151,6 @@ export default function ExperienceSection() {
                     >
                       {exp.role}
                     </motion.h3>
-
                     <motion.p
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -167,7 +160,6 @@ export default function ExperienceSection() {
                       {exp.company}
                     </motion.p>
                   </div>
-
                   {/* Description */}
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
@@ -177,7 +169,6 @@ export default function ExperienceSection() {
                   >
                     {exp.description}
                   </motion.p>
-
                   {/* Achievements */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -189,7 +180,6 @@ export default function ExperienceSection() {
                       <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
                       Key Achievements
                     </h4>
-
                     <div className="space-y-2 md:space-y-3">
                       {exp.achievements.map((achievement, achIndex) => (
                         <motion.div
@@ -209,7 +199,6 @@ export default function ExperienceSection() {
                       ))}
                     </div>
                   </motion.div>
-
                   {/* Technologies */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -221,7 +210,6 @@ export default function ExperienceSection() {
                       <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
                       Technologies & Skills
                     </h4>
-
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {exp.technologies.map((tech, techIndex) => (
                         <motion.span
@@ -239,7 +227,6 @@ export default function ExperienceSection() {
                   </motion.div>
                 </div>
               </div>
-
               {/* Divider */}
               {index < experience.length - 1 && (
                 <motion.div
@@ -252,7 +239,6 @@ export default function ExperienceSection() {
             </motion.div>
           ))}
         </motion.div>
-
         {/* Experience Summary Stats */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -266,24 +252,22 @@ export default function ExperienceSection() {
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Years Experience</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">6</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Months Experience</div>
             </motion.div>
-
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">50+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projects Completed</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">2</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Internships Completed</div>
             </motion.div>
-
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">91%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Success Rate</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">100%</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Commitment</div>
             </motion.div>
           </div>
         </motion.div>

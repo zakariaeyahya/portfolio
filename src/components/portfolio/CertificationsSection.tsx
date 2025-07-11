@@ -1,5 +1,4 @@
 "use client";
-
 import { Icon } from "@iconify/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
@@ -24,190 +23,172 @@ type Certificate = {
 
 const certifications: Certificate[] = [
   {
-    title: "DevOps Essentials",
+    title: "Python Project for Data Science",
     provider: "IBM",
     platform: "Coursera",
-    issued: "November 2023",
-    credentialId: "P67DLWJP2GL7",
-    skills: ["Continuous Integration", "DevOps", "Product Development", "IaaC"],
+    issued: "January 2024",
+    credentialId: "6SSNJSNWVTM3",
+    skills: ["Python", "Data Science", "Data Analysis"],
     providerIcon: "lineicons:ibm",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/P67DLWJP2GL7_DEVOPS.png",
+    certificatePreview: "/certificates/Python Project for Data Science.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
   {
-    title: "Git and GitHub Essentials",
+    title: "Data Analysis with Python",
     provider: "IBM",
     platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "YYQL3U4QAZJF",
-    skills: ["Version Control", "Git", "GitHub", "GitLab", "Open Source"],
+    issued: "January 2024",
+    credentialId: "ECTUSQ4WQUMB",
+    skills: ["Data Analysis", "Python", "Data Visualization"],
     providerIcon: "lineicons:ibm",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/ YYQL3U4QAZJF_GIT_GITHUB.png",
+    certificatePreview: "/certificates/Data Analysis with Python.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
   {
-    title: "Web Development with HTML, CSS, JavaScript Essentials",
+    title: "Machine Learning with Python",
     provider: "IBM",
     platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "3UPD6SABRD3B",
-    skills: ["IBM Cloud", "HTML", "CSS", "Full-Stack Development"],
+    issued: "January 2024",
+    credentialId: "EP43GH74SZ4D",
+    skills: ["Machine Learning", "Python", "Data Science"],
     providerIcon: "lineicons:ibm",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/3UPD6SABRD3B_INTRO_WEB.png",
+    certificatePreview: "/certificates/Machine Learning with Python.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
   {
-    title: "Introduction to Cloud Computing",
+    title: "Python for Data Science, AI & Development",
     provider: "IBM",
     platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "verified-credly",
-    skills: ["Container", "IaaS", "IBM Cloud", "Architecture", "Cloud Computing", "PaaS", "DevOps"],
+    issued: "January 2024",
+    credentialId: "L6C4P39PTHJG",
+    skills: ["Python", "Data Science", "AI", "Development"],
     providerIcon: "lineicons:ibm",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/EXFQ7QMJYUQQ_AWS.png",
+    certificatePreview: "/certificates/Python for Data Science, AI & Development.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
-
   {
-    title: "Introduction to Databases for Back-End Development",
-    provider: "Meta",
+    title: "Data Analysis and Visualization with Power BI",
+    provider: "Microsoft",
     platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "5FNQEGLH78UD",
-    skills: ["Database Design", "SQL", "Backend Development", "Data Management"],
-    providerIcon: "logos:meta-icon",
+    issued: "April 2024",
+    credentialId: "RXMBKJENLHNR",
+    skills: ["Data Analysis", "Power BI", "Data Visualization"],
+    providerIcon: "logos:microsoft-icon",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/5FNQEGLH78UD_DATABASES_FOR_BACKEND.png",
+    certificatePreview: "/certificates/Data Analysis and Visualization with Power BI.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
-
   {
-    title: "Introduction to Back-End Development",
-    provider: "Meta",
+    title: "Data Visualization with Python",
+    provider: "IBM",
     platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "2Y8NRQC5MP96",
-    skills: ["Backend Development", "APIs", "Server-Side Programming", "Web Development"],
-    providerIcon: "logos:meta-icon",
+    issued: "April 2024",
+    credentialId: "VTYL5J2K7KV2",
+    skills: ["Data Visualization", "Python", "Data Analysis"],
+    providerIcon: "lineicons:ibm",
+    platformIcon: "logos:coursera",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/certificates/Data Visualization with Python.pdf",
+    providerIconSize: 64,
+    platformIconSize: 88
+  },
+  {
+    title: "Data Visualization with R",
+    provider: "IBM",
+    platform: "Coursera",
+    issued: "April 2024",
+    credentialId: "SA839VQJT79C",
+    skills: ["Data Visualization", "R", "Data Analysis"],
+    providerIcon: "lineicons:ibm",
+    platformIcon: "logos:coursera",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/certificates/Data Visualization with R.pdf",
+    providerIconSize: 64,
+    platformIconSize: 88
+  },
+  {
+    title: "Introduction to Machine Learning with Python",
+    provider: "Arizona State University",
+    platform: "Coursera",
+    issued: "January 2024",
+    credentialId: "UAUAQBW42XTC",
+    skills: ["Machine Learning", "Python", "Data Science"],
+    providerIcon: "logos:asu",
     platformIcon: "logos:coursera",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/2Y8NRQC5MP96_INTRO_BE.png",
+    certificatePreview: "/certificates/Introduction to Machine Learning with Python.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
   {
-    title: "Django Web Framework",
-    provider: "Meta",
+    title: "Databases and SQL for Data Science with Python",
+    provider: "IBM",
     platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "3YRA842UKERB",
-    skills: ["Django", "Python", "Web Framework", "MVC Architecture"],
+    issued: "January 2024",
+    credentialId: "XXLM6THB9GWN",
+    skills: ["Databases", "SQL", "Data Science", "Python"],
+    providerIcon: "lineicons:ibm",
+    platformIcon: "logos:coursera",
+    color: "from-blue-500 to-blue-600",
+    certificatePreview: "/certificates/Databases and SQL for Data Science with Python.pdf",
+    providerIconSize: 64,
+    platformIconSize: 88
+  },
+  {
+    title: "Data Visualization in Tableau & Python",
+    provider: "Udemy",
+    platform: "Udemy",
+    issued: "April 2024",
+    credentialId: "UC-4b8cfb83-a413-4573-a761-4c5f3792f084",
+    skills: ["Data Visualization", "Tableau", "Python"],
+    providerIcon: "logos:udemy-icon",
+    platformIcon: "logos:udemy-icon",
+    color: "from-purple-500 to-pink-600",
+    certificatePreview: "/certificates/Data Visualization in Tableau & Python.pdf",
+    providerIconSize: 64,
+    platformIconSize: 88
+  },
+  {
+    title: "Python Web Scraping: Data Extraction with Beautiful Soup",
+    provider: "Meta Brains",
+    platform: "Udemy",
+    issued: "March 2024",
+    credentialId: "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
+    skills: ["Web Scraping", "Python", "Beautiful Soup"],
     providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
+    platformIcon: "logos:udemy-icon",
     color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/3YRA842UKERB_DJANGO.png",
+    certificatePreview: "/certificates/Python Web Scraping Data Extraction with Beautiful Soup.pdf",
     providerIconSize: 64,
     platformIconSize: 88
   },
   {
-    title: "Programming in Python",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "2AUUVS958L5Y",
-    skills: ["Python", "Programming", "Data Structures", "Algorithms"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/2AUUVS958L5Y_PYTHON.png",
+    title: "Deep Learning Mastery",
+    provider: "Raj Chhabria",
+    platform: "Udemy",
+    issued: "March 2024",
+    credentialId: "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
+    skills: ["Deep Learning", "Neural Networks", "Machine Learning"],
+    providerIcon: "logos:udemy-icon",
+    platformIcon: "logos:udemy-icon",
+    color: "from-purple-500 to-pink-600",
+    certificatePreview: "/certificates/Deep Learning Mastery.pdf",
     providerIconSize: 64,
     platformIconSize: 88
-  },
-
-  {
-    title: "Version Control",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "January 2023",
-    credentialId: "BLGJKHN6UTSF",
-    skills: ["Git", "Version Control", "Collaboration", "Software Development"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/BLGJKHN6UTSF_version_control.png",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Introduction to Databases",
-    provider: "Meta",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "N9LJFAWZXTMA",
-    skills: ["Database Fundamentals", "SQL", "Data Management", "Database Design"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/N9LJFAWZXTMA_DATABASES.png",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "AWS Cloud Technical Essentials",
-    provider: "Amazon Web Services",
-    platform: "Coursera",
-    issued: "February 2023",
-    credentialId: "EXFQ7QMJYUQQ",
-    skills: ["AWS", "Cloud Computing", "EC2", "S3", "IAM", "VPC"],
-    // providerIcon: "logos:aws",
-    providerIcon: "skill-icons:aws-dark",
-    platformIcon: "logos:coursera",
-    color: "from-orange-500 to-red-600 text-black dark:text",
-    certificatePreview: "/certificates/EXFQ7QMJYUQQ_AWS.png",
-    providerIconSize: 44,
-    platformIconSize: 88
-  },
-  {
-    title: "Foundations: Data, Data, Everywhere",
-    provider: "Google",
-    platform: "Coursera",
-    issued: "November 2022",
-    credentialId: "6RUAYHXFV5XZ",
-    skills: ["Data Analysis", "Data Management", "Statistical Analysis"],
-    providerIcon: "logos:google",
-    platformIcon: "logos:coursera",
-    color: "from-indigo-500 to-purple-600",
-    certificatePreview: "/certificates/6RUAYHXFV5XZ_Foundations_data.png",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Databases with SQL",
-    provider: "CS50",
-    platform: "HarvardX",
-    issued: "May 2025",
-    credentialId: "d7be6646-4c57-431e-88a9-ad7b882864e3",
-    skills: ["SQL", "Database", "Data Management", "Data Analysis"],
-    providerIcon: "fa-solid:university",
-    platformIcon: "simple-icons:edx",
-    color: "from-indigo-500 to-purple-600",
-    certificatePreview: "/certificates/CS50_SQL.png",
-    providerIconSize: 44,
-    platformIconSize: 44
   }
 ];
 
@@ -260,7 +241,6 @@ export default function CertificationsSection() {
         viewport={{ once: true }}
         className="mb-16 md:mb-24 lg:mb-32 relative overflow-hidden"
       >
-        {/* Enhanced Background Elements */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <motion.div
             variants={floatVariants}
@@ -281,7 +261,6 @@ export default function CertificationsSection() {
           />
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue-500/5 to-purple-500/5 rounded-full blur-3xl" />
         </div>
-
         <div className="relative z-10">
           <SectionHeader
             tagText="Professional Credentials"
@@ -291,7 +270,6 @@ export default function CertificationsSection() {
             showUnderline={false}
             centered={true}
           />
-
           <motion.div
             variants={containerVariants}
             initial="hidden"
@@ -311,8 +289,6 @@ export default function CertificationsSection() {
                 className="group h-full"
               >
                 <div className="h-full bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 transition-all duration-300 overflow-hidden">
-
-                  {/* Header with gradient - keeping this as requested */}
                   <div className={`h-20 flex items-center justify-between bg-slate-100 dark:bg-slate-900 px-4 ${cert.color} relative overflow-hidden`}>
                     <div className="flex items-center justify-end mr-4 gap-1">
                       <Icon icon={cert.providerIcon} className="" width={cert.providerIconSize} height={cert.providerIconSize} />
@@ -327,18 +303,12 @@ export default function CertificationsSection() {
                       <span className="text-blue-500 text-sm font-medium">Verified</span>
                     </div>
                   </div>
-
                   <div className="p-6 relative">
-                    {/* Subtle decorative elements */}
                     <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
                     <div className="absolute top-6 right-8 w-1 h-1 bg-purple-400/40 rounded-full animate-pulse delay-500"></div>
-
-                    {/* Certificate Title */}
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 leading-tight group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors">
                       {cert.title}
                     </h3>
-
-                    {/* Provider Info */}
                     <div className="space-y-3 mb-6 bg-gray-50/50 dark:bg-gray-800/30 rounded-xl p-4 border border-gray-200/50 dark:border-gray-700/30">
                       <div className="flex items-center gap-3 text-sm">
                         <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-md flex items-center justify-center">
@@ -362,8 +332,6 @@ export default function CertificationsSection() {
                         <span className="font-semibold text-gray-700 dark:text-gray-300">{cert.issued}</span>
                       </div>
                     </div>
-
-                    {/* Skills */}
                     <div className="mb-6">
                       <div className="flex items-center gap-2 mb-3">
                         <div className="w-4 h-4 bg-gradient-to-r from-amber-500 to-orange-500 rounded-md flex items-center justify-center">
@@ -384,13 +352,10 @@ export default function CertificationsSection() {
                         ))}
                       </div>
                     </div>
-
-                    {/* Credential ID */}
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200/60 dark:border-gray-700/50">
                       <Link
-                        href={`https://www.coursera.org/verify/${cert.credentialId}`}
+                        href={`https://www.${cert.platform.toLowerCase()}.com/verify/${cert.credentialId}`}
                         target="_blank"
-                      // rel="noopener noreferrer"
                       >
                         <div className="flex items-center gap-2">
                           <Icon icon="solar:arrow-right-up-bold" className="text-green-500" width={14} height={14} />
@@ -413,8 +378,6 @@ export default function CertificationsSection() {
               </motion.div>
             ))}
           </motion.div>
-
-          {/* Enhanced Summary Stats */}
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -431,7 +394,7 @@ export default function CertificationsSection() {
                   <Icon icon="solar:star-outline" className="text-white" width={18} height={18} />
                 </div>
                 <span className="text-blue-700 dark:text-blue-300 text-sm md:text-base font-semibold">
-                  13 Professional Certifications
+                  {certifications.length} Professional Certifications
                 </span>
               </div>
               <div className="w-px h-6 bg-gradient-to-b from-blue-300/50 via-purple-300/50 to-blue-300/50"></div>
@@ -445,8 +408,6 @@ export default function CertificationsSection() {
           </motion.div>
         </div>
       </motion.section>
-
-      {/* Enhanced Certificate Preview Modal */}
       <AnimatePresence>
         {selectedCertificate && (
           <motion.div
@@ -460,11 +421,9 @@ export default function CertificationsSection() {
               initial={{ scale: 0.8, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
-              // transition={{ type: "spring", damping: 25, stiffness: 300 }}
               className="bg-gradient-to-br from-white/95 to-white/90 dark:from-gray-900/95 dark:to-gray-800/90 backdrop-blur-xl rounded-3xl shadow-2xl max-w-4xl max-h-[90vh] overflow-hidden relative border border-white/20 dark:border-gray-700/30"
               onClick={(e) => e.stopPropagation()}
             >
-              {/* Modal Header */}
               <div className="flex items-center justify-between p-6 border-b border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
                 <div>
                   <h3 className="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-1">
@@ -483,22 +442,13 @@ export default function CertificationsSection() {
                   <Icon icon="solar:close-outline" className="text-gray-500" width={20} height={20} />
                 </motion.button>
               </div>
-
-              {/* Certificate Image */}
               <div className="p-6 flex justify-center bg-gradient-to-br from-gray-50/50 to-white/50 dark:from-gray-800/50 dark:to-gray-900/50">
-                <div className="relative max-w-full max-h-[60vh] overflow-hidden  shadow-lg border border-gray-200/50 dark:border-gray-700/50">
-                  <Image
-                    src={selectedCertificate.certificatePreview || ""}
-                    alt={selectedCertificate.title}
-                    width={800}
-                    height={600}
-                    className="w-full h-auto"
-                    style={{ objectFit: 'contain' }}
-                  />
-                </div>
+                <iframe
+                  src={selectedCertificate.certificatePreview}
+                  className="w-full h-[60vh]"
+                  style={{ border: 'none' }}
+                ></iframe>
               </div>
-
-              {/* Modal Footer */}
               <div className="flex items-center justify-between p-6 border-t border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
                 <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
                   Credential ID: <span className="text-gray-800 dark:text-gray-200">{selectedCertificate.credentialId}</span>
@@ -516,8 +466,8 @@ export default function CertificationsSection() {
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    href={selectedCertificate.certificatePreview || ""}
-                    download={`${selectedCertificate.title}.png`}
+                    href={selectedCertificate.certificatePreview}
+                    download
                     className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl border border-blue-500/50"
                   >
                     <Icon icon="solar:download-bold" width={16} height={16} />
@@ -531,4 +481,4 @@ export default function CertificationsSection() {
       </AnimatePresence>
     </>
   );
-} 
+}
