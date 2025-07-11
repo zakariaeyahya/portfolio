@@ -29,15 +29,15 @@ export default function Portfolio() {
 
         {/* Overview Section */}
         <OverviewSection />
-
-        {/* Tech Stack Section */}
-        <TechStackSection />
-
+        
         {/* Experience Section */}
         <ExperienceSection />
 
         {/* Projects Section */}
         <ProjectsSection />
+
+        {/* Tech Stack Section */}
+        <TechStackSection />
 
         {/* Testimonials Section */}
         <TestimonialsSection />

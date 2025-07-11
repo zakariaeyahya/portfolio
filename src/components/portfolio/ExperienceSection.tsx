@@ -29,12 +29,15 @@ const experience = [
     companyIcon: "mdi:briefcase",
     companyColor: "from-green-500 to-green-600",
     description: "Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.",
-    achievements: [
-      "Participation active aux réunions fonctionnelles et techniques avec l'équipe de développement et les interlocuteurs métier du client bancaire, afin d'adapter l'assistant aux besoins réels des utilisateurs."
-    ],
+achievements: [
+  "Conception d’un assistant virtuel bilingue (français/darija) pour faciliter l’interaction client dans un contexte multilingue.",
+  "Création d’une interface vocale et textuelle pour améliorer l’accessibilité et l’expérience utilisateur.",
+  "Collaboration étroite avec les équipes métier et techniques pour adapter les fonctionnalités aux retours des utilisateurs."
+],
     technologies: ["Agile", "Slack", "LLM", "RAG", "LangChain", "Groq API", "FastAPI", "Transformers", "PyTorch", "TensorFlow", "sentence-transformers"]
   }
 ];
+
 
 
 export default function ExperienceSection() {

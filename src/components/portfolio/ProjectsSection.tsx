@@ -4,136 +4,106 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
-const projects = [
+const projets = [
   {
-    title: "Sports Infrastructure Analytics Platform",
-    subtitle: "Data-Driven Decision Making for Sports Infrastructure",
-    description: "Built an automated web scraping and ETL pipeline with Apache Airflow orchestration. Created interactive dashboards enabling data-driven decision making for 50+ stakeholders. Implemented data quality checks and error handling, achieving 99.9% pipeline reliability.",
+    title: "Plateforme d'Analytique des Infrastructures Sportives",
+    subtitle: "Prise de Décision Basée sur les Données pour les Infrastructures Sportives",
+    description: "Conçu un pipeline automatisé de web scraping et d'ETL avec orchestration Apache Airflow. Créé des tableaux de bord interactifs permettant la prise de décision basée sur les données pour 50+ parties prenantes. Implémenté des vérifications de qualité des données et une gestion des erreurs, atteignant une fiabilité de pipeline de 99,9%.",
     features: [
-      "Automated web scraping and ETL pipeline",
-      "Interactive dashboards for stakeholders",
-      "Data quality checks and error handling",
-      "99.9% pipeline reliability"
-    ],
-    deliverables: [
-      "Fully functional web application deployed on production",
-      "Real-time data processing and visualization",
-      "User authentication and profile management",
-      "Admin dashboard for data management"
+      "Pipeline automatisé de web scraping et d'ETL",
+      "Tableaux de bord interactifs pour les parties prenantes",
+      "Vérifications de qualité des données et gestion des erreurs",
+      "Fiabilité du pipeline à 99,9%"
     ],
     tech: ["Python", "Apache Airflow", "Power BI", "Snowflake", "AWS S3", "Docker"],
     github: "https://github.com/zakariaeyahya/staduim.git",
     live: "#",
     gradient: "from-blue-500 to-cyan-500",
-    status: "Completed",
-    category: "Data Engineering",
-    highlight: "Featured",
-    timeline: "6 months",
-    clientType: "Sports Industry"
+    status: "Terminé",
+    category: "Ingénierie des Données",
+    highlight: "À l'honneur",
+    timeline: "1 mois",
+    clientType: "Industrie du Sport"
   },
   {
-    title: "Real-Time Product and Customer Data Pipeline on AWS",
-    subtitle: "Scalable Data Engineering Solution on AWS",
-    description: "Designed and deployed a complete data engineering solution on AWS, supporting both real-time and batch processing. Built scalable ETL/ELT pipelines including data ingestion, transformation, and visualization. Orchestrated workflows using Apache Airflow and AWS Step Functions, ensuring automated processing with 99% uptime.",
+    title: "Pipeline de Données Produits et Clients en Temps Réel sur AWS",
+    subtitle: "Solution d'Ingénierie des Données Évolutive sur AWS",
+    description: "Conçu et déployé une solution complète d'ingénierie des données sur AWS, supportant à la fois le traitement en temps réel et par lots. Construit des pipelines ETL/ELT évolutifs incluant l'ingestion, la transformation et la visualisation des données. Orchestré des flux de travail en utilisant Apache Airflow et AWS Step Functions, assurant un traitement automatisé avec un temps de disponibilité de 99%.",
     features: [
-      "Real-time and batch processing on AWS",
-      "Scalable ETL/ELT pipelines",
-      "Data ingestion, transformation, and visualization",
-      "Automated workflows with 99% uptime"
-    ],
-    deliverables: [
-      "Production-ready data pipeline platform",
-      "Data processing pipeline with OCR capabilities",
-      "User dashboard with data management",
-      "API documentation and integration guides"
+      "Traitement en temps réel et par lots sur AWS",
+      "Pipelines ETL/ELT évolutifs",
+      "Ingestion, transformation et visualisation des données",
+      "Flux de travail automatisés avec un temps de disponibilité de 99%"
     ],
     tech: ["Python", "PySpark", "SQL", "AWS Glue", "EMR", "Kinesis", "Redshift", "IAM", "EC2", "Lambda", "S3"],
     github: "#",
     live: "#",
     gradient: "from-purple-500 to-pink-500",
-    status: "Completed",
-    category: "Data Engineering",
-    highlight: "Featured",
-    timeline: "8 months",
-    clientType: "E-commerce & Enterprise"
+    status: "Terminé",
+    category: "Ingénierie des Données",
+    highlight: "À l'honneur",
+    timeline: "1 mois",
+    clientType: "E-commerce et Entreprise"
   },
   {
-    title: "Intelligent Educational Assistant",
-    subtitle: "AI-Powered Educational Support",
-    description: "Developed a multimodal AI assistant for personalized educational support. Implemented an RAG system with vectorization of educational resources.",
+    title: "Assistant Éducatif Intelligent",
+    subtitle: "Support Éducatif Propulsé par l'IA",
+    description: "Développé un assistant IA multimodal pour un soutien éducatif personnalisé. Implémenté un système RAG avec vectorisation des ressources éducatives.",
     features: [
-      "Multimodal AI assistant for education",
-      "RAG system with vectorization",
-      "Personalized educational support",
-      "Interactive learning tools"
-    ],
-    deliverables: [
-      "AI chatbot platform for educational support",
-      "Document processing pipeline with OCR capabilities",
-      "Multi-language translation engine",
-      "User dashboard with document management"
+      "Assistant IA multimodal pour l'éducation",
+      "Système RAG avec vectorisation",
+      "Soutien éducatif personnalisé",
+      "Outils d'apprentissage interactifs"
     ],
     tech: ["Python", "FastAPI", "Streamlit", "LlamaIndex", "Qdrant", "LangChain", "Whisper", "MLflow", "Postman"],
     github: "https://github.com/zakariaeyahya/assistant-ia-multifonction",
     live: "#",
     gradient: "from-green-500 to-emerald-500",
-    status: "Completed",
-    category: "AI Platform",
-    highlight: "Featured",
-    timeline: "6 months",
+    status: "Terminé",
+    category: "Plateforme IA",
+    highlight: "À l'honneur",
+    timeline: "2 mois",
     clientType: "EdTech"
   },
   {
-    title: "Moroccan Music Classifier",
-    subtitle: "Hybrid CNNet RNN-LSTM Model for Music Classification",
-    description: "Designed a hybrid CNNet RNN-LSTM model to classify 8 Moroccan music genres with 90% accuracy. Built a custom database of over 10K Moroccan audio samples.",
+    title: "Classificateur de Musique Marocaine",
+    subtitle: "Modèle Hybride CNNet RNN-LSTM pour la Classification Musicale",
+    description: "Conçu un modèle hybride CNNet RNN-LSTM pour classer 8 genres de musique marocaine avec une précision de 90%. Construit une base de données personnalisée de plus de 10K échantillons audio marocains.",
     features: [
-      "Hybrid CNNet RNN-LSTM model",
-      "Classification of 8 Moroccan music genres",
-      "90% accuracy in classification",
-      "Custom database of 10K+ audio samples"
-    ],
-    deliverables: [
-      "Music classification model",
-      "Custom database of Moroccan audio samples",
-      "User interface for music classification",
-      "API for model integration"
+      "Modèle hybride CNNet RNN-LSTM",
+      "Classification de 8 genres de musique marocaine",
+      "Précision de classification de 90%",
+      "Base de données personnalisée de 10K+ échantillons audio"
     ],
     tech: ["TensorFlow", "Keras", "Librosa", "FastAPI", "Streamlit", "scikit-learn", "Pandas"],
     github: "https://github.com/zakariaeyahya/Classification-des-Genres-Musicaux",
     live: "#",
     gradient: "from-yellow-500 to-orange-500",
-    status: "Completed",
-    category: "AI Platform",
-    highlight: "Featured",
-    timeline: "4 months",
-    clientType: "Music Industry"
+    status: "Terminé",
+    category: "Plateforme IA",
+    highlight: "À l'honneur",
+    timeline: "1 mois",
+    clientType: "Industrie Musicale"
   },
   {
-    title: "Integrated Analysis of Socio-Economic, Educational, and Crime Data",
-    subtitle: "Comprehensive Data Analysis for Urban Insights",
-    description: "Analyzed multiple datasets (census, schools, crime) using complex SQL queries. Extracted insights on socio-economic, educational, and crime trends.",
+    title: "Analyse Intégrée des Données Socio-économiques, Éducatives et Criminelles",
+    subtitle: "Analyse Complète des Données pour des Perspectives Urbaines",
+    description: "Analysé plusieurs ensembles de données (recensement, écoles, criminalité) en utilisant des requêtes SQL complexes. Extrait des perspectives sur les tendances socio-économiques, éducatives et criminelles.",
     features: [
-      "Analysis of multiple datasets",
-      "Complex SQL queries for insights",
-      "Insights on socio-economic trends",
-      "Insights on educational and crime trends"
-    ],
-    deliverables: [
-      "Comprehensive data analysis report",
-      "Interactive dashboards for data visualization",
-      "User interface for data exploration",
-      "API for data integration"
+      "Analyse de plusieurs ensembles de données",
+      "Requêtes SQL complexes pour extraire des perspectives",
+      "Perspectives sur les tendances socio-économiques",
+      "Perspectives sur les tendances éducatives et criminelles"
     ],
     tech: ["Python", "Scikit-learn", "Pandas", "SQL", "Matplotlib", "Seaborn"],
     github: "https://github.com/zakariaeyahya/Chicago_Data_Analysis_Project",
     live: "#",
     gradient: "from-red-500 to-pink-500",
-    status: "Completed",
-    category: "Data Analysis",
-    highlight: "Featured",
-    timeline: "3 months",
-    clientType: "Government & Public Sector"
+    status: "Terminé",
+    category: "Analyse de Données",
+    highlight: "À l'honneur",
+    timeline: "1 mois",
+    clientType: "Gouvernement et Secteur Public"
   }
 ];
 
@@ -221,7 +191,7 @@ export default function ProjectsSection() {
         />
         {/* Full-Width Stacked Projects */}
         <div className="max-w-7xl mx-auto px-3 md:px-4 space-y-8 md:space-y-12 lg:space-y-16">
-          {projects.map((project, index) => (
+          {projets.map((project, index) => (
             <motion.div
               key={index}
               variants={itemVariants}
@@ -323,7 +293,7 @@ export default function ProjectsSection() {
                         className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white/20 backdrop-blur-sm border border-white/30 text-white rounded-lg md:rounded-xl hover:bg-white/30 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
                       >
                         <Icon icon="solar:code-bold" width={18} height={18} className="md:w-5 md:h-5" />
-                        <span>View Repository</span>
+                        <span>Voir le dépôt</span>
                       </Link>
                       {project.live !== "#" && (
                         <Link
@@ -331,7 +301,7 @@ export default function ProjectsSection() {
                           className="flex items-center justify-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-white text-gray-900 rounded-lg md:rounded-xl hover:bg-gray-100 transition-all duration-300 text-sm font-medium shadow-lg hover:shadow-xl active:scale-95"
                         >
                           <Icon icon="solar:arrow-up-outline" width={18} height={18} className="md:w-5 md:h-5" />
-                          <span>Live Demo</span>
+                          <span>Démonstration en direct</span>
                         </Link>
                       )}
                     </div>
@@ -339,14 +309,14 @@ export default function ProjectsSection() {
                 </div>
                 {/* Project Details Content */}
                 <div className="p-4 sm:p-6 md:p-8 lg:p-10">
-                  <div className="grid lg:grid-cols-2 gap-6 md:gap-8 lg:gap-12">
+                  <div className="grid lg:grid-cols-1 gap-6 md:gap-8 lg:gap-12">
                     {/* Features Section */}
                     <div>
                       <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
                         <div className="p-1.5 md:p-2 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg md:rounded-xl">
                           <Icon icon="solar:settings-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
                         </div>
-                        <span>Key Features</span>
+                        <span>Fonctionnalités Clés</span>
                       </h4>
                       <ul className="space-y-2.5 md:space-y-3">
                         {project.features.map((feature, featureIndex) => (
@@ -366,32 +336,6 @@ export default function ProjectsSection() {
                         ))}
                       </ul>
                     </div>
-                    {/* Deliverables Section */}
-                    <div className="mt-6 lg:mt-0">
-                      <h4 className="text-lg md:text-xl lg:text-2xl font-bold text-gray-900 dark:text-white mb-4 md:mb-6 flex items-center gap-2 md:gap-3">
-                        <div className="p-1.5 md:p-2 bg-gradient-to-r from-green-500 to-emerald-600 rounded-lg md:rounded-xl">
-                          <Icon icon="solar:delivery-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
-                        </div>
-                        <span>Deliverables</span>
-                      </h4>
-                      <ul className="space-y-2.5 md:space-y-3">
-                        {project.deliverables.map((deliverable, deliverableIndex) => (
-                          <motion.li
-                            key={deliverableIndex}
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            transition={{ delay: deliverableIndex * 0.1 }}
-                            className="flex items-start gap-2.5 md:gap-3 text-gray-700 dark:text-gray-300"
-                          >
-                            <Icon
-                              icon="solar:box-bold"
-                              className="text-blue-500 mt-0.5 flex-shrink-0 w-4 h-4 md:w-5 md:h-5"
-                            />
-                            <span className="text-sm md:text-base leading-relaxed">{deliverable}</span>
-                          </motion.li>
-                        ))}
-                      </ul>
-                    </div>
                   </div>
                   {/* Tech Stack Section */}
                   <div className="mt-6 md:mt-8 lg:mt-12 pt-6 md:pt-8 border-t border-gray-200/50 dark:border-gray-700/50">
@@ -399,7 +343,7 @@ export default function ProjectsSection() {
                       <div className="p-1.5 md:p-2 bg-gradient-to-r from-purple-500 to-pink-600 rounded-lg md:rounded-xl">
                         <Icon icon="solar:code-bold" className="text-white w-[18px] h-[18px] md:w-6 md:h-6" />
                       </div>
-                      <span>Technology Stack</span>
+                      <span>Technologies Utilisées</span>
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {project.tech.map((tech, techIndex) => (
@@ -426,16 +370,14 @@ export default function ProjectsSection() {
           variants={itemVariants}
           className="text-center mt-12 md:mt-16 lg:mt-20 px-4 mb-12"
         >
-          <Link
-            href="#contact"
-          >
+          <Link href="#contact">
             <motion.div
               className="inline-flex items-center gap-2 md:gap-3 px-4 py-2.5 md:px-6 md:py-3 bg-gradient-to-r from-blue-500/10 to-purple-500/10 backdrop-blur-sm border border-blue-500/20 dark:border-purple-500/20 rounded-xl md:rounded-2xl"
               whileHover={{ scale: 1.05 }}
             >
               <Icon icon="solar:programming-bold" className="text-blue-500 dark:text-purple-400 w-5 h-5 md:w-6 md:h-6" />
               <span className="text-gray-700 dark:text-gray-300 font-medium text-sm md:text-base text-center">
-                Interested in working together? Let&apos;s create something amazing!
+                Intéressé à travailler ensemble ? Créons quelque chose d'incroyable !
               </span>
             </motion.div>
           </Link>
