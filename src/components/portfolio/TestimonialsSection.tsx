@@ -276,8 +276,7 @@ export default function TestimonialsSection() {
         <SectionHeader
           tagText="Client Stories"
           tagIcon="solar:users-group-rounded-outline"
-          heading="Testimonials Wall"
-          description="Real feedback from real clients who trusted me with their projects"
+          heading="Mur de témoignages"
           showUnderline={false}
           centered={true}
         />

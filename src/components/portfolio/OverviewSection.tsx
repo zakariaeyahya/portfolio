@@ -106,7 +106,7 @@ export default function OverviewSection() {
                       Bonjour, je suis Zakariae Yahya
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      Étudiant en <span className="font-bold text-blue-600 dark:text-blue-400">cinquième année spécialisé en Big Data et Intelligence Artificielle</span>, passionné par le <span className="font-bold text-purple-600 dark:text-purple-400">sport</span>, les <span className="font-bold text-green-600 dark:text-green-400">échecs</span> et les <span className="font-bold text-green-600 dark:text-green-400">nouvelles technologies en IA</span>.
+                      Étudiant en <span className="font-bold text-blue-600 dark:text-blue-400">5ème année spécialisé en Big Data et Intelligence Artificielle</span>, passionné par le <span className="font-bold text-purple-600 dark:text-purple-400">sport</span>, les <span className="font-bold text-green-600 dark:text-green-400">échecs</span> et les <span className="font-bold text-green-600 dark:text-green-400">nouvelles technologies en IA</span>.
                     </p>
                   </div>
 
@@ -127,7 +127,7 @@ export default function OverviewSection() {
                       Technologies Clés
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["Intégration IA", "React", "TypeScript", "Python", "AWS"].map((skill, index) => (
+                      {["Intégration IA","Python","LangChain","SQL", "Spark","AWS"].map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -233,6 +233,20 @@ export default function OverviewSection() {
                     <div className="text-sm font-bold text-gray-900 dark:text-white">Mobilité nationale, Maroc</div>
                   </div>
                 </motion.div>
+                      {/* ✅ Numéro de téléphone */}
+                  <motion.a
+                    href="tel:+212648151446"
+                    whileHover={{ scale: 1.02, x: 4 }}
+                    whileTap={{ scale: 0.98 }}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                  >
+                    <div className="p-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-md group-hover:from-green-600 group-hover:to-emerald-600 transition-all shadow-md">
+                      <Icon icon="solar:phone-bold" className="text-white w-4 h-4" width={16} height={16} />
+                    </div>
+                    <div>
+                      <div className="text-sm font-bold text-gray-900 dark:text-white">+212 648 151 446</div>
+                    </div>
+                  </motion.a>
               </div>
             </div>
 

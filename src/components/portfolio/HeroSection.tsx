@@ -3,6 +3,8 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import TypewriterRole from "./TypewriterRole";
+import Image from "next/image";
+import twooImage from "./twoo_.png"; // chemin relatif correct
 
 export default function HeroSection() {
   return (
@@ -35,6 +37,24 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
         className="relative z-10 max-w-4xl mx-auto px-6 text-center -mb-8"
       >
+      {/* Image ajoutée ici */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        className="mb-6 flex justify-center"
+      >
+<div className="relative w-[300px] h-[300px] rounded-full border-4 border-blue-500 shadow-xl overflow-hidden">
+  <Image
+    src={twooImage}
+    alt="Zakariae YAHYA"
+    fill
+    className="object-cover"
+  />
+</div>
+
+      </motion.div>
+
+
         {/* Name */}
         <motion.h1
           className="text-5xl md:text-6xl font-bold mb-4"
@@ -49,16 +69,6 @@ export default function HeroSection() {
 
         {/* Typewriter Role Component */}
         <TypewriterRole />
-
-        {/* Tagline */}
-        <motion.p
-          className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto leading-relaxed"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.6 }}
-        >
-          Créer des expériences numériques exceptionnelles avec du code propre et une conception réfléchie
-        </motion.p>
 
         {/* Social Links */}
         <motion.div
@@ -82,25 +92,6 @@ export default function HeroSection() {
               </Link>
             </motion.div>
           ))}
-        </motion.div>
-
-        {/* Status */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ delay: 1.4 }}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-green-50/80 dark:bg-green-900/20 border border-green-200/50 dark:border-green-800/50 rounded-full backdrop-blur-sm"
-        >
-          <motion.div
-            className="w-2 h-2 bg-green-500 rounded-full"
-            animate={{ scale: [1, 1.4, 1] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-          <Link href="#contact">
-            <span className="text-green-700 dark:text-green-300 text-sm font-medium">
-              Disponible pour des projets
-            </span>
-          </Link>
         </motion.div>
       </motion.section>
 

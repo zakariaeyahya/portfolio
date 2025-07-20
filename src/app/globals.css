@@ -58,9 +58,16 @@
 		color: hsl(var(--foreground));
 	}
 
-	html {
-		scroll-behavior: smooth;
-	}
+/* Ajoutez ceci dans votre fichier CSS global (globals.css ou styles.css) */
+
+		html {
+		scroll-behavior: auto; /* Scrolling instantané (par défaut) */
+		}
+
+		* {
+		scroll-behavior: auto;
+		scroll-padding-top: 100px; /* Ajuste pour éviter que la navbar cache le contenu */
+		}
 }
 
 @layer components {

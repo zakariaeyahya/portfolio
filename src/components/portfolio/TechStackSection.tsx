@@ -355,10 +355,10 @@ export default function TechStackSection() {
       className="mb-16"
     >
       <SectionHeader
-        tagText="Tech Arsenal"
+        tagText="technologiques"
         tagIcon="solar:settings-bold"
-        heading="Technology Stack"
-        description="Technologies I use to bring ideas to life"
+        heading="Compétences techniques"
+        description="Technologies que j'utilise pour donner vie à mes idées"
         showUnderline={false}
         centered={true}
       />

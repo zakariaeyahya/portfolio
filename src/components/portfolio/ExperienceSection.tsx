@@ -95,11 +95,10 @@ export default function ExperienceSection() {
       </div>
       <div className="relative z-10">
         <SectionHeader
-          tagText="Professional Journey"
+          tagText="Parcours professionnel"
           tagIcon="solar:case-bold"
           heading="Experience"
           showUnderline={false}
-          description="My professional journey and the impact I've made across different domains"
           centered={true}
         />
         <motion.div
@@ -181,8 +180,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
-                      Key Achievements
-                    </h4>
+Principales réalisations                    </h4>
                     <div className="space-y-2 md:space-y-3">
                       {exp.achievements.map((achievement, achIndex) => (
                         <motion.div
@@ -211,7 +209,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
-                      Technologies & Skills
+Technologies et compétences
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {exp.technologies.map((tech, techIndex) => (
@@ -256,21 +254,21 @@ export default function ExperienceSection() {
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
               <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">6</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Months Experience</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d'expérience</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
               <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">2</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Internships Completed</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Stages terminés</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
               <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">100%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Commitment</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Engagement</div>
             </motion.div>
           </div>
         </motion.div>

@@ -182,10 +182,10 @@ export default function ProjectsSection() {
       >
         {/* Section Header */}
         <SectionHeader
-          tagText="Portfolio Showcase"
+          tagText="Présentation du portfolio"
           tagIcon="solar:code-square-bold"
           heading="Featured Projects"
-          description="Discover my latest work in data engineering, AI integration, and digital innovation"
+          description="Découvrez mes derniers travaux en ingénierie des données, intégration de l'IA et innovation numérique"
           showUnderline={true}
           centered={true}
         />
