@@ -194,7 +194,7 @@ export default function ContactSection() {
                     <span className="font-medium">Message envoyé avec succès !</span>
                   </div>
                   <p className="text-green-600 text-left dark:text-green-500 text-sm mt-1">
-                    Merci de m'avoir contacté. Je vous répondrai bientôt !
+                    Merci de m&apos;avoir contacté. Je vous répondrai bientôt !
                   </p>
                   <button
                     onClick={() => setSubmitStatus('idle')}
@@ -212,10 +212,10 @@ export default function ContactSection() {
                 >
                   <div className="flex items-center gap-2 text-red-700 dark:text-red-400">
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
-                    <span className="font-medium">Échec de l'envoi du message</span>
+                    <span className="font-medium">Échec de l&apos;envoi du message</span>
                   </div>
                   <p className="text-red-600 text-left dark:text-red-500 text-sm mt-1">
-                    Veuillez réessayer ou me contacter directement à l'adresse zakariae.yh@gmail.com
+                    Veuillez réessayer ou me contacter directement à l&apos;adresse zakariae.yh@gmail.com
                   </p>
                   <button
                     onClick={() => setSubmitStatus('idle')}

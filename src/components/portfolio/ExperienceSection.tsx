@@ -254,7 +254,7 @@ Technologies et compétences
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
               <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">6</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d'expérience</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d&apos;expérience</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
