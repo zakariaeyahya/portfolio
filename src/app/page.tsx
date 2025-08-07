@@ -39,8 +39,9 @@ export default function Portfolio() {
         {/* Tech Stack Section */}
         <TechStackSection />
 
-        {/* Testimonials Section */}
-        <TestimonialsSection />
+{/* Testimonials Section */}
+{/* <TestimonialsSection /> */}
+
 
         {/* Certifications Section */}
         <CertificationsSection />
