@@ -5,21 +5,38 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
-    role: "Développeur Fullstack IA – Projet BrainBoost (Alternance)",
-    company: "Marketing Confort",
-    period: "Février 2025 — Août 2025",
+    role: "Data Scientist",
+    company: "Izemx",
+    period: "Février 2025 — En cours",
     type: "Stage",
     companyIcon: "mdi:briefcase",
     companyColor: "from-blue-500 to-blue-600",
-    description: "Conception et développement des interfaces web et mobile dédiées aux parents (suivi de la progression des enfants) et aux administrateurs (configuration des assistants IA).",
-    achievements: [
-      "Développement du back-end pour la gestion des assistants IA, des utilisateurs et des contenus pédagogiques.",
-      "Intégration de l'intelligence artificielle générative pour fournir des réponses guidées, personnalisées et filtrées selon des règles éducatives précises.",
-      "Mise en place d'un système de vectorisation des contenus et de suivi des performances des modèles IA.",
-      "Participation active à une équipe agile pluridisciplinaire, avec des réunions techniques et fonctionnelles hebdomadaires aux côtés de développeurs seniors et de chefs de projet.",
-      "⭐ Meilleur Employé du Mois Juin ⭐."
+    location: "Paris, France",
+    description: "Développement de solutions Big Data et IA pour des plateformes d'investissement crypto et éducatives, avec focus sur l'ingénierie des données temps réel et l'intelligence artificielle générative.",
+    projects: [
+      {
+        name: "Projet 2 : Zyra – Plateforme d'investissement crypto autonome",
+        description: "Développement d'un pipeline Big Data temps réel pour l'ingestion et le traitement de flux de marchés crypto",
+        achievements: [
+          "Conception et implémentation d'un pipeline ETL distribué (Python, Redis, PostgreSQL) pour l'ingestion de données de marchés avec traitement de 5k+ transactions/minute",
+          "Mise en place d'une architecture événementielle avec Redis Streams pour garantir la cohérence et la fiabilité des flux de données en temps réel",
+          "Développement d'un dashboard Grafana connecté à PostgreSQL pour le monitoring en temps réel des flux de données et la détection d'anomalies transactionnelles",
+          "Mise en place d'alertes automatiques sur les écarts de prix et les volumes anormaux, permettant une réactivité immédiate sur les incidents",
+          "Développement d'un système d'analyse prédictive capable d'anticiper les tendances du marché et d'optimiser les décisions d'investissement",
+          "Amélioration de la qualité des données analysées et réduction de 40% du temps de traitement des indicateurs stratégiques"
+        ]
+      },
+      {
+        name: "Projet 1 : BrainBoost – Plateforme éducative intelligente",
+        description: "Développement d'une plateforme éducative complète avec IA générative",
+        achievements: [
+          "Développement d'une plateforme web full-stack multi-interface adoptée avec 98% de satisfaction utilisateur lors des tests",
+          "Intégration d'un système RAG (LangChain, Qdrant) pour une assistance pédagogique personnalisée, réduisant de 60% le temps de réponse",
+          "Automatisation du traitement de 500+ contenus pédagogiques/semaine"
+        ]
+      }
     ],
-    technologies: ["Jira", "Agile", "Django", "LangChain", "LlamaIndex", "MLflow", "sentence-transformers", "TypeScript", "React", "React Native", "Spring Boot", "PostgreSQL", "Qdrant", "Docker", "Kubernetes", "GitLab CI/CD", "AWS", "Postman", "Apache Maven"]
+    technologies: ["Python", "Redis", "PostgreSQL", "Grafana", "Docker", "Django", "React", "Spring Boot", "LangChain", "LlamaIndex", "MLflow", "Qdrant", "Jira"]
   },
   {
     role: "Data Scientist",
@@ -28,13 +45,17 @@ const experience = [
     type: "Stage",
     companyIcon: "mdi:briefcase",
     companyColor: "from-green-500 to-green-600",
+    location: "Maroc",
     description: "Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.",
-achievements: [
-  "Conception d’un assistant virtuel bilingue (français/darija) pour faciliter l’interaction client dans un contexte multilingue.",
-  "Création d’une interface vocale et textuelle pour améliorer l’accessibilité et l’expérience utilisateur.",
-  "Collaboration étroite avec les équipes métier et techniques pour adapter les fonctionnalités aux retours des utilisateurs."
-],
-    technologies: ["Agile", "Slack", "LLM", "RAG", "LangChain", "Groq API", "FastAPI", "Transformers", "PyTorch", "TensorFlow", "sentence-transformers"]
+    achievements: [
+      "Conception d'un assistant virtuel bilingue (français/darija) pour faciliter l'interaction client dans un contexte multilingue.",
+      "Création d'une interface vocale et textuelle pour améliorer l'accessibilité et l'expérience utilisateur.",
+      "Développement d'un système RAG (Retrieval-Augmented Generation) avec LangChain pour des réponses contextuelles.",
+      "Intégration d'APIs de traitement du langage naturel (Groq API) pour la génération de réponses.",
+      "Collaboration étroite avec les équipes métier et techniques pour adapter les fonctionnalités aux retours des utilisateurs.",
+      "Utilisation de modèles de transformation (Transformers) et de frameworks de deep learning (PyTorch, TensorFlow)."
+    ],
+    technologies: ["Python", "FastAPI", "LangChain", "Groq API", "Transformers", "PyTorch", "TensorFlow", "sentence-transformers", "LLM", "RAG", "Agile", "Slack"]
   }
 ];
 
@@ -144,6 +165,12 @@ export default function ExperienceSection() {
                     >
                       <Icon icon="solar:calendar-outline" width={14} height={14} className="md:w-4 md:h-4" />
                       <span>{exp.period}</span>
+                      {exp.location && (
+                        <>
+                          <Icon icon="solar:map-point-outline" width={14} height={14} className="md:w-4 md:h-4" />
+                          <span>{exp.location}</span>
+                        </>
+                      )}
                     </motion.div>
                     <motion.h3
                       initial={{ opacity: 0, x: -30 }}
@@ -171,7 +198,7 @@ export default function ExperienceSection() {
                   >
                     {exp.description}
                   </motion.p>
-                  {/* Achievements */}
+                  {/* Projects or Achievements */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -180,24 +207,62 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
-Principales réalisations                    </h4>
-                    <div className="space-y-2 md:space-y-3">
-                      {exp.achievements.map((achievement, achIndex) => (
-                        <motion.div
-                          key={achIndex}
-                          initial={{ opacity: 0, x: -20 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ delay: 0.7 + achIndex * 0.1 }}
-                          className="flex items-start gap-3 md:gap-4 group/achievement hover:translate-x-1 md:hover:translate-x-2 transition-transform duration-300"
-                        >
-                          <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center mt-0.5 shadow-md md:shadow-lg group-hover/achievement:scale-110 transition-transform duration-300">
-                            <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full" />
-                          </div>
-                          <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
-                            {achievement}
-                          </span>
-                        </motion.div>
-                      ))}
+                      {exp.projects ? "Projets réalisés" : "Principales réalisations"}
+                    </h4>
+                    <div className="space-y-4 md:space-y-6">
+                      {exp.projects ? (
+                        exp.projects.map((project, projectIndex) => (
+                          <motion.div
+                            key={projectIndex}
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.7 + projectIndex * 0.2 }}
+                            className="bg-gray-50 dark:bg-gray-800/50 rounded-lg p-4 md:p-6 border border-gray-200 dark:border-gray-700"
+                          >
+                            <h5 className="text-lg md:text-xl font-bold text-gray-900 dark:text-white mb-2">
+                              {project.name}
+                            </h5>
+                            <p className="text-gray-600 dark:text-gray-400 mb-3 text-sm md:text-base">
+                              {project.description}
+                            </p>
+                            <div className="space-y-2">
+                              {project.achievements.map((achievement, achIndex) => (
+                                <motion.div
+                                  key={achIndex}
+                                  initial={{ opacity: 0, x: -20 }}
+                                  whileInView={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: 0.8 + projectIndex * 0.2 + achIndex * 0.1 }}
+                                  className="flex items-start gap-3 group/achievement hover:translate-x-1 transition-transform duration-300"
+                                >
+                                  <div className="flex-shrink-0 w-4 h-4 md:w-5 md:h-5 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center mt-0.5 shadow-md group-hover/achievement:scale-110 transition-transform duration-300">
+                                    <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full" />
+                                  </div>
+                                  <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+                                    {achievement}
+                                  </span>
+                                </motion.div>
+                              ))}
+                            </div>
+                          </motion.div>
+                        ))
+                      ) : (
+                        exp.achievements.map((achievement, achIndex) => (
+                          <motion.div
+                            key={achIndex}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ delay: 0.7 + achIndex * 0.1 }}
+                            className="flex items-start gap-3 md:gap-4 group/achievement hover:translate-x-1 md:hover:translate-x-2 transition-transform duration-300"
+                          >
+                            <div className="flex-shrink-0 w-5 h-5 md:w-6 md:h-6 rounded-full bg-gradient-to-br from-green-400 to-blue-500 flex items-center justify-center mt-0.5 shadow-md md:shadow-lg group-hover/achievement:scale-110 transition-transform duration-300">
+                              <div className="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full" />
+                            </div>
+                            <span className="text-gray-700 dark:text-gray-300 leading-relaxed text-sm md:text-base">
+                              {achievement}
+                            </span>
+                          </motion.div>
+                        ))
+                      )}
                     </div>
                   </motion.div>
                   {/* Technologies */}
@@ -253,22 +318,22 @@ Technologies et compétences
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">6</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">12+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d&apos;expérience</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">2</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Stages terminés</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">3</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projets majeurs</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
             >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">100%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Engagement</div>
+              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">98%</div>
+              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Satisfaction client</div>
             </motion.div>
           </div>
         </motion.div>

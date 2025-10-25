@@ -10,7 +10,7 @@ export default function TypewriterRole() {
 
   // Typewriter effect
   useEffect(() => {
-      const roles = ["Junior Data Scientist"];
+      const roles = ["Data Scientist", "Développeur Fullstack IA", "Étudiant ENSA Tétouan"];
     const currentRole = roles[currentRoleIndex];
     const timeout = setTimeout(() => {
       if (!isDeleting) {

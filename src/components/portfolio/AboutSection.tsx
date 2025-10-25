@@ -14,13 +14,13 @@ export default function AboutSection() {
       <h2 className="text-2xl font-bold mb-6">About</h2>
       <div className="max-w-none">
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Hello, I am Zakariae Yahya — a passionate Data Science and Artificial Intelligence student at ENSA Tétouan, specializing in developing innovative data science solutions and optimizing the use of big data.
+          Bonjour, je suis Zakariae YAHYA — un étudiant passionné en Data Science et Intelligence Artificielle à l'ENSA Tétouan, spécialisé dans le développement de solutions innovantes en science des données et l'optimisation de l'utilisation du big data.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          With experience in full-stack development and data science, I have honed my skills in technologies such as Django, LangChain, LlamaIndex, and various machine learning frameworks. I am currently seeking an internship to apply and further develop my skills in a professional setting.
+          Avec une expérience en développement full-stack et en science des données, j'ai perfectionné mes compétences dans des technologies telles que Django, LangChain, LlamaIndex, et divers frameworks de machine learning. Je suis actuellement à la recherche d'un stage pour appliquer et développer davantage mes compétences dans un environnement professionnel.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          Beyond my academic pursuits, I enjoy working on personal projects involving ETL pipelines, real-time data processing, and interactive dashboards. I am committed to continuous learning and staying at the forefront of technological advancements in data engineering and artificial intelligence.
+          Au-delà de mes études académiques, j'aime travailler sur des projets personnels impliquant des pipelines ETL, le traitement de données en temps réel, et des tableaux de bord interactifs. Je suis engagé dans l'apprentissage continu et rester à la pointe des avancées technologiques en ingénierie des données et intelligence artificielle.
         </p>
       </div>
     </motion.section>

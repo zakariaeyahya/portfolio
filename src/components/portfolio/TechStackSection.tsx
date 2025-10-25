@@ -206,7 +206,7 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "logos:python",
       level: "Expert",
       category: "Programming Languages",
-      description: "High-level programming language",
+      description: "Langage de programmation principal pour la data science et l'IA",
       yearsUsed: 4
     },
     {
@@ -214,23 +214,23 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "logos:sql-datasource",
       level: "Expert",
       category: "Programming Languages",
-      description: "Standard language for relational database management",
+      description: "Langage standard pour la gestion des bases de données relationnelles",
       yearsUsed: 3
     },
     {
-      name: "Java",
-      icon: "logos:java",
+      name: "JavaScript",
+      icon: "logos:javascript",
       level: "Intermediate",
       category: "Programming Languages",
-      description: "Object-oriented programming language",
-      yearsUsed: 1
+      description: "Langage de programmation pour le développement web",
+      yearsUsed: 2
     },
     {
       name: "TypeScript",
       icon: "logos:typescript-icon",
       level: "Intermediate",
       category: "Programming Languages",
-      description: "Typed superset of JavaScript",
+      description: "Superset typé de JavaScript pour le développement robuste",
       yearsUsed: 1
     },
   ],
@@ -240,31 +240,31 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "logos:fastapi",
       level: "Expert",
       category: "Frameworks",
-      description: "Modern, fast web framework for building APIs",
+      description: "Framework web moderne et rapide pour construire des APIs",
       yearsUsed: 2
     },
     {
       name: "Django",
       icon: "logos:django-icon",
-      level: "Intermediate",
+      level: "Expert",
       category: "Frameworks",
-      description: "High-level Python web framework",
-      yearsUsed: 1
-    },
-    {
-      name: "Spring Boot",
-      icon: "logos:spring-icon",
-      level: "Intermediate",
-      category: "Frameworks",
-      description: "Java-based framework for building microservices",
-      yearsUsed: 1
+      description: "Framework web Python de haut niveau pour le développement backend",
+      yearsUsed: 2
     },
     {
       name: "React",
       icon: "logos:react",
       level: "Intermediate",
       category: "Frameworks",
-      description: "JavaScript library for building user interfaces",
+      description: "Bibliothèque JavaScript pour construire des interfaces utilisateur",
+      yearsUsed: 1
+    },
+    {
+      name: "React Native",
+      icon: "logos:react",
+      level: "Intermediate",
+      category: "Frameworks",
+      description: "Framework pour développer des applications mobiles cross-platform",
       yearsUsed: 1
     },
   ],
@@ -308,15 +308,15 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "logos:langchain",
       level: "Expert",
       category: "Tools & Techniques",
-      description: "Framework for developing applications with large language models",
+      description: "Framework pour développer des applications avec des modèles de langage",
       yearsUsed: 2
     },
     {
-      name: "LLamaIndex",
+      name: "LlamaIndex",
       icon: "logos:llama",
-      level: "Intermediate",
+      level: "Expert",
       category: "Tools & Techniques",
-      description: "Data framework for LLM applications",
+      description: "Framework de données pour les applications LLM",
       yearsUsed: 2
     },
     {
@@ -324,15 +324,23 @@ const techStackData: Record<string, TechItem[]> = {
       icon: "logos:mlflow",
       level: "Intermediate",
       category: "Tools & Techniques",
-      description: "Platform for managing the ML lifecycle",
+      description: "Plateforme pour gérer le cycle de vie du ML",
       yearsUsed: 1
+    },
+    {
+      name: "sentence-transformers",
+      icon: "logos:huggingface",
+      level: "Expert",
+      category: "Tools & Techniques",
+      description: "Bibliothèque pour les modèles de transformation de phrases",
+      yearsUsed: 2
     },
     {
       name: "Postman",
       icon: "logos:postman",
       level: "Intermediate",
       category: "Tools & Techniques",
-      description: "API development and testing tool",
+      description: "Outil de développement et test d'APIs",
       yearsUsed: 2
     },
   ],
