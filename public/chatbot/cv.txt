@@ -1,0 +1,117 @@
+Zakariae YAHYA  Zakariae YAHYA — Stage PFE |	AI Engineer & LLM Specialist  – Février 2026
+zakariae.yh@gmail.com
+ 
++212 648151446
+ 
+zakariae yahya
+ 
+zakariaeyahya
+ 
+Mobilité nationale
+ 
+YAHYA Zakariae
+ 
+Profil
+Étudiant ingénieur en Data & IA, je me spécialise dans l'IA générative et le MLOps. Fort de 10 mois d'expérience, j'ai conçu des architectures scalables, optimisé des systèmes RAG (-96% de latence) et industrialisé des modèles via Docker, Kafka et MLflow. Je recherche un stage de fin d'études pour contribuer au déploiement de solutions IA robustes et à impact pour vos clients.
+
+FORMATION ACADÉMIQUE
+Ingénierie en Sciences des Données, Big Data & Intelligence Artificielle, ENSA Tétouan
+2021 – Actuellement
+EXPÉRIENCES PROFESSIONNELLES
+Stage – Data Scientist, Izemx
+02/2025 – En cours
+ | 
+Paris , France
+Projet 3: IAVIA : Optimisation du système RAG pour la recherche documentaire :
+
+•Optimisation d’un pipeline de recherche hybride (Vector Search + BM25), réduisant la latence des requêtes de -96 % grâce à l’ajout d’un caching multi-niveaux.
+•Conception d’un pipeline d’ingestion et de vectorisation PDF avec chunking intelligent et embeddings GPU, accélérant le traitement documentaire de +80 %.
+•Amélioration de la pertinence du système RAG via hybridation sémantique/lexicale et reranking, augmentant la précision des réponses de +40 %.
+•Optimisation de l’indexation Qdrant avec traitement parallèle par batch, réduisant l’usage mémoire de -75 % et augmentant la vitesse d’indexation de +350 %.
+Projet 2 : Zyra – Plateforme d'investissement crypto autonome
+
+Développement et déploiement d’un pipeline Big Data temps réel pour l’ingestion et le traitement de flux de marchés financiers.
+
+•Conçu et déployé un pipeline ETL distribué (Python, Redis, PostgreSQL, Docker) capable de traiter 5k+ transactions/minute.
+•Architecturé une solution event-driven (Kafka / Redis Streams) garantissant la consistance et la résilience des flux de données.
+•Mis en place un système de monitoring & alerting (Grafana, CloudWatch) pour la détection d’anomalies en temps réel.
+Projet 1 : BrainBoost – Plateforme éducative intelligente
+
+Conception d’une plateforme web IA générative intégrant un système de question-réponse contextuel.
+
+•Architecturé et déployé une solution RAG complète (LangChain, Qdrant) avec chunking intelligent et prompt engineering,diminuant le temps de réponse de 60% tout en augmentant la précision de 45%. Implémenté A/B testing et monitoring des modèles via MLflow pour optimisation .
+•Développé une plateforme full-stack multi-interface (Django, React, Spring Boot) adoptée avec 98 % de satisfaction utilisateur.
+•Optimisé la scalabilité et la latence du traitement de 500+ contenus/semaine, avec suivi de performance via MLflow.
+Environnement technique : Python, Redis, PostgreSQL, Grafana, Docker, Django, React, Spring Boot, LangChain, LlamaIndex, MLflow, Qdrant.
+
+Stage - Data Scientist, DIGITAL PLACE
+06/2024 – 09/2024
+ | 
+Tanger ,Maroc
+•Conçu un assistant client vocal et textuel (français & darija) basé sur des modèles LLM et RAG multilingues, optimisant le temps de réponse de 40 %.
+•Intégré une architecture LangChain + FastAPI connectée à Groq API, avec gestion des embeddings via Transformers et SentenceTransformers.
+•Participé à la mise en production et au test pilote du système sous méthodologie Agile (Scrum).
+Environnement technique : LLM, RAG, LangChain, FastAPI, Groq API, PyTorch, TensorFlow, Transformers, Slack
+
+Projets
+ASSISTANT ÉDUCATIF
+•Développement d'un assistant IA multimodal pour le soutien scolaire personnalisé avec tableau de bord analytique (Grafana) pour le suivi des performances utilisateurs et l'optimisation du modèle.
+•Automatisation de l’analyse et de l’organisation des ressources éducatives, avec un suivi de la performance afin d’améliorer en continu les réponses.
+•Technologies: Python, FastAPI, Streamlit, LlamaIndex, Qdrant, LangChain, Whisper, MLflow, Postman.
+CLASSIFICATEUR DE MUSIQUE MAROCAINE
+•Développement d'un modèle hybride CNN-LSTM pour la classification de 8 genres de musique marocaine avec 90% de précision
+•Création d'une base de données personnalisée de 10k+ échantillons audio avec preprocessing et feature extraction (Librosa)
+•Déploiement du modèle via API FastAPI avec interface Streamlit pour des prédictions en temps réel
+Technologies: TensorFlow, Keras, Librosa, FastAPI, Streamlit
+
+Compétences
+MLOps & Data Infrastructure :
+
+• Containerization & Orchestration : Docker, Kubernetes
+
+• Data Pipelines : Kafka, Redis Streams, Airflow
+
+• Monitoring & Observability : Grafana, CloudWatch, MLflow
+
+• CI/CD : GitLab, GitHub Actions, automated testing
+
+AI & Machine Learning :
+
+• LLM & RAG : LangChain, LlamaIndex, Hugging Face Transformers
+
+• Model optimization : fine-tuning, LoRA, prompt engineering
+
+• Vector databases : FAISS, Qdrant, ChromaDB
+
+• Deep Learning : TensorFlow, PyTorch, Keras
+
+Backend Development & APIs :
+
+• Web frameworks : FastAPI, Django, Spring Boot
+
+• API design & REST principles
+
+• Frontend integration : React, Streamlit,React native
+
+• API testing : Postman
+
+Languages & Core Skills :
+
+• Languages : Python (expert), Java
+
+• Version control : Git, GitHub, GitLab
+
+• Agile : Scrum, sprint planning, code reviews
+
+ACTIVITÉS PARASCOLAIRES
+Membre de l’équipe d'organisation du Forum ENSA TETOUAN et Moroccan Microsoft Community
+Langues
+Arabe
+Langue maternelle
+
+Anglais
+Courant 
+
+Français
+Courant 
+

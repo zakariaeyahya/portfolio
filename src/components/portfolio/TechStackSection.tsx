@@ -66,6 +66,22 @@ const techStackData: Record<string, TechItem[]> = {
       yearsUsed: 2
     },
     {
+      name: "Kafka",
+      icon: "logos:kafka",
+      level: "Expert",
+      category: "Big Data & Storage",
+      description: "Distributed event streaming platform",
+      yearsUsed: 2
+    },
+    {
+      name: "Redis",
+      icon: "logos:redis",
+      level: "Expert",
+      category: "Big Data & Storage",
+      description: "In-memory data structure store and streaming",
+      yearsUsed: 2
+    },
+    {
       name: "Snowflake",
       icon: "logos:snowflake-icon",
       level: "Intermediate",
@@ -102,7 +118,7 @@ const techStackData: Record<string, TechItem[]> = {
     {
       name: "Qdrant",
       icon: "logos:qdrant",
-      level: "Intermediate",
+      level: "Expert",
       category: "Orchestration & Indexing",
       description: "Vector similarity search engine",
       yearsUsed: 2
@@ -114,6 +130,14 @@ const techStackData: Record<string, TechItem[]> = {
       category: "Orchestration & Indexing",
       description: "AI-native open-source vector database",
       yearsUsed: 2
+    },
+    {
+      name: "FAISS",
+      icon: "logos:meta",
+      level: "Intermediate",
+      category: "Orchestration & Indexing",
+      description: "Library for efficient similarity search",
+      yearsUsed: 1
     },
   ],
   "Machine Learning": [
@@ -210,6 +234,14 @@ const techStackData: Record<string, TechItem[]> = {
       yearsUsed: 4
     },
     {
+      name: "Java",
+      icon: "logos:java",
+      level: "Intermediate",
+      category: "Programming Languages",
+      description: "Langage de programmation orienté objet",
+      yearsUsed: 2
+    },
+    {
       name: "SQL",
       icon: "logos:sql-datasource",
       level: "Expert",
@@ -252,6 +284,14 @@ const techStackData: Record<string, TechItem[]> = {
       yearsUsed: 2
     },
     {
+      name: "Spring Boot",
+      icon: "logos:spring-icon",
+      level: "Intermediate",
+      category: "Frameworks",
+      description: "Framework Java pour applications d'entreprise",
+      yearsUsed: 1
+    },
+    {
       name: "React",
       icon: "logos:react",
       level: "Intermediate",
@@ -267,6 +307,14 @@ const techStackData: Record<string, TechItem[]> = {
       description: "Framework pour développer des applications mobiles cross-platform",
       yearsUsed: 1
     },
+    {
+      name: "Streamlit",
+      icon: "logos:streamlit",
+      level: "Expert",
+      category: "Frameworks",
+      description: "Framework pour créer des applications de data science",
+      yearsUsed: 2
+    },
   ],
   "Cloud & DevOps": [
     {
@@ -280,7 +328,7 @@ const techStackData: Record<string, TechItem[]> = {
     {
       name: "Docker",
       icon: "logos:docker-icon",
-      level: "Intermediate",
+      level: "Expert",
       category: "Cloud & DevOps",
       description: "Platform for developing, shipping, and running applications",
       yearsUsed: 2
@@ -300,6 +348,30 @@ const techStackData: Record<string, TechItem[]> = {
       category: "Cloud & DevOps",
       description: "Continuous Integration and Continuous Deployment",
       yearsUsed: 2
+    },
+    {
+      name: "GitHub Actions",
+      icon: "logos:github-actions",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "Automated workflows for CI/CD",
+      yearsUsed: 1
+    },
+    {
+      name: "Grafana",
+      icon: "logos:grafana",
+      level: "Expert",
+      category: "Cloud & DevOps",
+      description: "Monitoring and observability platform",
+      yearsUsed: 2
+    },
+    {
+      name: "CloudWatch",
+      icon: "logos:aws-cloudwatch",
+      level: "Intermediate",
+      category: "Cloud & DevOps",
+      description: "AWS monitoring and logging service",
+      yearsUsed: 1
     },
   ],
   "Tools & Techniques": [
@@ -322,9 +394,17 @@ const techStackData: Record<string, TechItem[]> = {
     {
       name: "MLflow",
       icon: "logos:mlflow",
-      level: "Intermediate",
+      level: "Expert",
       category: "Tools & Techniques",
       description: "Plateforme pour gérer le cycle de vie du ML",
+      yearsUsed: 2
+    },
+    {
+      name: "Whisper",
+      icon: "logos:openai",
+      level: "Intermediate",
+      category: "Tools & Techniques",
+      description: "Modèle de reconnaissance vocale par OpenAI",
       yearsUsed: 1
     },
     {

@@ -15,6 +15,16 @@ const experience = [
     description: "Développement de solutions Big Data et IA pour des plateformes d'investissement crypto et éducatives, avec focus sur l'ingénierie des données temps réel et l'intelligence artificielle générative.",
     projects: [
       {
+        name: "Projet 3 : IAVIA – Optimisation du système RAG pour la recherche documentaire",
+        description: "Optimisation avancée d'un pipeline de recherche hybride (Vector Search + BM25) pour la recherche documentaire",
+        achievements: [
+          "Optimisation d'un pipeline de recherche hybride (Vector Search + BM25), réduisant la latence des requêtes de -96% grâce à l'ajout d'un caching multi-niveaux",
+          "Conception d'un pipeline d'ingestion et de vectorisation PDF avec chunking intelligent et embeddings GPU, accélérant le traitement documentaire de +80%",
+          "Amélioration de la pertinence du système RAG via hybridation sémantique/lexicale et reranking, augmentant la précision des réponses de +40%",
+          "Optimisation de l'indexation Qdrant avec traitement parallèle par batch, réduisant l'usage mémoire de -75% et augmentant la vitesse d'indexation de +350%"
+        ]
+      },
+      {
         name: "Projet 2 : Zyra – Plateforme d'investissement crypto autonome",
         description: "Développement d'un pipeline Big Data temps réel pour l'ingestion et le traitement de flux de marchés crypto",
         achievements: [
@@ -318,7 +328,7 @@ Technologies et compétences
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">12+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d&apos;expérience</div>
             </motion.div>
             <motion.div

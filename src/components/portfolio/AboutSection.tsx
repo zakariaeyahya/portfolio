@@ -14,13 +14,13 @@ export default function AboutSection() {
       <h2 className="text-2xl font-bold mb-6">About</h2>
       <div className="max-w-none">
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Bonjour, je suis Zakariae YAHYA — un étudiant passionné en Data Science et Intelligence Artificielle à l&apos;ENSA Tétouan, spécialisé dans le développement de solutions innovantes en science des données et l&apos;optimisation de l&apos;utilisation du big data.
+          Bonjour, je suis Zakariae YAHYA — étudiant ingénieur en Data & IA à l&apos;ENSA Tétouan, je me spécialise dans l&apos;IA générative et le MLOps. Fort de 10 mois d&apos;expérience, j&apos;ai conçu des architectures scalables, optimisé des systèmes RAG (-96% de latence) et industrialisé des modèles via Docker, Kafka et MLflow.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-          Avec une expérience en développement full-stack et en science des données, j&apos;ai perfectionné mes compétences dans des technologies telles que Django, LangChain, LlamaIndex, et divers frameworks de machine learning. Je suis actuellement à la recherche d&apos;un stage pour appliquer et développer davantage mes compétences dans un environnement professionnel.
+          Mes expériences chez Izemx et DIGITAL PLACE m&apos;ont permis de développer des solutions complètes en Big Data et IA générative, notamment un pipeline ETL distribué capable de traiter 5k+ transactions/minute et un système RAG multilingue optimisant le temps de réponse de 40%.
         </p>
         <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
-          Au-delà de mes études académiques, j&apos;aime travailler sur des projets personnels impliquant des pipelines ETL, le traitement de données en temps réel, et des tableaux de bord interactifs. Je suis engagé dans l&apos;apprentissage continu et rester à la pointe des avancées technologiques en ingénierie des données et intelligence artificielle.
+          Je recherche un stage de fin d&apos;études pour contribuer au déploiement de solutions IA robustes et à impact. Passionné par l&apos;apprentissage continu, je reste constamment à la pointe des avancées technologiques en ingénierie des données et intelligence artificielle.
         </p>
       </div>
     </motion.section>
