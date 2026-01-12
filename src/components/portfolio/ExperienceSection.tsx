@@ -7,65 +7,60 @@ const experience = [
   {
     role: "Data Scientist",
     company: "Izemx",
-    period: "Février 2025 — En cours",
+    period: "02/2025 – En cours",
     type: "Stage",
     companyIcon: "mdi:briefcase",
     companyColor: "from-blue-500 to-blue-600",
     location: "Paris, France",
-    description: "Développement de solutions Big Data et IA pour des plateformes d'investissement crypto et éducatives, avec focus sur l'ingénierie des données temps réel et l'intelligence artificielle générative.",
+    description: "Développement de solutions avancées en IA et ingénierie des données pour optimiser les moteurs de recherche documentaire, plateformes d'investissement crypto et éducatives.",
     projects: [
       {
-        name: "Projet 3 : IAVIA – Optimisation du système RAG pour la recherche documentaire",
-        description: "Optimisation avancée d'un pipeline de recherche hybride (Vector Search + BM25) pour la recherche documentaire",
+        name: "IAVIA – Optimisation d'un moteur de recherche documentaire",
+        description: "Conception et implémentation d'un moteur de recherche hybride intégré à une plateforme RAG.",
         achievements: [
-          "Optimisation d'un pipeline de recherche hybride (Vector Search + BM25), réduisant la latence des requêtes de -96% grâce à l'ajout d'un caching multi-niveaux",
-          "Conception d'un pipeline d'ingestion et de vectorisation PDF avec chunking intelligent et embeddings GPU, accélérant le traitement documentaire de +80%",
-          "Amélioration de la pertinence du système RAG via hybridation sémantique/lexicale et reranking, augmentant la précision des réponses de +40%",
-          "Optimisation de l'indexation Qdrant avec traitement parallèle par batch, réduisant l'usage mémoire de -75% et augmentant la vitesse d'indexation de +350%"
+          "Conception et implémentation d'un moteur de recherche hybride (Vector Search Qdrant + BM25) intégré à une plateforme RAG basée sur FastAPI, n8n et Redis, avec embeddings GPU et cache multi-niveaux → –96 % de latence.",
+          "Amélioration de la pertinence des réponses IA via hybridation sémantique/lexicale, reranking des résultats et orchestration RAG (search/mixed, kvec/klex) → +40 % de précision mesurée.",
+          "Optimisation avancée de la base vectorielle Qdrant (schémas de collections, index HNSW, stratégies de chunking et metadata filtering) → indexation ×3,5 et –75 % d'empreinte mémoire.",
+          "Intégration complète dans un pipeline d'indexation automatisé (Google Drive, SharePoint, S3) avec tracking des jobs, statistiques temps réel et monitoring Langfuse."
         ]
       },
       {
-        name: "Projet 2 : Zyra – Plateforme d'investissement crypto autonome",
-        description: "Développement d'un pipeline Big Data temps réel pour l'ingestion et le traitement de flux de marchés crypto",
+        name: "Zyra – Plateforme d'investissement crypto",
+        description: "Développement d'un pipeline streaming pour ingestion et traitement de données crypto.",
         achievements: [
-          "Conception et implémentation d'un pipeline ETL distribué (Python, Redis, PostgreSQL) pour l'ingestion de données de marchés avec traitement de 5k+ transactions/minute",
-          "Mise en place d'une architecture événementielle avec Redis Streams pour garantir la cohérence et la fiabilité des flux de données en temps réel",
-          "Développement d'un dashboard Grafana connecté à PostgreSQL pour le monitoring en temps réel des flux de données et la détection d'anomalies transactionnelles",
-          "Mise en place d'alertes automatiques sur les écarts de prix et les volumes anormaux, permettant une réactivité immédiate sur les incidents",
-          "Développement d'un système d'analyse prédictive capable d'anticiper les tendances du marché et d'optimiser les décisions d'investissement",
-          "Amélioration de la qualité des données analysées et réduction de 40% du temps de traitement des indicateurs stratégiques"
+          "Développement d'un pipeline streaming absorbant ~5 000 transactions/min avec garanties de robustesse.",
+          "Mise en place d'une architecture event-driven (Redis Streams) pour ingestion, traitement et distribution des événements.",
+          "Supervision monitoring/alerting temps réel via Grafana (métriques, dashboards, seuils)."
         ]
       },
       {
-        name: "Projet 1 : BrainBoost – Plateforme éducative intelligente",
-        description: "Développement d'une plateforme éducative complète avec IA générative",
+        name: "BrainBoost – Plateforme éducative IA",
+        description: "Déploiement d'une architecture RAG optimisée pour l'éducation.",
         achievements: [
-          "Développement d'une plateforme web full-stack multi-interface adoptée avec 98% de satisfaction utilisateur lors des tests",
-          "Intégration d'un système RAG (LangChain, Qdrant) pour une assistance pédagogique personnalisée, réduisant de 60% le temps de réponse",
-          "Automatisation du traitement de 500+ contenus pédagogiques/semaine"
+          "Déploiement d'une architecture RAG optimisée : +45% précision et –60% latence.",
+          "Contribution au développement applicatif et API (backend + intégration) : Django / Spring Boot / React.",
+          "Suivi des expérimentations et performance via MLflow (tracking, comparaison de runs)."
         ]
       }
     ],
-    technologies: ["Python", "Redis", "PostgreSQL", "Grafana", "Docker", "Django", "React", "Spring Boot", "LangChain", "LlamaIndex", "MLflow", "Qdrant", "Jira"]
+    technologies: ["Python", "Redis", "PostgreSQL", "Docker", "LangChain", "Qdrant", "n8n"]
   },
   {
     role: "Data Scientist",
     company: "DIGITAL PLACE",
-    period: "Juin 2024 — Septembre 2024",
+    period: "06/2024 – 09/2024",
     type: "Stage",
     companyIcon: "mdi:briefcase",
     companyColor: "from-green-500 to-green-600",
-    location: "Maroc",
-    description: "Conception et déploiement d'un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l'interaction client dans un contexte multilingue.",
+    location: "Tanger, Maroc",
+    description: "Conception et déploiement d'un assistant vocal et textuel multilingue pour améliorer l'interaction client.",
     achievements: [
-      "Conception d'un assistant virtuel bilingue (français/darija) pour faciliter l'interaction client dans un contexte multilingue.",
-      "Création d'une interface vocale et textuelle pour améliorer l'accessibilité et l'expérience utilisateur.",
-      "Développement d'un système RAG (Retrieval-Augmented Generation) avec LangChain pour des réponses contextuelles.",
-      "Intégration d'APIs de traitement du langage naturel (Groq API) pour la génération de réponses.",
-      "Collaboration étroite avec les équipes métier et techniques pour adapter les fonctionnalités aux retours des utilisateurs.",
-      "Utilisation de modèles de transformation (Transformers) et de frameworks de deep learning (PyTorch, TensorFlow)."
+      "Conception d'un assistant vocal et textuel multilingue (FR/Darija) basé sur des modèles LLM et RAG, diminuant le temps de réponse de 40 %.",
+      "Intégration d'une architecture LangChain + FastAPI connectée à Groq API, avec gestion des embeddings via Transformers et SentenceTransformers.",
+      "Participation à la mise en production et au test pilote du système sous méthodologie Agile (Scrum).",
+      "Environnement : Python, FastAPI, LangChain, Groq API, PyTorch, TensorFlow, Slack."
     ],
-    technologies: ["Python", "FastAPI", "LangChain", "Groq API", "Transformers", "PyTorch", "TensorFlow", "sentence-transformers", "LLM", "RAG", "Agile", "Slack"]
+    technologies: ["Python", "FastAPI", "LangChain", "Groq API", "PyTorch", "TensorFlow", "Slack"]
   }
 ];
 

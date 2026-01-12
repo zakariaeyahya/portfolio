@@ -5,14 +5,114 @@ import Link from "next/link";
 import SectionHeader from "./SectionHeader";
 
 const projets = [
+    {
+    title: "CryptoVibe – Analyse de Sentiment Crypto en Temps Réel",
+    subtitle: "NLP, ETL & IA pour l’Aide à la Décision Financière",
+    description:
+      "Plateforme d’analyse de sentiment crypto transformant les flux sociaux (Twitter, Reddit) et les données de marché en indicateurs décisionnels. Pipeline ETL orchestré par Airflow et structuré selon l’architecture Medallion.",
+    features: [
+      "Pipeline ETL automatisé (Medallion Architecture)",
+      "RoBERTa fine-tuné (88% de précision)",
+      "Analyse corrélative sentiment / prix (r = 0,65 BTC)",
+      "Dashboard React + chatbot IA RAG"
+    ],
+    tech: [
+      "Python",
+      "Apache Airflow",
+      "HuggingFace Transformers",
+      "PyTorch",
+      "LangChain",
+      "Qdrant",
+      "FastAPI",
+      "Docker",
+      "React"
+    ],
+    github: "https://github.com/zakariaeyahya/Crypto_Analysis.git",
+    live: "#",
+    gradient: "from-indigo-500 to-violet-500",
+    status: "Terminé",
+    category: "Data & IA Financière",
+    highlight: "Projet Avancé",
+    timeline: "2 mois",
+    clientType: "Finance & Risk Analytics"
+  },
+
+  {
+    title: "Pipeline de Données Produits et Clients en Temps Réel sur AWS",
+    subtitle: "Solution d'Ingénierie des Données Évolutive sur AWS",
+    description:
+      "Conception et déploiement d’une architecture data AWS supportant des traitements batch et temps réel. Orchestration avancée avec Airflow et Step Functions garantissant un taux de disponibilité de 99%.",
+    features: [
+      "Traitement batch et streaming",
+      "Pipelines ETL/ELT scalables",
+      "Orchestration Airflow & Step Functions",
+      "Disponibilité de 99%"
+    ],
+    tech: [
+      "Python",
+      "PySpark",
+      "SQL",
+      "AWS Glue",
+      "EMR",
+      "Kinesis",
+      "Redshift",
+      "Lambda",
+      "EC2",
+      "S3"
+    ],
+    github: "#",
+    live: "#",
+    gradient: "from-purple-500 to-pink-500",
+    status: "Terminé",
+    category: "Ingénierie des Données",
+    highlight: "À l'honneur",
+    timeline: "1 mois",
+    clientType: "E-commerce & Entreprise"
+  },
+
+  
+  {
+    title: "Pipeline Transactionnel Blockchain / NoSQL",
+    subtitle: "Règlement, Traçabilité et Audit des Paiements",
+    description:
+      "Architecture data hybride combinant blockchain Polygon et MongoDB pour la gestion transactionnelle, la traçabilité et l’audit des paiements, réduisant les délais de règlement de 85%.",
+    features: [
+      "500+ transactions/jour",
+      "Workflow événementiel avec escrow programmable",
+      "Split automatique des paiements (70/20/10)",
+      "API haute performance monitorée via Grafana"
+    ],
+    tech: [
+      "Node.js",
+      "Express",
+      "MongoDB Atlas",
+      "Polygon",
+      "Solidity",
+      "Chainlink",
+      "Socket.io",
+      "Grafana",
+      "IPFS",
+      "React"
+    ],
+    github: "https://github.com/zakariaeyahya/done-food-delivery.git",
+    live: "#",
+    gradient: "from-emerald-500 to-teal-500",
+    status: "Terminé",
+    category: "Blockchain & Data Engineering",
+    highlight: "À l'honneur",
+    timeline: "2 mois",
+    clientType: "FinTech & Paiement"
+  },
+
   {
     title: "Plateforme d'Analytique des Infrastructures Sportives",
     subtitle: "Prise de Décision Basée sur les Données pour les Infrastructures Sportives",
-    description: "Conçu un pipeline automatisé de web scraping et d'ETL avec orchestration Apache Airflow. Créé des tableaux de bord interactifs permettant la prise de décision basée sur les données pour 50+ parties prenantes. Implémenté des vérifications de qualité des données et une gestion des erreurs, atteignant une fiabilité de pipeline de 99,9%.",
+    description:
+      "Conception d’un pipeline automatisé de web scraping et d’ETL orchestré par Apache Airflow. Développement de tableaux de bord interactifs pour plus de 50 parties prenantes, avec contrôles de qualité et gestion des erreurs assurant une fiabilité de 99,9%.",
     features: [
-      "Pipeline automatisé de web scraping et d'ETL",
-      "Tableaux de bord interactifs pour les parties prenantes",
-      "Vérifications de qualité des données et gestion des erreurs",
+      "Pipeline automatisé de scraping et ETL",
+      "Dashboards décisionnels pour 50+ utilisateurs",
+      "Contrôles qualité et gestion des erreurs",
       "Fiabilité du pipeline à 99,9%"
     ],
     tech: ["Python", "Apache Airflow", "Power BI", "Snowflake", "AWS S3", "Docker"],
@@ -25,85 +125,98 @@ const projets = [
     timeline: "1 mois",
     clientType: "Industrie du Sport"
   },
+
+
+
+
+
   {
-    title: "Pipeline de Données Produits et Clients en Temps Réel sur AWS",
-    subtitle: "Solution d'Ingénierie des Données Évolutive sur AWS",
-    description: "Conçu et déployé une solution complète d'ingénierie des données sur AWS, supportant à la fois le traitement en temps réel et par lots. Construit des pipelines ETL/ELT évolutifs incluant l'ingestion, la transformation et la visualisation des données. Orchestré des flux de travail en utilisant Apache Airflow et AWS Step Functions, assurant un traitement automatisé avec un temps de disponibilité de 99%.",
+    title: "SmartCine – Recommandation de Films par Web Sémantique",
+    subtitle: "Knowledge Graph & Ontologies OWL",
+    description:
+      "Système de recommandation basé sur une ontologie OWL et un Knowledge Graph RDF, permettant des recommandations explicables via des règles sémantiques plutôt que statistiques.",
     features: [
-      "Traitement en temps réel et par lots sur AWS",
-      "Pipelines ETL/ELT évolutifs",
-      "Ingestion, transformation et visualisation des données",
-      "Flux de travail automatisés avec un temps de disponibilité de 99%"
+      "Ontologie OWL (films, acteurs, réalisateurs)",
+      "Knowledge Graph RDF interrogeable via SPARQL",
+      "Recommandations explicables",
+      "Interface React avec intégration OMDB"
     ],
-    tech: ["Python", "PySpark", "SQL", "AWS Glue", "EMR", "Kinesis", "Redshift", "IAM", "EC2", "Lambda", "S3"],
-    github: "#",
+    tech: [
+      "Python",
+      "SPARQL",
+      "Apache Jena Fuseki",
+      "RDFLib",
+      "Knowledge Graphs",
+      "React"
+    ],
+    github: "https://github.com/771salameche/Semantic-Web-Movie-Project",
     live: "#",
-    gradient: "from-purple-500 to-pink-500",
+    gradient: "from-rose-500 to-red-600",
     status: "Terminé",
-    category: "Ingénierie des Données",
+    category: "Web Sémantique & IA",
+    highlight: "Projet Académique Avancé",
+    timeline: "1 mois",
+    clientType: "Média & Divertissement"
+  },
+
+  {
+    title: "CAN 2025 Fan Intelligence Copilot",
+    subtitle: "Assistant IA Conversationnel (RAG & LLM)",
+    description:
+      "Assistant IA multilingue dédié à la CAN 2025, basé sur une architecture RAG hybride combinant recherche sémantique, BM25 et SQL avec mécanisme anti-hallucination.",
+    features: [
+      "Architecture RAG hybride (Qdrant + SQL + BM25)",
+      "Chatbot sportif intelligent",
+      "Voice Chat multilingue (50+ langues)",
+      "Monitoring via Prometheus & Grafana"
+    ],
+    tech: [
+      "Python",
+      "FastAPI",
+      "PostgreSQL",
+      "Qdrant",
+      "Whisper",
+      "Docker",
+      "React",
+      "Prometheus",
+      "Grafana"
+    ],
+    github: "https://github.com/zakariaeyahya/can2025-fan-intelligence-copilot",
+    live: "#",
+    gradient: "from-sky-500 to-indigo-600",
+    status: "Terminé",
+    category: "IA Générative & RAG",
     highlight: "À l'honneur",
     timeline: "1 mois",
-    clientType: "E-commerce et Entreprise"
+    clientType: "Sport & Média"
   },
-  {
-    title: "Assistant Éducatif Intelligent",
-    subtitle: "Support Éducatif Propulsé par l'IA",
-    description: "Développé un assistant IA multimodal pour un soutien éducatif personnalisé. Implémenté un système RAG avec vectorisation des ressources éducatives.",
-    features: [
-      "Assistant IA multimodal pour l'éducation",
-      "Système RAG avec vectorisation",
-      "Soutien éducatif personnalisé",
-      "Outils d'apprentissage interactifs"
-    ],
-    tech: ["Python", "FastAPI", "Streamlit", "LlamaIndex", "Qdrant", "LangChain", "Whisper", "MLflow", "Postman"],
-    github: "https://github.com/zakariaeyahya/assistant-ia-multifonction",
-    live: "#",
-    gradient: "from-green-500 to-emerald-500",
-    status: "Terminé",
-    category: "Plateforme IA",
-    highlight: "À l'honneur",
-    timeline: "2 mois",
-    clientType: "EdTech"
-  },
+
   {
     title: "Classificateur de Musique Marocaine",
-    subtitle: "Modèle Hybride CNNet RNN-LSTM pour la Classification Musicale",
-    description: "Conçu un modèle hybride CNNet RNN-LSTM pour classer 8 genres de musique marocaine avec une précision de 90%. Construit une base de données personnalisée de plus de 10K échantillons audio marocains.",
+    subtitle: "Classification Audio par Deep Learning",
+    description:
+      "Développement d’un modèle CNN-LSTM pour la classification de 8 genres de musique marocaine, avec déploiement via API et interface de prédiction temps réel.",
     features: [
-      "Modèle hybride CNNet RNN-LSTM",
-      "Classification de 8 genres de musique marocaine",
-      "Précision de classification de 90%",
-      "Base de données personnalisée de 10K+ échantillons audio"
+      "Modèle CNN-LSTM",
+      "Classification de 8 genres",
+      "Dataset audio 10k+ échantillons",
+      "API FastAPI + interface Streamlit"
     ],
-    tech: ["TensorFlow", "Keras", "Librosa", "FastAPI", "Streamlit", "scikit-learn", "Pandas"],
+    tech: [
+      "TensorFlow",
+      "Keras",
+      "Librosa",
+      "FastAPI",
+      "Streamlit"
+    ],
     github: "https://github.com/zakariaeyahya/Classification-des-Genres-Musicaux",
     live: "#",
     gradient: "from-yellow-500 to-orange-500",
     status: "Terminé",
-    category: "Plateforme IA",
+    category: "IA & Deep Learning",
     highlight: "À l'honneur",
     timeline: "1 mois",
     clientType: "Industrie Musicale"
-  },
-  {
-    title: "Analyse Intégrée des Données Socio-économiques, Éducatives et Criminelles",
-    subtitle: "Analyse Complète des Données pour des Perspectives Urbaines",
-    description: "Analysé plusieurs ensembles de données (recensement, écoles, criminalité) en utilisant des requêtes SQL complexes. Extrait des perspectives sur les tendances socio-économiques, éducatives et criminelles.",
-    features: [
-      "Analyse de plusieurs ensembles de données",
-      "Requêtes SQL complexes pour extraire des perspectives",
-      "Perspectives sur les tendances socio-économiques",
-      "Perspectives sur les tendances éducatives et criminelles"
-    ],
-    tech: ["Python", "Scikit-learn", "Pandas", "SQL", "Matplotlib", "Seaborn"],
-    github: "https://github.com/zakariaeyahya/Chicago_Data_Analysis_Project",
-    live: "#",
-    gradient: "from-red-500 to-pink-500",
-    status: "Terminé",
-    category: "Analyse de Données",
-    highlight: "À l'honneur",
-    timeline: "1 mois",
-    clientType: "Gouvernement et Secteur Public"
   }
 ];
 
