@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 export default function Background() {
   const [isMobile, setIsMobile] = useState(false);
+  const [particles, setParticles] = useState<Array<{ left: number; top: number; delay: number; duration: number }>>([]);
 
   useEffect(() => {
     const checkMobile = () => {
@@ -16,8 +17,17 @@ export default function Background() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Reduce particle count on mobile
-  const particleCount = isMobile ? 5 : 12;
+  useEffect(() => {
+    // Generate particle positions only on client to prevent hydration mismatch
+    const particleCount = isMobile ? 5 : 12;
+    const newParticles = Array.from({ length: particleCount }).map(() => ({
+      left: Math.random() * 100,
+      top: Math.random() * 100,
+      delay: Math.random() * 3,
+      duration: Math.random() * 2 + 4,
+    }));
+    setParticles(newParticles);
+  }, [isMobile]);
 
   // Reduce animation complexity on mobile
   const animationConfig = isMobile
@@ -87,13 +97,13 @@ export default function Background() {
       )}
 
       {/* Reduced floating particles */}
-      {Array.from({ length: particleCount }).map((_, i) => (
+      {particles.map((particle, i) => (
         <motion.div
           key={i}
           className="absolute w-1 h-1 bg-blue-400/60 rounded-full"
           style={{
-            left: `${Math.random() * 100}%`,
-            top: `${Math.random() * 100}%`,
+            left: `${particle.left}%`,
+            top: `${particle.top}%`,
             willChange: 'transform, opacity',
           }}
           animate={{
@@ -101,9 +111,9 @@ export default function Background() {
             opacity: [0, 1, 0],
           }}
           transition={{
-            duration: Math.random() * 2 + 4,
+            duration: particle.duration,
             repeat: Infinity,
-            delay: Math.random() * 3,
+            delay: particle.delay,
             ease: "linear",
           }}
         />
