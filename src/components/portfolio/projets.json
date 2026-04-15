@@ -1,5 +1,39 @@
 [
   {
+    "title": "Real-Time E-Commerce Streaming Analytics Platform",
+    "subtitle": "Détection de fraude, recommandations et prévision d'inventaire en streaming",
+    "description": "Plateforme d'analytics streaming temps réel pour l'e-commerce, conçue autour d'une architecture event-driven unifiant Kafka, PyFlink, FastAPI et Redis. Le projet couvre la détection de fraude, la recommandation personnalisée, la prévision d'inventaire et un socle lakehouse pour l'analyse continue.",
+    "features": [
+      "Traitement de 2.7M+ événements avec pipeline streaming unifié",
+      "Détection de fraude en temps réel avec scoring et latence faible",
+      "Recommandations personnalisées et prévision d'inventaire basées ML",
+      "Observabilité complète avec Prometheus/Grafana et orchestration Airflow"
+    ],
+    "tech": [
+      "Python 3.11",
+      "Apache Kafka",
+      "PyFlink",
+      "FastAPI",
+      "Redis",
+      "scikit-learn",
+      "Apache Iceberg",
+      "dbt",
+      "MinIO",
+      "Prometheus",
+      "Grafana",
+      "Airflow",
+      "Docker Compose"
+    ],
+    "github": "https://github.com/zakariaeyahya/realtime-ecommerce-streaming-platform",
+    "live": "#",
+    "gradient": "from-cyan-500 to-blue-600",
+    "status": "Terminé",
+    "category": "Data Engineering & Streaming IA",
+    "highlight": "Projet Avancé",
+    "timeline": "2 mois",
+    "clientType": "E-commerce & Retail Analytics"
+  },
+  {
     "title": "CryptoVibe – Analyse de Sentiment Crypto en Temps Réel",
     "subtitle": "NLP, ETL & IA pour l'Aide à la Décision Financière",
     "description": "Plateforme d'analyse de sentiment crypto transformant les flux sociaux (Twitter, Reddit) et les données de marché en indicateurs décisionnels. Pipeline ETL orchestré par Airflow et structuré selon l'architecture Medallion.",
@@ -61,25 +95,29 @@
     "clientType": "E-commerce & Entreprise"
   },
   {
-    "title": "Pipeline Transactionnel Blockchain / NoSQL",
-    "subtitle": "Règlement, Traçabilité et Audit des Paiements",
-    "description": "Architecture data hybride combinant blockchain Polygon et MongoDB pour la gestion transactionnelle, la traçabilité et l'audit des paiements, réduisant les délais de règlement de 85%.",
+    "title": "DONE Food Delivery - Plateforme Décentralisée de Livraison",
+    "subtitle": "Smart Contracts, Paiements Automatisés et Traçabilité On-Chain",
+    "description": "Plateforme de livraison de repas décentralisée sur Ethereum/Polygon, avec automatisation du cycle commande-paiement-livraison via smart contracts. Le système garantit transparence, traçabilité des transactions et intégration Web2/Web3 (MetaMask + fallback Stripe).",
     "features": [
-      "500+ transactions/jour",
-      "Workflow événementiel avec escrow programmable",
-      "Split automatique des paiements (70/20/10)",
-      "API haute performance monitorée via Grafana"
+      "Gestion décentralisée des commandes et paiements on-chain",
+      "Split automatique des fonds (70% restaurant, 20% livreur, 10% plateforme)",
+      "Staking des livreurs, résolution de litiges et preuves sur IPFS",
+      "Oracles Chainlink pour prix/position et fallback carte bancaire via Stripe"
     ],
     "tech": [
       "Node.js",
       "Express",
       "MongoDB Atlas",
-      "Polygon",
+      "Polygon Mumbai",
       "Solidity",
+      "Hardhat",
+      "Ethers.js",
       "Chainlink",
       "Socket.io",
-      "Grafana",
       "IPFS",
+      "Stripe",
+      "JWT",
+      "Docker",
       "React"
     ],
     "github": "https://github.com/zakariaeyahya/done-food-delivery.git",

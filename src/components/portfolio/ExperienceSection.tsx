@@ -5,6 +5,25 @@ import SectionHeader from "./SectionHeader";
 
 const experience = [
   {
+    role: "AI Software Engineer / Data Engineer",
+    company: "Banque Centrale Populaire - Architecture et Innovation Groupe",
+    period: "02/2026 – 08/2026",
+    type: "Stage",
+    companyIcon: "mdi:bank",
+    companyColor: "from-orange-500 to-red-600",
+    location: "Casablanca, Maroc",
+    description: "Conception et industrialisation d'une plateforme de détection de fraude en temps réel pour les virements instantanés, de l'ingestion des flux au déploiement sécurisé.",
+    achievements: [
+      "Conception d'une architecture data temps réel pour la collecte, le traitement et l'exploitation des transactions intra-bancaires avec scoring bout-à-bout à très faible latence.",
+      "Développement de pipelines de streaming avec Kafka et Spark pour traiter plus d'un million d'événements par jour et alimenter les composants de scoring et d'analyse.",
+      "Implémentation de modèles de scoring fraude avec réentraînement automatisé, tracking MLflow et amélioration continue de la qualité de détection.",
+      "Industrialisation des workflows de traitement et de mise à jour des artefacts avec Airflow, en garantissant fiabilité, traçabilité et continuité de service.",
+      "Supervision continue de la plateforme et détection de dérive via Prometheus et Grafana, avec réduction des anomalies et amélioration de la stabilité opérationnelle.",
+      "Déploiement et exploitation sur Azure AKS avec Docker et GitLab CI/CD, sécurisation des accès via Keycloak et authentification/autorisation centralisées avec Red Hat SSO."
+    ],
+    technologies: ["Python", "Kafka", "Spark", "Airflow", "MLflow", "Redis", "PostgreSQL", "Spring Boot", "React", "Docker", "Kubernetes", "Azure AKS", "GitLab CI/CD", "Keycloak", "Red Hat SSO"]
+  },
+  {
     role: "Data Scientist",
     company: "Izemx",
     period: "02/2025 – En cours",
@@ -323,14 +342,14 @@ Technologies et compétences
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">10+</div>
+              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">18+</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d&apos;expérience</div>
             </motion.div>
             <motion.div
               whileHover={{ scale: 1.05, y: -5 }}
               className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
             >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">3</div>
+              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5</div>
               <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projets majeurs</div>
             </motion.div>
             <motion.div

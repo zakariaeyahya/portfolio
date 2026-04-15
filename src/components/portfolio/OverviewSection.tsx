@@ -163,7 +163,7 @@ export default function OverviewSection() {
                     </div>
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Conception et développement des interfaces web et mobile dédiées aux parents (suivi de la progression des enfants) et aux administrateurs (configuration des assistants IA).
+                    Stage orienté IA appliquée, avec participation à plusieurs projets autour des assistants intelligents, du RAG et du traitement de flux en temps réel. Contribution à la conception des solutions, à l&apos;optimisation des performances et au monitoring des systèmes.
                   </p>
                 </motion.div>
                 <motion.div
@@ -183,6 +183,25 @@ export default function OverviewSection() {
                   </div>
                   <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
                     Conception et déploiement d&apos;un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l&apos;interaction client dans un contexte multilingue.
+                  </p>
+                </motion.div>
+                <motion.div
+                  variants={itemVariants}
+                  whileHover={{ scale: 1.02, y: -5 }}
+                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/30 shadow-xl flex flex-col"
+                >
+                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
+                    <div className="p-2 md:p-3 bg-orange-500 rounded-lg md:rounded-xl shadow-lg">
+                      <Icon icon="solar:buildings-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Ingénieur IA</h4>
+                      <p className="text-orange-600 dark:text-orange-400 font-medium text-sm md:text-base">Banque Centrale Populaire</p>
+                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Plateforme de détection de fraude bancaire</p>
+                    </div>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
+                    Contribution à une plateforme de détection de fraude en temps réel pour les virements instantanés, avec conception de la logique de détection, traitement continu des flux transactionnels et suivi opérationnel des alertes.
                   </p>
                 </motion.div>
               </div>
@@ -276,11 +295,11 @@ export default function OverviewSection() {
               </div>
             </div>
 
-            {/* Available for Hire */}
+            {/* Disponible pour l'emploi */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50/90 to-cyan-50/90 dark:from-emerald-950/30 dark:to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:rocket-bold" className="text-emerald-600 w-5 h-5" width={20} height={20} />
-                Disponible pour un stage
+                Ouvert à l&apos;emploi
               </h4>
               <div className="space-y-3.5">
                 <motion.div
@@ -290,7 +309,7 @@ export default function OverviewSection() {
                   className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                 >
                   <Icon icon="solar:check-circle-bold" className="text-green-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Ouvert aux nouvelles opportunités</span>
+                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Ouvert aux opportunités professionnelles</span>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
