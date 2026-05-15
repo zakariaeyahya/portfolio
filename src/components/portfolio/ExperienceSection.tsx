@@ -1,91 +1,13 @@
 "use client";
+
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
-const experience = [
-  {
-    role: "AI Software Engineer / Data Engineer",
-    company: "Banque Centrale Populaire - Architecture et Innovation Groupe",
-    period: "02/2026 – 08/2026",
-    type: "Stage",
-    companyIcon: "mdi:bank",
-    companyColor: "from-orange-500 to-red-600",
-    location: "Casablanca, Maroc",
-    description: "Conception et industrialisation d'une plateforme de détection de fraude en temps réel pour les virements instantanés, de l'ingestion des flux au déploiement sécurisé.",
-    achievements: [
-      "Conception d'une architecture data temps réel pour la collecte, le traitement et l'exploitation des transactions intra-bancaires avec scoring bout-à-bout à très faible latence.",
-      "Développement de pipelines de streaming avec Kafka et Spark pour traiter plus d'un million d'événements par jour et alimenter les composants de scoring et d'analyse.",
-      "Implémentation de modèles de scoring fraude avec réentraînement automatisé, tracking MLflow et amélioration continue de la qualité de détection.",
-      "Industrialisation des workflows de traitement et de mise à jour des artefacts avec Airflow, en garantissant fiabilité, traçabilité et continuité de service.",
-      "Supervision continue de la plateforme et détection de dérive via Prometheus et Grafana, avec réduction des anomalies et amélioration de la stabilité opérationnelle.",
-      "Déploiement et exploitation sur Azure AKS avec Docker et GitLab CI/CD, sécurisation des accès via Keycloak et authentification/autorisation centralisées avec Red Hat SSO."
-    ],
-    technologies: ["Python", "Kafka", "Spark", "Airflow", "MLflow", "Redis", "PostgreSQL", "Spring Boot", "React", "Docker", "Kubernetes", "Azure AKS", "GitLab CI/CD", "Keycloak", "Red Hat SSO"]
-  },
-  {
-    role: "Data Scientist",
-    company: "Izemx",
-    period: "02/2025 – En cours",
-    type: "Stage",
-    companyIcon: "mdi:briefcase",
-    companyColor: "from-blue-500 to-blue-600",
-    location: "Paris, France",
-    description: "Développement de solutions avancées en IA et ingénierie des données pour optimiser les moteurs de recherche documentaire, plateformes d'investissement crypto et éducatives.",
-    projects: [
-      {
-        name: "IAVIA – Optimisation d'un moteur de recherche documentaire",
-        description: "Conception et implémentation d'un moteur de recherche hybride intégré à une plateforme RAG.",
-        achievements: [
-          "Conception et implémentation d'un moteur de recherche hybride (Vector Search Qdrant + BM25) intégré à une plateforme RAG basée sur FastAPI, n8n et Redis, avec embeddings GPU et cache multi-niveaux → –96 % de latence.",
-          "Amélioration de la pertinence des réponses IA via hybridation sémantique/lexicale, reranking des résultats et orchestration RAG (search/mixed, kvec/klex) → +40 % de précision mesurée.",
-          "Optimisation avancée de la base vectorielle Qdrant (schémas de collections, index HNSW, stratégies de chunking et metadata filtering) → indexation ×3,5 et –75 % d'empreinte mémoire.",
-          "Intégration complète dans un pipeline d'indexation automatisé (Google Drive, SharePoint, S3) avec tracking des jobs, statistiques temps réel et monitoring Langfuse."
-        ]
-      },
-      {
-        name: "Zyra – Plateforme d'investissement crypto",
-        description: "Développement d'un pipeline streaming pour ingestion et traitement de données crypto.",
-        achievements: [
-          "Développement d'un pipeline streaming absorbant ~5 000 transactions/min avec garanties de robustesse.",
-          "Mise en place d'une architecture event-driven (Redis Streams) pour ingestion, traitement et distribution des événements.",
-          "Supervision monitoring/alerting temps réel via Grafana (métriques, dashboards, seuils)."
-        ]
-      },
-      {
-        name: "BrainBoost – Plateforme éducative IA",
-        description: "Déploiement d'une architecture RAG optimisée pour l'éducation.",
-        achievements: [
-          "Déploiement d'une architecture RAG optimisée : +45% précision et –60% latence.",
-          "Contribution au développement applicatif et API (backend + intégration) : Django / Spring Boot / React.",
-          "Suivi des expérimentations et performance via MLflow (tracking, comparaison de runs)."
-        ]
-      }
-    ],
-    technologies: ["Python", "Redis", "PostgreSQL", "Docker", "LangChain", "Qdrant", "n8n"]
-  },
-  {
-    role: "Data Scientist",
-    company: "DIGITAL PLACE",
-    period: "06/2024 – 09/2024",
-    type: "Stage",
-    companyIcon: "mdi:briefcase",
-    companyColor: "from-green-500 to-green-600",
-    location: "Tanger, Maroc",
-    description: "Conception et déploiement d'un assistant vocal et textuel multilingue pour améliorer l'interaction client.",
-    achievements: [
-      "Conception d'un assistant vocal et textuel multilingue (FR/Darija) basé sur des modèles LLM et RAG, diminuant le temps de réponse de 40 %.",
-      "Intégration d'une architecture LangChain + FastAPI connectée à Groq API, avec gestion des embeddings via Transformers et SentenceTransformers.",
-      "Participation à la mise en production et au test pilote du système sous méthodologie Agile (Scrum).",
-      "Environnement : Python, FastAPI, LangChain, Groq API, PyTorch, TensorFlow, Slack."
-    ],
-    technologies: ["Python", "FastAPI", "LangChain", "Groq API", "PyTorch", "TensorFlow", "Slack"]
-  }
-];
-
-
-
 export default function ExperienceSection() {
+  const { experience } = portfolioContent;
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -132,7 +54,6 @@ export default function ExperienceSection() {
       viewport={{ once: true }}
       className="mb-16 relative overflow-hidden"
     >
-      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-blue-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl" />
@@ -140,9 +61,9 @@ export default function ExperienceSection() {
       </div>
       <div className="relative z-10">
         <SectionHeader
-          tagText="Parcours professionnel"
-          tagIcon="solar:case-bold"
-          heading="Experience"
+          tagText={experience.sectionHeader.tagText}
+          tagIcon={experience.sectionHeader.tagIcon}
+          heading={experience.sectionHeader.heading}
           showUnderline={false}
           centered={true}
         />
@@ -153,14 +74,9 @@ export default function ExperienceSection() {
           viewport={{ once: true }}
           className="max-w-5xl mx-auto space-y-6 md:space-y-12 px-4 md:px-6"
         >
-          {experience.map((exp, index) => (
-            <motion.div
-              key={index}
-              variants={itemVariants}
-              className="relative group"
-            >
+          {experience.items.map((exp, index) => (
+            <motion.div key={index} variants={itemVariants} className="relative group">
               <div className="flex flex-col sm:flex-row sm:items-start gap-6 md:gap-8 lg:gap-12">
-                {/* Company Icon & Info */}
                 <div className="flex-shrink-0 flex flex-col items-center sm:items-start">
                   <motion.div
                     variants={iconVariants}
@@ -173,13 +89,11 @@ export default function ExperienceSection() {
                       width={40}
                       height={40}
                     />
-                    {/* Animated background gradient */}
                     <div className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
                   </motion.div>
                 </div>
-                {/* Content */}
+
                 <div className="flex-1 space-y-4 md:space-y-6 min-w-0">
-                  {/* Header */}
                   <div className="space-y-1 md:space-y-2">
                     <motion.div
                       initial={{ opacity: 0, x: -30 }}
@@ -213,7 +127,7 @@ export default function ExperienceSection() {
                       {exp.company}
                     </motion.p>
                   </div>
-                  {/* Description */}
+
                   <motion.p
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -222,7 +136,7 @@ export default function ExperienceSection() {
                   >
                     {exp.description}
                   </motion.p>
-                  {/* Projects or Achievements */}
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -231,7 +145,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:cup-star-bold" className="text-amber-500" width={22} height={22} />
-                      {exp.projects ? "Projets réalisés" : "Principales réalisations"}
+                      {exp.projects ? experience.projectsLabel : experience.achievementsLabel}
                     </h4>
                     <div className="space-y-4 md:space-y-6">
                       {exp.projects ? (
@@ -270,7 +184,7 @@ export default function ExperienceSection() {
                           </motion.div>
                         ))
                       ) : (
-                        exp.achievements.map((achievement, achIndex) => (
+                        exp.achievements?.map((achievement, achIndex) => (
                           <motion.div
                             key={achIndex}
                             initial={{ opacity: 0, x: -20 }}
@@ -289,7 +203,7 @@ export default function ExperienceSection() {
                       )}
                     </div>
                   </motion.div>
-                  {/* Technologies */}
+
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
@@ -298,7 +212,7 @@ export default function ExperienceSection() {
                   >
                     <h4 className="text-base md:text-lg font-bold text-gray-800 dark:text-gray-200 flex items-center gap-2">
                       <Icon icon="solar:programming-bold" className="text-purple-500" width={18} height={18} />
-Technologies et compétences
+                      {experience.technologiesLabel}
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
                       {exp.technologies.map((tech, techIndex) => (
@@ -317,8 +231,8 @@ Technologies et compétences
                   </motion.div>
                 </div>
               </div>
-              {/* Divider */}
-              {index < experience.length - 1 && (
+
+              {index < experience.items.length - 1 && (
                 <motion.div
                   initial={{ opacity: 0, scaleX: 0 }}
                   whileInView={{ opacity: 1, scaleX: 1 }}
@@ -329,7 +243,7 @@ Technologies et compétences
             </motion.div>
           ))}
         </motion.div>
-        {/* Experience Summary Stats */}
+
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -338,27 +252,20 @@ Technologies et compétences
           className="mt-16 md:mt-24 text-center px-4 md:px-6"
         >
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 lg:gap-8 max-w-4xl mx-auto">
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-blue-600 dark:text-blue-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">18+</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Mois d&apos;expérience</div>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30 transition-all duration-500"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-green-600 dark:text-green-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">5</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Projets majeurs</div>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -5 }}
-              className="group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30 transition-all duration-500 sm:col-span-2 lg:col-span-1"
-            >
-              <div className="text-4xl md:text-5xl font-bold text-purple-600 dark:text-purple-400 mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300">98%</div>
-              <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">Satisfaction client</div>
-            </motion.div>
+            {experience.stats.map((stat, index) => (
+              <motion.div
+                key={`${index}-${stat.label}`}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className={`group p-6 md:p-8 rounded-xl md:rounded-2xl bg-gradient-to-br ${stat.cardClass} border transition-all duration-500 ${index === 2 ? "sm:col-span-2 lg:col-span-1" : ""}`}
+              >
+                <div className={`text-4xl md:text-5xl font-bold ${stat.valueClass} mb-2 md:mb-3 group-hover:scale-110 transition-transform duration-300`}>
+                  {stat.value}
+                </div>
+                <div className="text-gray-600 dark:text-gray-400 font-medium text-base md:text-lg">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
           </div>
         </motion.div>
       </div>

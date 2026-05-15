@@ -1,19 +1,21 @@
 "use client";
+
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import TypewriterRole from "./TypewriterRole";
 import Image from "next/image";
-import twooImage from "./twoo_.png"; // chemin relatif correct
+import Link from "next/link";
+import twooImage from "./twoo_.png";
+import TypewriterRole from "./TypewriterRole";
 
 export default function HeroSection() {
+  const { hero, profile } = portfolioContent;
+
   return (
     <div className="relative min-h-[100dvh] flex items-center justify-center">
-      {/* Subtle Background Pattern */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-blue-500/5 dark:bg-blue-400/10 rounded-full blur-3xl" />
         <div className="absolute bottom-1/3 right-1/4 w-80 h-80 bg-purple-500/5 dark:bg-purple-400/10 rounded-full blur-3xl" />
-        {/* Geometric Accents */}
         <motion.div
           className="absolute top-20 right-20 w-2 h-2 bg-blue-500/30 rounded-full"
           animate={{ scale: [1, 1.5, 1], opacity: [0.3, 0.7, 0.3] }}
@@ -37,25 +39,16 @@ export default function HeroSection() {
         transition={{ duration: 0.8 }}
         className="relative z-10 max-w-4xl mx-auto px-6 text-center -mb-8"
       >
-      {/* Image ajoutée ici */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        className="mb-6 flex justify-center"
-      >
-<div className="relative w-[300px] h-[300px] rounded-full border-4 border-blue-500 shadow-xl overflow-hidden">
-  <Image
-    src={twooImage}
-    alt="Zakariae YAHYA"
-    fill
-    className="object-cover"
-  />
-</div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          className="mb-6 flex justify-center"
+        >
+          <div className="relative w-[300px] h-[300px] rounded-full border-4 border-blue-500 shadow-xl overflow-hidden">
+            <Image src={twooImage} alt={profile.imageAlt} fill className="object-cover" />
+          </div>
+        </motion.div>
 
-      </motion.div>
-
-
-        {/* Name */}
         <motion.h1
           className="text-5xl md:text-6xl font-bold mb-4"
           initial={{ opacity: 0, y: 20 }}
@@ -63,29 +56,23 @@ export default function HeroSection() {
           transition={{ delay: 0.2, duration: 0.6 }}
         >
           <span className="bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 dark:from-white dark:via-gray-100 dark:to-white bg-clip-text text-transparent z-10">
-            Zakariae YAHYA
+            {profile.fullName}
           </span>
         </motion.h1>
 
-        {/* Typewriter Role Component */}
-        <TypewriterRole />
+        <TypewriterRole roles={hero.roles} />
 
-        {/* Social Links */}
         <motion.div
           className="flex flex-wrap gap-3 justify-center mb-12"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.0 }}
         >
-          {[
-            { href: "https://github.com/zakariaeyahya", icon: "simple-icons:github", label: "GitHub", color: "hover:text-gray-900 dark:hover:text-white" },
-            { href: "https://www.linkedin.com/in/zakariae-yahya/", icon: "skill-icons:linkedin", label: "LinkedIn", color: "hover:text-blue-600" },
-            { href: "mailto:zakariae.yh@gmail.com", icon: "material-icon-theme:email", label: "Email", color: "hover:text-green-600" },
-          ].map((link) => (
+          {profile.socialLinks.map((link) => (
             <motion.div key={link.label} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Link
                 href={link.href}
-                className={`inline-flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 backdrop-blur-sm rounded-full text-sm transition-all duration-300 border border-gray-300/50 dark:border-gray-600/50 shadow-lg hover:shadow-xl ${link.color}`}
+                className={`inline-flex items-center gap-2 px-4 py-2 bg-white/80 hover:bg-white dark:bg-gray-800/80 dark:hover:bg-gray-800 backdrop-blur-sm rounded-full text-sm transition-all duration-300 border border-gray-300/50 dark:border-gray-600/50 shadow-lg hover:shadow-xl ${link.colorClass}`}
               >
                 <Icon icon={link.icon} width={18} height={18} />
                 {link.label}
@@ -95,7 +82,6 @@ export default function HeroSection() {
         </motion.div>
       </motion.section>
 
-      {/* Scroll for more indicator */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -104,11 +90,11 @@ export default function HeroSection() {
       >
         <motion.button
           onClick={() => {
-            const overviewSection = document.getElementById('overview');
+            const overviewSection = document.getElementById("overview");
             if (overviewSection) {
               overviewSection.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start",
               });
             }
           }}
@@ -118,7 +104,7 @@ export default function HeroSection() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <span className="text-sm font-medium tracking-wide">Faites défiler pour plus</span>
+          <span className="text-sm font-medium tracking-wide">{hero.scrollText}</span>
           <motion.div
             animate={{ y: [0, 4, 0] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}

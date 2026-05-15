@@ -1,19 +1,11 @@
 "use client";
 
+import type { PortfolioContent } from "@/data/portfolio-content";
 import { motion } from "framer-motion";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
 
-type Project = {
-  title: string;
-  subtitle: string;
-  description: string;
-  tech: string[];
-  features: string[];
-  github: string;
-  live: string;
-  gradient: string;
-};
+type Project = PortfolioContent["projects"]["items"][number];
 
 export default function ProjectCard({ project }: { project: Project }) {
   return (
@@ -23,63 +15,61 @@ export default function ProjectCard({ project }: { project: Project }) {
       viewport={{ once: true }}
       transition={{ duration: 0.6, ease: "easeOut" }}
       whileHover={{ y: -4 }}
-      className="relative group rounded-3xl overflow-hidden border border-gray-200/40 dark:border-gray-700/40 bg-white/70 dark:bg-gray-900/60 backdrop-blur-xl shadow-md hover:shadow-xl transition"
+      className="relative group flex h-full flex-col overflow-hidden rounded-3xl border border-gray-200/40 bg-white/70 shadow-md backdrop-blur-xl transition hover:shadow-xl dark:border-gray-700/40 dark:bg-gray-900/60"
     >
-      {/* Glow */}
       <div
-        className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-700 bg-gradient-to-br ${project.gradient} blur-3xl`}
+        className={`absolute inset-0 opacity-0 blur-3xl transition duration-700 group-hover:opacity-100 bg-gradient-to-br ${project.gradient}`}
       />
 
-      {/* Header */}
       <div className="relative p-8">
+        <span className="mb-4 inline-flex items-center rounded-full border border-blue-200/70 bg-blue-50/80 px-3 py-1 text-xs font-semibold uppercase tracking-[0.18em] text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/40 dark:text-blue-300">
+          {project.domain}
+        </span>
+
         <h3 className="text-3xl font-bold tracking-tight">
           {project.title}
         </h3>
 
-        <p className="mt-2 text-gray-600 dark:text-gray-400">
+        <p className="mt-3 text-gray-600 dark:text-gray-400">
           {project.subtitle}
         </p>
       </div>
 
-      {/* Content */}
-      <div className="relative px-8 pb-8 space-y-6">
-        <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+      <div className="relative flex flex-1 flex-col px-8 pb-8">
+        <p className="leading-relaxed text-gray-700 dark:text-gray-300">
           {project.description}
         </p>
 
-        {/* Features */}
-        <ul className="space-y-2">
-          {project.features.slice(0, 3).map((f, i) => (
+        <ul className="mt-6 space-y-2">
+          {project.features.slice(0, 3).map((feature, index) => (
             <li
-              key={i}
+              key={index}
               className="flex gap-2 text-sm text-gray-600 dark:text-gray-400"
             >
               <Icon
                 icon="solar:check-circle-bold"
-                className="text-green-500 mt-0.5"
+                className="mt-0.5 text-green-500"
               />
-              {f}
+              {feature}
             </li>
           ))}
         </ul>
 
-        {/* Tech */}
-        <div className="flex flex-wrap gap-2">
-          {project.tech.map((tech, i) => (
+        <div className="mt-6 flex flex-wrap gap-2">
+          {project.tech.map((tech, index) => (
             <span
-              key={i}
-              className="px-3 py-1 text-xs rounded-full bg-gray-100/70 dark:bg-gray-800/70 backdrop-blur"
+              key={index}
+              className="rounded-full bg-gray-100/70 px-3 py-1 text-xs backdrop-blur dark:bg-gray-800/70"
             >
               {tech}
             </span>
           ))}
         </div>
 
-        {/* Actions */}
-        <div className="flex gap-6 pt-4">
+        <div className="mt-auto flex gap-6 pt-6">
           <Link
             href={project.github}
-            className="flex items-center gap-2 text-sm font-medium text-blue-600 dark:text-blue-400 hover:underline"
+            className="flex items-center gap-2 text-sm font-medium text-blue-600 hover:underline dark:text-blue-400"
           >
             <Icon icon="solar:code-bold" />
             Code
@@ -88,7 +78,7 @@ export default function ProjectCard({ project }: { project: Project }) {
           {project.live !== "#" && (
             <Link
               href={project.live}
-              className="flex items-center gap-2 text-sm font-medium text-purple-600 dark:text-purple-400 hover:underline"
+              className="flex items-center gap-2 text-sm font-medium text-purple-600 hover:underline dark:text-purple-400"
             >
               <Icon icon="solar:arrow-up-outline" />
               Live

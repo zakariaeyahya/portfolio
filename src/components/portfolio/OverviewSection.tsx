@@ -1,9 +1,13 @@
 "use client";
+
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import SectionHeader from "./SectionHeader";
 
 export default function OverviewSection() {
+  const { overview, profile } = portfolioContent;
+
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -49,7 +53,6 @@ export default function OverviewSection() {
       transition={{ duration: 1.2 }}
       viewport={{ once: true }}
     >
-      {/* Enhanced Background Elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
           variants={floatVariants}
@@ -77,57 +80,58 @@ export default function OverviewSection() {
         viewport={{ once: true }}
         className="relative z-10"
       >
-        {/* Section Header */}
         <SectionHeader
-          tagText="Faites ma connaissance"
-          tagIcon="solar:user-heart-bold"
-          heading="À propos de moi"
-          description="Création d'expériences numériques avec passion, précision et but"
+          tagText={overview.sectionHeader.tagText}
+          tagIcon={overview.sectionHeader.tagIcon}
+          heading={overview.sectionHeader.heading}
+          description={overview.sectionHeader.description}
           showUnderline={true}
           centered={true}
         />
 
-        {/* Main Content Grid */}
         <div className="grid lg:grid-cols-12 gap-6 md:gap-8 items-start px-4">
-          {/* Main Profile Section */}
           <motion.div variants={itemVariants} className="lg:col-span-8">
             <div className="space-y-6 md:space-y-8">
-              {/* Introduction Card */}
               <div className="relative p-4 md:p-6 lg:p-8 rounded-2xl md:rounded-3xl bg-gradient-to-br from-white/90 to-white/50 dark:from-gray-800/90 dark:to-gray-900/50 backdrop-blur-xl border border-white/30 dark:border-gray-700/40 shadow-2xl">
-                {/* Decorative Elements */}
-                <div className="absolute top-4 md:top-6 right-4 md:right-6 w-3 md:w-4 h-3 md:h-4 bg-green-400 rounded-full animate-pulse"></div>
-                <div className="absolute top-4 md:top-6 right-10 md:right-14 w-2 md:w-3 h-2 md:h-3 bg-blue-400 rounded-full animate-pulse delay-300"></div>
-                <div className="hidden md:block absolute top-6 right-20 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-500"></div>
+                <div className="absolute top-4 md:top-6 right-4 md:right-6 w-3 md:w-4 h-3 md:h-4 bg-green-400 rounded-full animate-pulse" />
+                <div className="absolute top-4 md:top-6 right-10 md:right-14 w-2 md:w-3 h-2 md:h-3 bg-blue-400 rounded-full animate-pulse delay-300" />
+                <div className="hidden md:block absolute top-6 right-20 w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-500" />
 
                 <div className="space-y-4 md:space-y-6">
                   <div>
                     <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900 dark:text-white flex items-center gap-2 md:gap-3">
-                      <span className="text-2xl sm:text-3xl md:text-4xl">👋</span>
-                      Bonjour, je suis Zakariae Yahya
+                      <span className="text-2xl sm:text-3xl md:text-4xl">{overview.greetingEmoji}</span>
+                      {overview.title} {profile.displayName}
                     </h3>
                     <p className="text-base md:text-lg lg:text-xl text-gray-600 dark:text-gray-300 leading-relaxed mb-4 md:mb-6">
-                      Étudiant en <span className="font-bold text-blue-600 dark:text-blue-400">5ème année spécialisé en Big Data et Intelligence Artificielle</span>, passionné par le <span className="font-bold text-purple-600 dark:text-purple-400">sport</span>, les <span className="font-bold text-green-600 dark:text-green-400">échecs</span> et les <span className="font-bold text-green-600 dark:text-green-400">nouvelles technologies en IA</span>.
+                      {overview.introParts.map((part, index) => (
+                        <span key={`${index}-${part.text}`} className={part.className}>
+                          {part.text}
+                        </span>
+                      ))}
                     </p>
                   </div>
 
-                  {/* Expanded About Content */}
                   <div className="space-y-3 md:space-y-4 border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
-                    <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      Je me spécialise dans le domaine du Big Data et de l&apos;Intelligence Artificielle, en utilisant des technologies modernes pour développer des solutions innovantes. J&apos;aime transformer des problèmes complexes en solutions élégantes et efficaces qui apportent une réelle valeur ajoutée.
-                    </p>
-                    <p className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
-                      En dehors du travail, j&apos;aime explorer les technologies émergentes, contribuer à des projets open-source, et partager mes connaissances avec des développeurs en herbe. Je crois en l&apos;apprentissage continu et en restant à la pointe de l&apos;innovation technologique.
-                    </p>
+                    {overview.paragraphs.map((paragraph, index) => (
+                      <p key={`${index}-${paragraph.slice(0, 20)}`} className="text-sm md:text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                        {paragraph}
+                      </p>
+                    ))}
                   </div>
 
-                  {/* Skills Highlight */}
                   <div className="border-t border-gray-200/50 dark:border-gray-700/50 pt-4 md:pt-6">
                     <h4 className="font-bold text-gray-900 dark:text-white mb-3 md:mb-4 flex items-center gap-2">
-                      <Icon icon="solar:lightning-bold" className="text-yellow-500 w-4 md:w-5 h-4 md:h-5" width={20} height={20} />
-                      Technologies Clés
+                      <Icon
+                        icon="solar:lightning-bold"
+                        className="text-yellow-500 w-4 md:w-5 h-4 md:h-5"
+                        width={20}
+                        height={20}
+                      />
+                      {overview.skillsHeading}
                     </h4>
                     <div className="flex flex-wrap gap-2 md:gap-3">
-                      {["Intégration IA","Python","LangChain","SQL", "Spark","AWS"].map((skill, index) => (
+                      {overview.skills.map((skill, index) => (
                         <motion.span
                           key={skill}
                           initial={{ opacity: 0, scale: 0 }}
@@ -145,80 +149,42 @@ export default function OverviewSection() {
                 </div>
               </div>
 
-              {/* Professional Roles Grid */}
               <div className="grid md:grid-cols-2 gap-4 md:gap-6">
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 backdrop-blur-sm border border-blue-200/50 dark:border-blue-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-blue-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:code-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                {overview.roles.map((role) => (
+                  <motion.div
+                    key={`${role.title}-${role.company}`}
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.02, y: -5 }}
+                    className={`p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br ${role.cardClass} backdrop-blur-sm border shadow-xl flex flex-col`}
+                  >
+                    <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
+                      <div className={`p-2 md:p-3 ${role.iconBgClass} rounded-lg md:rounded-xl shadow-lg`}>
+                        <Icon icon={role.icon} className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
+                      </div>
+                      <div>
+                        <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">{role.title}</h4>
+                        <p className={`${role.companyTextClass} font-medium text-sm md:text-base`}>{role.company}</p>
+                        <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">{role.period}</p>
+                      </div>
                     </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Développeur Fullstack IA</h4>
-                      <p className="text-blue-600 dark:text-blue-400 font-medium text-sm md:text-base">Marketing Confort</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Février 2025 — Juillet 2025</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Stage orienté IA appliquée, avec participation à plusieurs projets autour des assistants intelligents, du RAG et du traitement de flux en temps réel. Contribution à la conception des solutions, à l&apos;optimisation des performances et au monitoring des systèmes.
-                  </p>
-                </motion.div>
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 backdrop-blur-sm border border-green-200/50 dark:border-green-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-green-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:hospital-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Data Scientist</h4>
-                      <p className="text-green-600 dark:text-green-400 font-medium text-sm md:text-base">DIGITAL PLACE</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Juin 2024 — Septembre 2024</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Conception et déploiement d&apos;un prototype mobile avec une interface vocale et textuelle en français et en dialecte marocain (darija), pour faciliter l&apos;interaction client dans un contexte multilingue.
-                  </p>
-                </motion.div>
-                <motion.div
-                  variants={itemVariants}
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="p-4 md:p-6 rounded-xl md:rounded-2xl bg-gradient-to-br from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 backdrop-blur-sm border border-orange-200/50 dark:border-orange-800/30 shadow-xl flex flex-col"
-                >
-                  <div className="flex items-start gap-3 md:gap-4 mb-3 md:mb-4">
-                    <div className="p-2 md:p-3 bg-orange-500 rounded-lg md:rounded-xl shadow-lg">
-                      <Icon icon="solar:buildings-bold" className="text-white w-5 md:w-6 h-5 md:h-6" width={24} height={24} />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-gray-900 dark:text-white text-base md:text-lg">Ingénieur IA</h4>
-                      <p className="text-orange-600 dark:text-orange-400 font-medium text-sm md:text-base">Banque Centrale Populaire</p>
-                      <p className="text-xs md:text-sm text-gray-600 dark:text-gray-400 mt-1">Plateforme de détection de fraude bancaire</p>
-                    </div>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
-                    Contribution à une plateforme de détection de fraude en temps réel pour les virements instantanés, avec conception de la logique de détection, traitement continu des flux transactionnels et suivi opérationnel des alertes.
-                  </p>
-                </motion.div>
+                    <p className="text-gray-700 dark:text-gray-300 text-xs md:text-sm leading-relaxed mb-2 md:mb-3 flex-1">
+                      {role.description}
+                    </p>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </motion.div>
 
-          {/* Enhanced Sidebar */}
           <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6 mt-6 lg:mt-0">
-            {/* Contact Card */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-purple-50/90 to-pink-50/90 dark:from-purple-950/30 dark:to-pink-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:chat-round-dots-bold" className="text-purple-500 w-5 h-5" width={20} height={20} />
-                Restons en contact
+                {overview.contactHeading}
               </h4>
               <div className="space-y-3">
                 <motion.a
-                  href="mailto:zakariae.yh@gmail.com"
+                  href={`mailto:${profile.email}`}
                   whileHover={{ scale: 1.02, x: 4 }}
                   whileTap={{ scale: 0.98 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
@@ -227,10 +193,11 @@ export default function OverviewSection() {
                     <Icon icon="solar:letter-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">zakariae.yh@gmail.com</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white break-all">{profile.email}</div>
                   </div>
                 </motion.a>
-                <motion.div
+                <motion.a
+                  href={profile.websiteUrl}
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 border border-white/20 dark:border-gray-700/30"
                 >
@@ -238,9 +205,9 @@ export default function OverviewSection() {
                     <Icon icon="solar:global-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">zakariaeyahya.ma</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">{profile.websiteLabel}</div>
                   </div>
-                </motion.div>
+                </motion.a>
                 <motion.div
                   whileHover={{ scale: 1.02, x: 4 }}
                   className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30"
@@ -249,86 +216,64 @@ export default function OverviewSection() {
                     <Icon icon="solar:map-point-bold" className="text-white w-4 h-4" width={16} height={16} />
                   </div>
                   <div>
-                    <div className="text-sm font-bold text-gray-900 dark:text-white">Mobilité nationale, Maroc</div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">{profile.location}</div>
                   </div>
                 </motion.div>
-                      {/* ✅ Numéro de téléphone */}
-                  <motion.a
-                    href="tel:+212648151446"
-                    whileHover={{ scale: 1.02, x: 4 }}
-                    whileTap={{ scale: 0.98 }}
-                    className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                  >
-                    <div className="p-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-md group-hover:from-green-600 group-hover:to-emerald-600 transition-all shadow-md">
-                      <Icon icon="solar:phone-bold" className="text-white w-4 h-4" width={16} height={16} />
-                    </div>
-                    <div>
-                      <div className="text-sm font-bold text-gray-900 dark:text-white">+212 648 151 446</div>
-                    </div>
-                  </motion.a>
+                <motion.a
+                  href={profile.phoneHref}
+                  whileHover={{ scale: 1.02, x: 4 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="flex items-center gap-3 p-3 rounded-lg bg-white/70 dark:bg-gray-800/30 hover:bg-white/90 dark:hover:bg-gray-800/50 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                >
+                  <div className="p-1 bg-gradient-to-r from-green-500 to-emerald-500 rounded-md group-hover:from-green-600 group-hover:to-emerald-600 transition-all shadow-md">
+                    <Icon icon="solar:phone-bold" className="text-white w-4 h-4" width={16} height={16} />
+                  </div>
+                  <div>
+                    <div className="text-sm font-bold text-gray-900 dark:text-white">{profile.phone}</div>
+                  </div>
+                </motion.a>
               </div>
             </div>
 
-            {/* Achievement Highlights */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-amber-50/90 to-yellow-50/90 dark:from-amber-950/30 dark:to-yellow-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:cup-star-bold" className="text-amber-600 w-5 h-5" width={20} height={20} />
-                Réalisations
+                {overview.achievementsHeading}
               </h4>
               <div className="space-y-4">
-                {[
-                  { icon: "solar:star-bold", text: "Stage en Développement Fullstack IA", color: "text-yellow-600" },
-                  { icon: "solar:cpu-bolt-bold-duotone", text: "Expert en Intégration IA", color: "text-blue-600" },
-                  { icon: "solar:code-square-bold", text: "Projets en Data Science", color: "text-green-600" },
-                ].map((achievement, index) => (
+                {overview.achievements.map((achievement, index) => (
                   <motion.div
-                    key={index}
+                    key={`${index}-${achievement.text}`}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: 1.5 + index * 0.2 }}
                     className="flex items-center gap-3 p-3 rounded-lg bg-amber-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
                   >
-                    <Icon icon={achievement.icon} className={`${achievement.color} w-5 h-5`} width={20} height={20} />
+                    <Icon icon={achievement.icon} className={`${achievement.colorClass} w-5 h-5`} width={20} height={20} />
                     <span className="text-sm font-medium text-gray-800 dark:text-gray-300">{achievement.text}</span>
                   </motion.div>
                 ))}
               </div>
             </div>
 
-            {/* Disponible pour l'emploi */}
             <div className="p-6 rounded-2xl bg-gradient-to-br from-emerald-50/90 to-cyan-50/90 dark:from-emerald-950/30 dark:to-cyan-950/30 backdrop-blur-sm border border-white/30 dark:border-gray-700/40 shadow-xl">
               <h4 className="font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                 <Icon icon="solar:rocket-bold" className="text-emerald-600 w-5 h-5" width={20} height={20} />
-                Ouvert à l&apos;emploi
+                {overview.availabilityHeading}
               </h4>
               <div className="space-y-3.5">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.0 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:check-circle-bold" className="text-green-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Ouvert aux opportunités professionnelles</span>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.2 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:planet-2-bold" className="text-cyan-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Disponible pour un déplacement</span>
-                </motion.div>
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 2.4 }}
-                  className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
-                >
-                  <Icon icon="solar:clock-circle-bold" className="text-blue-600 w-5 h-5" width={20} height={20} />
-                  <span className="text-sm font-medium text-gray-800 dark:text-gray-300">Disponible à distance et sur site</span>
-                </motion.div>
+                {overview.availability.map((item, index) => (
+                  <motion.div
+                    key={`${index}-${item.text}`}
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 2 + index * 0.2 }}
+                    className="flex items-center gap-3 p-3 rounded-lg bg-green-100/70 dark:bg-gray-800/30 transition-all duration-300 group border border-white/20 dark:border-gray-700/30"
+                  >
+                    <Icon icon={item.icon} className={`${item.colorClass} w-5 h-5`} width={20} height={20} />
+                    <span className="text-sm font-medium text-gray-800 dark:text-gray-300">{item.text}</span>
+                  </motion.div>
+                ))}
               </div>
             </div>
           </motion.div>

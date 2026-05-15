@@ -1,59 +1,58 @@
 "use client";
-import emailjs from '@emailjs/browser';
+
+import portfolioContent from "@/data/portfolio-content";
+import emailjs from "@emailjs/browser";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useState } from "react";
-import SectionHeader from './SectionHeader';
+import SectionHeader from "./SectionHeader";
 
 export default function ContactSection() {
+  const { contact, profile } = portfolioContent;
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
+    message: "",
   });
-
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({
+    setFormData((prev) => ({
       ...prev,
-      [name]: value
+      [name]: value,
     }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('idle');
+    setSubmitStatus("idle");
 
     try {
-      // Configuration EmailJS
-      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || 'VOTRE_SERVICE_ID';
-      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || 'VOTRE_TEMPLATE_ID';
-      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || 'VOTRE_PUBLIC_KEY';
+      const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || "VOTRE_SERVICE_ID";
+      const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || "VOTRE_TEMPLATE_ID";
+      const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || "VOTRE_PUBLIC_KEY";
 
-      // Envoyer l'email en utilisant EmailJS
-      const result = await emailjs.send(
+      await emailjs.send(
         serviceId,
         templateId,
         {
           from_name: formData.name,
           from_email: formData.email,
           message: formData.message,
-          to_email: 'zakariae.yh@gmail.com', // Votre email
+          to_email: profile.email,
         },
-        publicKey
+        publicKey,
       );
 
-      console.log('Email envoyé avec succès :', result);
-      setSubmitStatus('success');
+      setSubmitStatus("success");
       setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      console.error('Échec de l\'envoi de l\'email :', error);
-      setSubmitStatus('error');
+      console.error("Échec de l'envoi de l'email :", error);
+      setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
     }
@@ -70,14 +69,12 @@ export default function ContactSection() {
     >
       <div className="max-w-4xl mx-auto">
         <SectionHeader
-          tagIcon="solar:chat-line-bold"
-          tagText="Contact"
-          heading="Envoyez-moi un message"
+          tagIcon={contact.sectionHeader.tagIcon}
+          tagText={contact.sectionHeader.tagText}
+          heading={contact.sectionHeader.heading}
           centered={true}
         />
 
-
-        {/* Formulaire de Contact */}
         <motion.div
           className="mb-12"
           initial={{ opacity: 0, y: 30 }}
@@ -94,7 +91,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
               >
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Nom *
+                  {contact.form.nameLabel}
                 </label>
                 <input
                   type="text"
@@ -104,7 +101,7 @@ export default function ContactSection() {
                   value={formData.name}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
-                  placeholder="Votre nom complet"
+                  placeholder={contact.form.namePlaceholder}
                 />
               </motion.div>
               <motion.div
@@ -114,7 +111,7 @@ export default function ContactSection() {
                 viewport={{ once: true }}
               >
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                  Email *
+                  {contact.form.emailLabel}
                 </label>
                 <input
                   type="email"
@@ -124,7 +121,7 @@ export default function ContactSection() {
                   value={formData.email}
                   onChange={handleInputChange}
                   className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300"
-                  placeholder="votre.email@example.com"
+                  placeholder={contact.form.emailPlaceholder}
                 />
               </motion.div>
             </div>
@@ -135,7 +132,7 @@ export default function ContactSection() {
               viewport={{ once: true }}
             >
               <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
-                Message *
+                {contact.form.messageLabel}
               </label>
               <textarea
                 id="message"
@@ -145,7 +142,7 @@ export default function ContactSection() {
                 value={formData.message}
                 onChange={handleInputChange}
                 className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 transition-all duration-300 resize-none"
-                placeholder="Parlez-moi de votre projet ou idée..."
+                placeholder={contact.form.messagePlaceholder}
               />
             </motion.div>
             <motion.div
@@ -165,12 +162,12 @@ export default function ContactSection() {
                 {isSubmitting ? (
                   <>
                     <Icon icon="solar:loading-outline" width={20} height={20} className="animate-spin" />
-                    Envoi en cours...
+                    {contact.form.sendingText}
                   </>
                 ) : (
                   <>
                     <Icon icon="solar:letter-outline" width={20} height={20} />
-                    Envoyer le Message
+                    {contact.form.submitText}
                     <motion.div
                       className="ml-2"
                       animate={{ x: [0, 4, 0] }}
@@ -182,8 +179,7 @@ export default function ContactSection() {
                 )}
               </motion.button>
 
-              {/* Messages de Statut */}
-              {submitStatus === 'success' && (
+              {submitStatus === "success" && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -191,20 +187,20 @@ export default function ContactSection() {
                 >
                   <div className="flex items-center gap-2 text-green-700 dark:text-green-400">
                     <Icon icon="solar:check-circle-bold" width={20} height={20} />
-                    <span className="font-medium">Message envoyé avec succès !</span>
+                    <span className="font-medium">{contact.success.title}</span>
                   </div>
                   <p className="text-green-600 text-left dark:text-green-500 text-sm mt-1">
-                    Merci de m&apos;avoir contacté. Je vous répondrai bientôt !
+                    {contact.success.description}
                   </p>
                   <button
-                    onClick={() => setSubmitStatus('idle')}
+                    onClick={() => setSubmitStatus("idle")}
                     className="absolute top-1 right-1 text-red-500 rounded-md"
                   >
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
                   </button>
                 </motion.div>
               )}
-              {submitStatus === 'error' && (
+              {submitStatus === "error" && (
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -212,13 +208,13 @@ export default function ContactSection() {
                 >
                   <div className="flex items-center gap-2 text-red-700 dark:text-red-400">
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
-                    <span className="font-medium">Échec de l&apos;envoi du message</span>
+                    <span className="font-medium">{contact.error.title}</span>
                   </div>
                   <p className="text-red-600 text-left dark:text-red-500 text-sm mt-1">
-                    Veuillez réessayer ou me contacter directement à l&apos;adresse zakariae.yh@gmail.com
+                    {contact.error.description} {profile.email}
                   </p>
                   <button
-                    onClick={() => setSubmitStatus('idle')}
+                    onClick={() => setSubmitStatus("idle")}
                     className="absolute top-1 right-1 text-red-500 rounded-md"
                   >
                     <Icon icon="solar:close-circle-bold" width={20} height={20} />
@@ -229,7 +225,6 @@ export default function ContactSection() {
           </form>
         </motion.div>
 
-        {/* Méthodes de Contact Alternatives */}
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -237,26 +232,23 @@ export default function ContactSection() {
           transition={{ duration: 0.8, delay: 1.1 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600 dark:text-gray-400 mb-6">Ou contactez-moi directement :</p>
+          <p className="text-gray-600 dark:text-gray-400 mb-6">{contact.alternateLabel}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="mailto:zakariae.yh@gmail.com"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
-              >
-                <Icon icon="solar:mailbox-bold-duotone" width={18} height={18} />
-                Envoyer un Email
-              </Link>
-            </motion.div>
-            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-              <Link
-                href="/chatbot/ZakariaeYahya_CV_DataScientist.pdf"
-                className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
-              >
-                <Icon icon="solar:download-outline" width={18} height={18} />
-                Télécharger CV
-              </Link>
-            </motion.div>
+            {contact.alternateActions.map((action) => {
+              const href = action.type === "email" ? `mailto:${profile.email}` : profile.resumeUrl;
+
+              return (
+                <motion.div key={action.type} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    href={href}
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white hover:bg-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 border-2 border-gray-300 hover:border-gray-400 dark:border-gray-600 dark:hover:border-gray-500 rounded-xl font-medium transition-all duration-300 shadow-md hover:shadow-lg"
+                  >
+                    <Icon icon={action.icon} width={18} height={18} />
+                    {action.label}
+                  </Link>
+                </motion.div>
+              );
+            })}
           </div>
         </motion.div>
       </div>

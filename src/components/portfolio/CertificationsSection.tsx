@@ -1,4 +1,6 @@
 "use client";
+
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { AnimatePresence, motion } from "framer-motion";
 import Link from "next/link";
@@ -18,180 +20,12 @@ type Certificate = {
   certificatePreview: string;
   providerIconSize: number;
   platformIconSize: number;
+  verifyUrl?: string;
 };
 
-const certifications: Certificate[] = [
-  {
-    title: "Python Project for Data Science",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "6SSNJSNWVTM3",
-    skills: ["Python", "Data Science", "Data Analysis"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Python Project for Data Science.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Data Analysis with Python",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "ECTUSQ4WQUMB",
-    skills: ["Data Analysis", "Python", "Data Visualization"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Data Analysis with Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Machine Learning with Python",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "EP43GH74SZ4D",
-    skills: ["Machine Learning", "Python", "Data Science"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Machine Learning with Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Python for Data Science, AI & Development",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "L6C4P39PTHJG",
-    skills: ["Python", "Data Science", "AI", "Development"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Python for Data Science, AI & Development.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Data Analysis and Visualization with Power BI",
-    provider: "Microsoft",
-    platform: "Coursera",
-    issued: "April 2024",
-    credentialId: "RXMBKJENLHNR",
-    skills: ["Data Analysis", "Power BI", "Data Visualization"],
-    providerIcon: "logos:microsoft-icon",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/Data Analysis and Visualization with Power BI.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Data Visualization with Python",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "April 2024",
-    credentialId: "VTYL5J2K7KV2",
-    skills: ["Data Visualization", "Python", "Data Analysis"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Data Visualization with Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Data Visualization with R",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "April 2024",
-    credentialId: "SA839VQJT79C",
-    skills: ["Data Visualization", "R", "Data Analysis"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Data Visualization with R.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Introduction to Machine Learning with Python",
-    provider: "Arizona State University",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "UAUAQBW42XTC",
-    skills: ["Machine Learning", "Python", "Data Science"],
-    providerIcon: "logos:asu",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/Introduction to Machine Learning with Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Databases and SQL for Data Science with Python",
-    provider: "IBM",
-    platform: "Coursera",
-    issued: "January 2024",
-    credentialId: "XXLM6THB9GWN",
-    skills: ["Databases", "SQL", "Data Science", "Python"],
-    providerIcon: "lineicons:ibm",
-    platformIcon: "logos:coursera",
-    color: "from-blue-500 to-blue-600",
-    certificatePreview: "/certificates/Databases and SQL for Data Science with Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Data Visualization in Tableau & Python",
-    provider: "Udemy",
-    platform: "Udemy",
-    issued: "April 2024",
-    credentialId: "UC-4b8cfb83-a413-4573-a761-4c5f3792f084",
-    skills: ["Data Visualization", "Tableau", "Python"],
-    providerIcon: "logos:udemy-icon",
-    platformIcon: "logos:udemy-icon",
-    color: "from-purple-500 to-pink-600",
-    certificatePreview: "/certificates/Data Visualization in Tableau & Python.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Python Web Scraping: Data Extraction with Beautiful Soup",
-    provider: "Meta Brains",
-    platform: "Udemy",
-    issued: "March 2024",
-    credentialId: "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
-    skills: ["Web Scraping", "Python", "Beautiful Soup"],
-    providerIcon: "logos:meta-icon",
-    platformIcon: "logos:udemy-icon",
-    color: "from-blue-500 to-purple-600",
-    certificatePreview: "/certificates/Python Web Scraping Data Extraction with Beautiful Soup.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  },
-  {
-    title: "Deep Learning Mastery",
-    provider: "Raj Chhabria",
-    platform: "Udemy",
-    issued: "March 2024",
-    credentialId: "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
-    skills: ["Deep Learning", "Neural Networks", "Machine Learning"],
-    providerIcon: "logos:udemy-icon",
-    platformIcon: "logos:udemy-icon",
-    color: "from-purple-500 to-pink-600",
-    certificatePreview: "/certificates/Deep Learning Mastery.pdf",
-    providerIconSize: 64,
-    platformIconSize: 88
-  }
-];
-
 export default function CertificationsSection() {
+  const { certifications } = portfolioContent;
+  const certificateItems = certifications.items as Certificate[];
   const [selectedCertificate, setSelectedCertificate] = useState<Certificate | null>(null);
 
   const containerVariants = {
@@ -262,10 +96,10 @@ export default function CertificationsSection() {
         </div>
         <div className="relative z-10">
           <SectionHeader
-            tagText="Certifications "
-            tagIcon="solar:verified-check-bold"
-            heading="Certifications"
-            description="Certifications et titres professionnels qui valident mon expertise dans les technologies modernes et les pratiques de développement."
+            tagText={certifications.sectionHeader.tagText}
+            tagIcon={certifications.sectionHeader.tagIcon}
+            heading={certifications.sectionHeader.heading}
+            description={certifications.sectionHeader.description}
             showUnderline={false}
             centered={true}
           />
@@ -276,35 +110,35 @@ export default function CertificationsSection() {
             viewport={{ once: true }}
             className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 px-4"
           >
-            {certifications.map((cert, index) => (
+            {certificateItems.map((cert, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
                 whileHover={{
                   y: -8,
                   scale: 1.02,
-                  transition: { duration: 0.3, ease: "easeOut" }
+                  transition: { duration: 0.3, ease: "easeOut" },
                 }}
                 className="group h-full"
               >
                 <div className="h-full bg-white/70 dark:bg-gray-900/50 backdrop-blur-sm rounded-2xl border border-gray-300 dark:border-gray-800 hover:border-gray-400 dark:hover:border-gray-600 transition-all duration-300 overflow-hidden">
                   <div className={`h-20 flex items-center justify-between bg-slate-100 dark:bg-slate-900 px-4 ${cert.color} relative overflow-hidden`}>
                     <div className="flex items-center justify-end mr-4 gap-1">
-                      <Icon icon={cert.providerIcon} className="" width={cert.providerIconSize} height={cert.providerIconSize} />
+                      <Icon icon={cert.providerIcon} width={cert.providerIconSize} height={cert.providerIconSize} />
                       <span className="text-black dark:text-white text-sm font-bold">×</span>
-                      <Icon icon={cert.platformIcon} className="" width={cert.platformIconSize} height={cert.platformIconSize} />
+                      <Icon icon={cert.platformIcon} width={cert.platformIconSize} height={cert.platformIconSize} />
                     </div>
                     <div className="flex items-center justify-start gap-0">
                       <div className="relative w-8 h-8 rounded-lg flex items-center justify-center">
-                        <div className="absolute top-1/5 left-1/4 w-1/2 h-1/2 bg-white rounded-lg -z-0"></div>
+                        <div className="absolute top-1/5 left-1/4 w-1/2 h-1/2 bg-white rounded-lg -z-0" />
                         <Icon icon="solar:verified-check-bold" className="text-blue-500 z-10" width={26} height={26} />
                       </div>
-                      <span className="text-blue-500 text-sm font-medium">Verified</span>
+                      <span className="text-blue-500 text-sm font-medium">{certifications.verifiedLabel}</span>
                     </div>
                   </div>
                   <div className="p-6 relative">
-                    <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
-                    <div className="absolute top-6 right-8 w-1 h-1 bg-purple-400/40 rounded-full animate-pulse delay-500"></div>
+                    <div className="absolute top-4 right-4 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse" />
+                    <div className="absolute top-6 right-8 w-1 h-1 bg-purple-400/40 rounded-full animate-pulse delay-500" />
                     <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4 leading-tight group-hover:text-gray-700 dark:group-hover:text-gray-100 transition-colors">
                       {cert.title}
                     </h3>
@@ -313,21 +147,21 @@ export default function CertificationsSection() {
                         <div className="w-5 h-5 bg-gradient-to-r from-blue-500 to-blue-600 rounded-md flex items-center justify-center">
                           <Icon icon="solar:buildings-2-bold" className="text-white" width={12} height={12} />
                         </div>
-                        <span className="text-gray-600 dark:text-gray-400 font-medium">Provider:</span>
+                        <span className="text-gray-600 dark:text-gray-400 font-medium">{certifications.labels.provider}</span>
                         <span className="font-semibold text-gray-900 dark:text-white">{cert.provider}</span>
                       </div>
                       <div className="flex items-center gap-3 text-sm">
                         <div className="w-5 h-5 bg-gradient-to-r from-purple-500 to-purple-600 rounded-md flex items-center justify-center">
                           <Icon icon="solar:monitor-smartphone-bold" className="text-white" width={12} height={12} />
                         </div>
-                        <span className="text-gray-600 dark:text-gray-400 font-medium">Platform:</span>
+                        <span className="text-gray-600 dark:text-gray-400 font-medium">{certifications.labels.platform}</span>
                         <span className="font-semibold text-blue-600 dark:text-blue-400">{cert.platform}</span>
                       </div>
                       <div className="flex items-center gap-3 text-sm">
                         <div className="w-5 h-5 bg-gradient-to-r from-green-500 to-green-600 rounded-md flex items-center justify-center">
                           <Icon icon="solar:calendar-bold" className="text-white" width={12} height={12} />
                         </div>
-                        <span className="text-gray-600 dark:text-gray-400 font-medium">Issued:</span>
+                        <span className="text-gray-600 dark:text-gray-400 font-medium">{certifications.labels.issued}</span>
                         <span className="font-semibold text-gray-700 dark:text-gray-300">{cert.issued}</span>
                       </div>
                     </div>
@@ -337,7 +171,7 @@ export default function CertificationsSection() {
                           <Icon icon="solar:star-bold" className="text-white" width={10} height={10} />
                         </div>
                         <h4 className="text-xs font-bold text-gray-700 dark:text-gray-300 uppercase tracking-wide">
-                          Skills Validated
+                          {certifications.labels.skills}
                         </h4>
                       </div>
                       <div className="flex flex-wrap gap-2">
@@ -352,10 +186,7 @@ export default function CertificationsSection() {
                       </div>
                     </div>
                     <div className="flex items-center justify-between pt-4 border-t border-gray-200/60 dark:border-gray-700/50">
-                      <Link
-                        href={`https://www.${cert.platform.toLowerCase()}.com/verify/${cert.credentialId}`}
-                        target="_blank"
-                      >
+                      <Link href={cert.verifyUrl || "#"} target="_blank">
                         <div className="flex items-center gap-2">
                           <Icon icon="solar:arrow-right-up-bold" className="text-green-500" width={14} height={14} />
                           <span className="text-xs text-gray-500 dark:text-gray-400 font-medium">
@@ -369,21 +200,13 @@ export default function CertificationsSection() {
                         onClick={() => setSelectedCertificate(cert)}
                       >
                         <Icon icon="solar:eye-bold" width={12} height={12} />
-                        <span>View</span>
+                        <span>{certifications.actions.view}</span>
                       </button>
                     </div>
                   </div>
                 </div>
               </motion.div>
             ))}
-          </motion.div>
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="text-center mt-12 md:mt-16 px-4 mb-12"
-          >
           </motion.div>
         </div>
       </motion.section>
@@ -425,12 +248,13 @@ export default function CertificationsSection() {
                 <iframe
                   src={selectedCertificate.certificatePreview}
                   className="w-full h-[60vh]"
-                  style={{ border: 'none' }}
-                ></iframe>
+                  style={{ border: "none" }}
+                />
               </div>
               <div className="flex items-center justify-between p-6 border-t border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
                 <div className="text-sm text-gray-600 dark:text-gray-400 font-medium">
-                  Credential ID: <span className="text-gray-800 dark:text-gray-200">{selectedCertificate.credentialId}</span>
+                  {certifications.labels.credentialId}{" "}
+                  <span className="text-gray-800 dark:text-gray-200">{selectedCertificate.credentialId}</span>
                 </div>
                 <div className="flex gap-3">
                   <motion.button
@@ -440,7 +264,7 @@ export default function CertificationsSection() {
                     className="px-4 py-2 bg-gradient-to-r from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl border border-red-500/50"
                   >
                     <Icon icon="solar:close-circle-bold" className="text-white" width={20} height={20} />
-                    Close
+                    {certifications.actions.close}
                   </motion.button>
                   <motion.a
                     whileHover={{ scale: 1.05 }}
@@ -450,7 +274,7 @@ export default function CertificationsSection() {
                     className="px-4 py-2 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl transition-all duration-300 flex items-center gap-2 shadow-lg hover:shadow-xl border border-blue-500/50"
                   >
                     <Icon icon="solar:download-bold" width={16} height={16} />
-                    Download
+                    {certifications.actions.download}
                   </motion.a>
                 </div>
               </div>

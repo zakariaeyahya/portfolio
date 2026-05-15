@@ -1,11 +1,13 @@
 "use client";
 
 import { useTheme } from "@/components/ThemeProvider";
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 
 export default function Navigation() {
   const { theme, toggleTheme } = useTheme();
+  const { navigation, profile } = portfolioContent;
 
   return (
     <nav className="fixed top-0 md:top-4 w-full z-50 ">
@@ -16,24 +18,23 @@ export default function Navigation() {
             animate={{ opacity: 1, x: 0 }}
             className="text-xl font-bold bg-gradient-to-r from-indigo-600 via-purple-600 to-violet-600 dark:from-indigo-400 dark:via-purple-400 dark:to-violet-400 bg-clip-text text-transparent"
           >
-            ZY
+            {profile.initials}
           </motion.div>
           <div className="flex items-center space-x-8">
             <div className="hidden md:flex items-center space-x-8">
-              {["Overview","Experience", "Projects","Stack",  "Certifications", "Contact"].map((item, index) => (
+              {navigation.items.map((item, index) => (
                 <motion.a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
+                  key={item.href}
+                  href={item.href}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
                   className="text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors duration-300 text-sm font-medium"
                 >
-                  {item}
+                  {item.label}
                 </motion.a>
               ))}
             </div>
-            {/* Theme Toggle */}
             <motion.button
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -41,7 +42,7 @@ export default function Navigation() {
               whileTap={{ scale: 0.9 }}
               onClick={toggleTheme}
               className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 border border-gray-300 dark:border-gray-600 transition-all duration-300"
-              aria-label="Toggle theme"
+              aria-label={navigation.themeToggleAriaLabel}
             >
               {theme === "dark" ? (
                 <Icon icon="solar:sun-bold" className="text-yellow-500" width={20} height={20} />
@@ -54,4 +55,4 @@ export default function Navigation() {
       </div>
     </nav>
   );
-} 
+}

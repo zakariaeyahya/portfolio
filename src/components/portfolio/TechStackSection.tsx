@@ -1,4 +1,6 @@
 "use client";
+
+import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -13,425 +15,15 @@ interface TechItem {
   yearsUsed?: number;
 }
 
-const techStackData: Record<string, TechItem[]> = {
-  "Databases": [
-    {
-      name: "SQL",
-      icon: "logos:mysql",
-      level: "Expert",
-      category: "Databases",
-      description: "Structured Query Language for relational databases",
-      yearsUsed: 2
-    },
-    {
-      name: "MySQL",
-      icon: "logos:mysql",
-      level: "Expert",
-      category: "Databases",
-      description: "Popular open-source relational database",
-      yearsUsed: 2
-    },
-    {
-      name: "Oracle",
-      icon: "logos:oracle",
-      level: "Intermediate",
-      category: "Databases",
-      description: "Multimodel database management system",
-      yearsUsed: 1
-    },
-    {
-      name: "NoSQL",
-      icon: "logos:mongodb",
-      level: "Expert",
-      category: "Databases",
-      description: "Non-relational database systems",
-      yearsUsed: 2
-    },
-  ],
-  "Big Data & Storage": [
-    {
-      name: "Hadoop",
-      icon: "logos:apache-hadoop",
-      level: "Intermediate",
-      category: "Big Data & Storage",
-      description: "Framework for distributed storage and processing",
-      yearsUsed: 2
-    },
-    {
-      name: "Apache Spark",
-      icon: "logos:apache-spark",
-      level: "Intermediate",
-      category: "Big Data & Storage",
-      description: "Analytics engine for large-scale data processing",
-      yearsUsed: 2
-    },
-    {
-      name: "Kafka",
-      icon: "logos:kafka",
-      level: "Expert",
-      category: "Big Data & Storage",
-      description: "Distributed event streaming platform",
-      yearsUsed: 2
-    },
-    {
-      name: "Redis",
-      icon: "logos:redis",
-      level: "Expert",
-      category: "Big Data & Storage",
-      description: "In-memory data structure store and streaming",
-      yearsUsed: 2
-    },
-    {
-      name: "Snowflake",
-      icon: "logos:snowflake-icon",
-      level: "Intermediate",
-      category: "Big Data & Storage",
-      description: "Cloud-based data warehousing",
-      yearsUsed: 1
-    },
-    {
-      name: "Amazon S3",
-      icon: "logos:aws-s3",
-      level: "Intermediate",
-      category: "Big Data & Storage",
-      description: "Scalable storage in the cloud",
-      yearsUsed: 1
-    },
-    {
-      name: "AWS Glue",
-      icon: "logos:aws-glue",
-      level: "Intermediate",
-      category: "Big Data & Storage",
-      description: "Serverless data integration service",
-      yearsUsed: 1
-    },
-  ],
-  "Orchestration & Indexing": [
-    {
-      name: "Apache Airflow",
-      icon: "logos:apache-airflow",
-      level: "Expert",
-      category: "Orchestration & Indexing",
-      description: "Platform to programmatically author, schedule, and monitor workflows",
-      yearsUsed: 2
-    },
-    {
-      name: "Qdrant",
-      icon: "logos:qdrant",
-      level: "Expert",
-      category: "Orchestration & Indexing",
-      description: "Vector similarity search engine",
-      yearsUsed: 2
-    },
-    {
-      name: "ChromaDB",
-      icon: "logos:chromadb",
-      level: "Intermediate",
-      category: "Orchestration & Indexing",
-      description: "AI-native open-source vector database",
-      yearsUsed: 2
-    },
-    {
-      name: "FAISS",
-      icon: "logos:meta",
-      level: "Intermediate",
-      category: "Orchestration & Indexing",
-      description: "Library for efficient similarity search",
-      yearsUsed: 1
-    },
-  ],
-  "Machine Learning": [
-    {
-      name: "Supervised Learning",
-      icon: "logos:scikit-learn",
-      level: "Expert",
-      category: "Machine Learning",
-      description: "Machine learning models with labeled data",
-      yearsUsed: 3
-    },
-    {
-      name: "Unsupervised Learning",
-      icon: "logos:scikit-learn",
-      level: "Expert",
-      category: "Machine Learning",
-      description: "Machine learning models with unlabeled data",
-      yearsUsed: 3
-    },
-    {
-      name: "Deep Learning",
-      icon: "logos:tensorflow",
-      level: "Expert",
-      category: "Machine Learning",
-      description: "Neural networks with multiple layers",
-      yearsUsed: 3
-    },
-    {
-      name: "PyTorch",
-      icon: "logos:pytorch",
-      level: "Expert",
-      category: "Machine Learning",
-      description: "Open-source machine learning library",
-      yearsUsed: 3
-    },
-    {
-      name: "TensorFlow",
-      icon: "logos:tensorflow",
-      level: "Expert",
-      category: "Machine Learning",
-      description: "End-to-end open-source platform for machine learning",
-      yearsUsed: 3
-    },
-    {
-      name: "Hugging Face",
-      icon: "logos:huggingface",
-      level: "Intermediate",
-      category: "Machine Learning",
-      description: "Platform for building, training, and deploying ML models",
-      yearsUsed: 2
-    },
-  ],
-  "Data Visualization": [
-    {
-      name: "PowerBI",
-      icon: "logos:power-bi",
-      level: "Expert",
-      category: "Data Visualization",
-      description: "Business analytics service by Microsoft",
-      yearsUsed: 4
-    },
-    {
-      name: "Tableau",
-      icon: "logos:tableau-icon",
-      level: "Expert",
-      category: "Data Visualization",
-      description: "Interactive data visualization software",
-      yearsUsed: 3
-    },
-    {
-      name: "Matplotlib",
-      icon: "logos:python",
-      level: "Expert",
-      category: "Data Visualization",
-      description: "Plotting library for the Python programming language",
-      yearsUsed: 3
-    },
-    {
-      name: "Seaborn",
-      icon: "logos:python",
-      level: "Expert",
-      category: "Data Visualization",
-      description: "Statistical data visualization library",
-      yearsUsed: 3
-    },
-  ],
-  "Programming Languages": [
-    {
-      name: "Python",
-      icon: "logos:python",
-      level: "Expert",
-      category: "Programming Languages",
-      description: "Langage de programmation principal pour la data science et l'IA",
-      yearsUsed: 4
-    },
-    {
-      name: "Java",
-      icon: "logos:java",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Langage de programmation orienté objet",
-      yearsUsed: 2
-    },
-    {
-      name: "SQL",
-      icon: "logos:sql-datasource",
-      level: "Expert",
-      category: "Programming Languages",
-      description: "Langage standard pour la gestion des bases de données relationnelles",
-      yearsUsed: 3
-    },
-    {
-      name: "JavaScript",
-      icon: "logos:javascript",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Langage de programmation pour le développement web",
-      yearsUsed: 2
-    },
-    {
-      name: "TypeScript",
-      icon: "logos:typescript-icon",
-      level: "Intermediate",
-      category: "Programming Languages",
-      description: "Superset typé de JavaScript pour le développement robuste",
-      yearsUsed: 1
-    },
-  ],
-  "Frameworks": [
-    {
-      name: "FastAPI",
-      icon: "logos:fastapi",
-      level: "Expert",
-      category: "Frameworks",
-      description: "Framework web moderne et rapide pour construire des APIs",
-      yearsUsed: 2
-    },
-    {
-      name: "Django",
-      icon: "logos:django-icon",
-      level: "Expert",
-      category: "Frameworks",
-      description: "Framework web Python de haut niveau pour le développement backend",
-      yearsUsed: 2
-    },
-    {
-      name: "Spring Boot",
-      icon: "logos:spring-icon",
-      level: "Intermediate",
-      category: "Frameworks",
-      description: "Framework Java pour applications d'entreprise",
-      yearsUsed: 1
-    },
-    {
-      name: "React",
-      icon: "logos:react",
-      level: "Intermediate",
-      category: "Frameworks",
-      description: "Bibliothèque JavaScript pour construire des interfaces utilisateur",
-      yearsUsed: 1
-    },
-    {
-      name: "React Native",
-      icon: "logos:react",
-      level: "Intermediate",
-      category: "Frameworks",
-      description: "Framework pour développer des applications mobiles cross-platform",
-      yearsUsed: 1
-    },
-    {
-      name: "Streamlit",
-      icon: "logos:streamlit",
-      level: "Expert",
-      category: "Frameworks",
-      description: "Framework pour créer des applications de data science",
-      yearsUsed: 2
-    },
-  ],
-  "Cloud & DevOps": [
-    {
-      name: "AWS",
-      icon: "logos:aws",
-      level: "Intermediate",
-      category: "Cloud & DevOps",
-      description: "Comprehensive cloud computing platform",
-      yearsUsed: 1
-    },
-    {
-      name: "Docker",
-      icon: "logos:docker-icon",
-      level: "Expert",
-      category: "Cloud & DevOps",
-      description: "Platform for developing, shipping, and running applications",
-      yearsUsed: 2
-    },
-    {
-      name: "Kubernetes",
-      icon: "logos:kubernetes",
-      level: "Intermediate",
-      category: "Cloud & DevOps",
-      description: "Container orchestration platform",
-      yearsUsed: 1
-    },
-    {
-      name: "GitLab CI/CD",
-      icon: "logos:gitlab",
-      level: "Intermediate",
-      category: "Cloud & DevOps",
-      description: "Continuous Integration and Continuous Deployment",
-      yearsUsed: 2
-    },
-    {
-      name: "GitHub Actions",
-      icon: "logos:github-actions",
-      level: "Intermediate",
-      category: "Cloud & DevOps",
-      description: "Automated workflows for CI/CD",
-      yearsUsed: 1
-    },
-    {
-      name: "Grafana",
-      icon: "logos:grafana",
-      level: "Expert",
-      category: "Cloud & DevOps",
-      description: "Monitoring and observability platform",
-      yearsUsed: 2
-    },
-    {
-      name: "CloudWatch",
-      icon: "logos:aws-cloudwatch",
-      level: "Intermediate",
-      category: "Cloud & DevOps",
-      description: "AWS monitoring and logging service",
-      yearsUsed: 1
-    },
-  ],
-  "Tools & Techniques": [
-    {
-      name: "LangChain",
-      icon: "logos:langchain",
-      level: "Expert",
-      category: "Tools & Techniques",
-      description: "Framework pour développer des applications avec des modèles de langage",
-      yearsUsed: 2
-    },
-    {
-      name: "LlamaIndex",
-      icon: "logos:llama",
-      level: "Expert",
-      category: "Tools & Techniques",
-      description: "Framework de données pour les applications LLM",
-      yearsUsed: 2
-    },
-    {
-      name: "MLflow",
-      icon: "logos:mlflow",
-      level: "Expert",
-      category: "Tools & Techniques",
-      description: "Plateforme pour gérer le cycle de vie du ML",
-      yearsUsed: 2
-    },
-    {
-      name: "Whisper",
-      icon: "logos:openai",
-      level: "Intermediate",
-      category: "Tools & Techniques",
-      description: "Modèle de reconnaissance vocale par OpenAI",
-      yearsUsed: 1
-    },
-    {
-      name: "sentence-transformers",
-      icon: "logos:huggingface",
-      level: "Expert",
-      category: "Tools & Techniques",
-      description: "Bibliothèque pour les modèles de transformation de phrases",
-      yearsUsed: 2
-    },
-    {
-      name: "Postman",
-      icon: "logos:postman",
-      level: "Intermediate",
-      category: "Tools & Techniques",
-      description: "Outil de développement et test d'APIs",
-      yearsUsed: 2
-    },
-  ],
-};
-
 export default function TechStackSection() {
-  const [activeCategory, setActiveCategory] = useState<string>("All");
-  const categories = ["All", ...Object.keys(techStackData)];
-  const filteredTech = activeCategory === "All"
-    ? Object.values(techStackData).flat()
-    : techStackData[activeCategory] || [];
+  const { techStack } = portfolioContent;
+  const techStackData = techStack.categories as Record<string, TechItem[]>;
+  const [activeCategory, setActiveCategory] = useState<string>(techStack.allLabel);
+  const categories = [techStack.allLabel, ...Object.keys(techStackData)];
+  const filteredTech =
+    activeCategory === techStack.allLabel
+      ? Object.values(techStackData).flat()
+      : techStackData[activeCategory] || [];
 
   return (
     <motion.section
@@ -443,10 +35,10 @@ export default function TechStackSection() {
       className="mb-16"
     >
       <SectionHeader
-        tagText="technologiques"
-        tagIcon="solar:settings-bold"
-        heading="Compétences techniques"
-        description="Technologies que j'utilise pour donner vie à mes idées"
+        tagText={techStack.sectionHeader.tagText}
+        tagIcon={techStack.sectionHeader.tagIcon}
+        heading={techStack.sectionHeader.heading}
+        description={techStack.sectionHeader.description}
         showUnderline={false}
         centered={true}
       />
@@ -456,17 +48,18 @@ export default function TechStackSection() {
             <button
               key={category}
               onClick={() => setActiveCategory(category)}
-              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${activeCategory === category
-                ? "bg-blue-600 text-white shadow-lg scale-105"
-                : "bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
-                }`}
+              className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                activeCategory === category
+                  ? "bg-blue-600 text-white shadow-lg scale-105"
+                  : "bg-gray-100 hover:bg-gray-200 dark:bg-gray-800 dark:hover:bg-gray-700 text-gray-700 dark:text-gray-300"
+              }`}
             >
               {category}
             </button>
           ))}
         </div>
       </div>
-      {activeCategory === "All" ? (
+      {activeCategory === techStack.allLabel ? (
         <div className="space-y-8">
           {Object.entries(techStackData).map(([categoryName, techs]) => (
             <motion.div
@@ -481,11 +74,7 @@ export default function TechStackSection() {
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4">
                 {techs.map((tech, index) => (
-                  <TechCard
-                    key={tech.name}
-                    tech={tech}
-                    index={index}
-                  />
+                  <TechCard key={tech.name} tech={tech} index={index} />
                 ))}
               </div>
             </motion.div>
@@ -494,11 +83,7 @@ export default function TechStackSection() {
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {filteredTech.map((tech, index) => (
-            <TechCard
-              key={tech.name}
-              tech={tech}
-              index={index}
-            />
+            <TechCard key={tech.name} tech={tech} index={index} />
           ))}
         </div>
       )}
@@ -548,21 +133,34 @@ function TechCard({ tech, index }: { tech: TechItem; index: number }) {
         duration: 0.6,
         delay: index * 0.05,
         type: "spring",
-        stiffness: 100
+        stiffness: 100,
       }}
       viewport={{ once: true }}
       className="group relative"
     >
       <div className="relative">
-        <div className={`absolute inset-0 bg-gradient-to-br ${getLevelGradient(tech.level)} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl scale-105`} />
+        <div
+          className={`absolute inset-0 bg-gradient-to-br ${getLevelGradient(tech.level)} rounded-2xl opacity-0 group-hover:opacity-20 transition-opacity duration-500 blur-xl scale-105`}
+        />
         <div className="relative bg-white/90 dark:bg-gray-900/90 backdrop-blur-xl rounded-2xl border border-gray-200/60 dark:border-gray-700/60 group-hover:border-gray-300/80 dark:group-hover:border-gray-600/80 transition-all duration-300 shadow-lg group-hover:shadow-2xl group-hover:shadow-black/5 dark:group-hover:shadow-black/40 overflow-hidden">
           <div className="relative h-0.5 bg-gradient-to-r from-transparent via-gray-300 dark:via-gray-600 to-transparent">
-            <div className={`absolute inset-0 bg-gradient-to-r ${getLevelGradient(tech.level)} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
+            <div
+              className={`absolute inset-0 bg-gradient-to-r ${getLevelGradient(tech.level)} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}
+            />
           </div>
           <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-            <div className="absolute top-4 right-4 w-1 h-1 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse" style={{ animationDelay: '0s' }} />
-            <div className="absolute top-8 left-6 w-0.5 h-0.5 bg-gray-400 dark:bg-gray-500 rounded-full animate-pulse" style={{ animationDelay: '1s' }} />
-            <div className="absolute bottom-6 right-8 w-0.5 h-0.5 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse" style={{ animationDelay: '2s' }} />
+            <div
+              className="absolute top-4 right-4 w-1 h-1 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse"
+              style={{ animationDelay: "0s" }}
+            />
+            <div
+              className="absolute top-8 left-6 w-0.5 h-0.5 bg-gray-400 dark:bg-gray-500 rounded-full animate-pulse"
+              style={{ animationDelay: "1s" }}
+            />
+            <div
+              className="absolute bottom-6 right-8 w-0.5 h-0.5 bg-gray-300 dark:bg-gray-600 rounded-full animate-pulse"
+              style={{ animationDelay: "2s" }}
+            />
           </div>
           <div className="p-4 relative">
             <div className="flex justify-center mb-3">
@@ -574,7 +172,9 @@ function TechCard({ tech, index }: { tech: TechItem; index: number }) {
                     width={36}
                     height={36}
                   />
-                  <div className={`absolute inset-0 bg-gradient-to-br ${getLevelGradient(tech.level)} rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300`} />
+                  <div
+                    className={`absolute inset-0 bg-gradient-to-br ${getLevelGradient(tech.level)} rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                  />
                 </div>
               </div>
             </div>
@@ -582,26 +182,33 @@ function TechCard({ tech, index }: { tech: TechItem; index: number }) {
               {tech.name}
             </h3>
             <div className="flex justify-center mb-2">
-              <span className={`inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold border ${getLevelBadgeStyle(tech.level)} transition-all duration-300`}>
-                <span className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${getLevelGradient(tech.level)} mr-1.5`} />
+              <span
+                className={`inline-flex items-center px-2.5 py-1 rounded-lg text-xs font-semibold border ${getLevelBadgeStyle(tech.level)} transition-all duration-300`}
+              >
+                <span
+                  className={`w-1.5 h-1.5 rounded-full bg-gradient-to-r ${getLevelGradient(tech.level)} mr-1.5`}
+                />
                 {tech.level}
               </span>
             </div>
             {tech.yearsUsed && (
               <div className="text-center">
                 <div className="inline-flex items-center gap-1">
-                  <div className={`w-1 h-1 rounded-full ${getExperienceColor(tech.yearsUsed).replace('text-', 'bg-')}`} />
+                  <div
+                    className={`w-1 h-1 rounded-full ${getExperienceColor(tech.yearsUsed).replace("text-", "bg-")}`}
+                  />
                   <span className={`text-xs font-medium ${getExperienceColor(tech.yearsUsed)}`}>
-                    {tech.yearsUsed} year{tech.yearsUsed > 1 ? 's' : ''} exp
+                    {tech.yearsUsed} year{tech.yearsUsed > 1 ? "s" : ""} exp
                   </span>
                 </div>
               </div>
             )}
           </div>
-          <div className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05] pointer-events-none"
+          <div
+            className="absolute inset-0 opacity-[0.02] dark:opacity-[0.05] pointer-events-none"
             style={{
-              backgroundImage: `radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)`,
-              backgroundSize: '20px 20px'
+              backgroundImage: "radial-gradient(circle at 1px 1px, currentColor 1px, transparent 0)",
+              backgroundSize: "20px 20px",
             }}
           />
         </div>
