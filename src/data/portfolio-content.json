@@ -587,6 +587,14 @@
           "category": "Databases",
           "description": "Non-relational database systems",
           "yearsUsed": 2
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "logos:postgresql",
+          "level": "Expert",
+          "category": "Databases",
+          "description": "Système de base de données relationnelle avancé pour applications data et backend",
+          "yearsUsed": 2
         }
       ],
       "Big Data & Storage": [
@@ -645,6 +653,54 @@
           "category": "Big Data & Storage",
           "description": "Serverless data integration service",
           "yearsUsed": 1
+        },
+        {
+          "name": "PySpark",
+          "icon": "logos:apache-spark",
+          "level": "Expert",
+          "category": "Big Data & Storage",
+          "description": "API Python de Spark pour le traitement distribué et l'ingénierie des données",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Azure Databricks",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Plateforme Lakehouse pour pipelines data, notebooks et traitements distribués",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Delta Lake",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Storage layer fiable pour Lakehouse avec support des upserts et de la qualité des données",
+          "yearsUsed": 1
+        },
+        {
+          "name": "ADLS Gen2",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Stockage Azure pour architectures data lake et pipelines analytiques",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Amazon Redshift",
+          "icon": "logos:aws-redshift",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Entrepôt de données cloud pour reporting analytique et modélisation métier",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Redis Streams",
+          "icon": "logos:redis",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Mécanisme de streaming Redis pour ingestion et traitement temps réel",
+          "yearsUsed": 1
         }
       ],
       "Orchestration & Indexing": [
@@ -678,6 +734,38 @@
           "level": "Intermediate",
           "category": "Orchestration & Indexing",
           "description": "Library for efficient similarity search",
+          "yearsUsed": 1
+        },
+        {
+          "name": "n8n",
+          "icon": "logos:n8n",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Outil d'automatisation de workflows pour orchestrer des intégrations et des pipelines",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Auto Loader",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Mécanisme Databricks pour ingestion incrémentale de fichiers à grande échelle",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Delta Live Tables",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Orchestration déclarative de pipelines data sur Databricks",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Step Functions",
+          "icon": "logos:aws-step-functions",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Service AWS pour orchestrer des workflows et automatiser des traitements distribués",
           "yearsUsed": 1
         }
       ],
@@ -763,6 +851,14 @@
           "category": "Data Visualization",
           "description": "Statistical data visualization library",
           "yearsUsed": 3
+        },
+        {
+          "name": "Amazon QuickSight",
+          "icon": "logos:aws-quicksight",
+          "level": "Intermediate",
+          "category": "Data Visualization",
+          "description": "Service de visualisation AWS pour dashboards analytiques et restitution métier",
+          "yearsUsed": 1
         }
       ],
       "Programming Languages": [
@@ -913,6 +1009,38 @@
           "category": "Cloud & DevOps",
           "description": "AWS monitoring and logging service",
           "yearsUsed": 1
+        },
+        {
+          "name": "Azure AKS",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Service Kubernetes managé d'Azure pour déployer des plateformes data et IA",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Prometheus",
+          "icon": "logos:prometheus",
+          "level": "Expert",
+          "category": "Cloud & DevOps",
+          "description": "Collecte de métriques et monitoring pour systèmes distribués et plateformes ML",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Keycloak",
+          "icon": "logos:keycloak",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Gestion des identités et des accès pour sécuriser les applications et APIs",
+          "yearsUsed": 1
+        },
+        {
+          "name": "AWS EC2",
+          "icon": "logos:aws-ec2",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Machines virtuelles cloud pour héberger services IA, APIs et environnements de test",
+          "yearsUsed": 1
         }
       ],
       "Tools & Techniques": [
@@ -962,6 +1090,46 @@
           "level": "Intermediate",
           "category": "Tools & Techniques",
           "description": "Outil de développement et test d'APIs",
+          "yearsUsed": 2
+        },
+        {
+          "name": "LangGraph",
+          "icon": "logos:langchain",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Framework pour orchestrer des graphes d'agents et workflows LLM complexes",
+          "yearsUsed": 1
+        },
+        {
+          "name": "MCP",
+          "icon": "logos:graphql",
+          "level": "Intermediate",
+          "category": "Tools & Techniques",
+          "description": "Protocol d'intégration d'outils et de contexte pour systèmes multi-agents",
+          "yearsUsed": 1
+        },
+        {
+          "name": "RAG",
+          "icon": "logos:openai",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Approche Retrieval-Augmented Generation pour assistants IA et recherche documentaire",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Vector Search",
+          "icon": "logos:qdrant",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Recherche sémantique par embeddings pour systèmes de recherche et assistants IA",
+          "yearsUsed": 2
+        },
+        {
+          "name": "LLM",
+          "icon": "logos:openai",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Conception et intégration d'applications basées sur des large language models",
           "yearsUsed": 2
         }
       ]
