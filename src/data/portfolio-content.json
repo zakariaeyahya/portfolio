@@ -72,9 +72,9 @@
   "about": {
     "title": "Profil",
     "paragraphs": [
-      "Bonjour, je suis Zakariae Yahya, élève ingénieur en Big Data & Intelligence Artificielle à l'ENSA Tétouan. Je conçois des systèmes d'IA applicative mêlant orchestration d'agents, workflows GenAI, RAG et backend Python pour des usages métier à fort impact.",
-      "Mes expériences chez Banque Centrale Populaire, Izemx et DIGITAL PLACE m'ont permis d'industrialiser des pipelines temps réel Kafka/Spark, des architectures RAG multi-sources et des assistants IA observables, sécurisés et déployables en production.",
-      "Je m'intéresse particulièrement à l'Agentic AI, au Data Engineering, au MLOps et à la fiabilité des plateformes data. Disponible pour des opportunités AI Engineer / Data Engineer à partir de septembre 2026."
+      "Bonjour, je suis Zakariae Yahya, élève ingénieur en Big Data & Intelligence Artificielle à l'ENSA Tétouan. Je conçois des systèmes IA utiles en production : assistants RAG, workflows agentiques, APIs backend et pipelines data.",
+      "Mes expériences chez Banque Centrale Populaire, Izemx et Digital Place m'ont amené à livrer des solutions concrètes : détection de fraude bancaire en temps réel, agents documentaires multi-sources, assistants éducatifs et assistant vocal bilingue français/darija.",
+      "Je recherche des opportunités AI Engineer / Data Engineer où je peux combiner Python, LLM, RAG, microservices, MLOps et observabilité pour transformer un besoin métier en produit fiable."
     ]
   },
   "overview": {
@@ -121,7 +121,7 @@
     ],
     "paragraphs": [
       "Je travaille à l'intersection de l'AI Engineering et du Data Engineering, avec un fort intérêt pour les systèmes multi-agents, les pipelines batch/streaming et la mise en production d'applications LLM.",
-      "J'aime transformer des besoins métier en workflows reproductibles, mesurables et maintenables, en combinant orchestration, observabilité, performance et collaboration avec les équipes produit et développement."
+      "J'aime réduire la complexité : partir d'un besoin métier, choisir l'architecture juste, livrer un prototype robuste, puis l'améliorer avec des métriques, des tests, de l'observabilité et des retours utilisateurs."
     ],
     "skillsHeading": "Technologies clés",
     "skills": [
@@ -137,7 +137,7 @@
         "title": "AI Software Engineer / Data Engineer",
         "company": "Banque Centrale Populaire",
         "period": "02/2026 - 08/2026",
-        "description": "Plateforme fraude temps réel combinant pipeline data Kafka/Spark, scoring ML, monitoring et assistance multi-agents pour les analystes.",
+        "description": "Plateforme de détection de fraude bancaire en temps réel avec scoring ML, microservices sécurisés, monitoring et assistant IA pour analystes.",
         "icon": "solar:buildings-bold",
         "iconBgClass": "bg-orange-500",
         "cardClass": "from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 border-orange-200/50 dark:border-orange-800/30",
@@ -147,7 +147,7 @@
         "title": "AI Software Engineer",
         "company": "Izemx",
         "period": "02/2025 - 01/2026",
-        "description": "Optimisation de systèmes RAG, ingestion documentaire multi-sources et développement d'assistants IA et pipelines temps réel pour plusieurs produits.",
+        "description": "Livraison d'assistants IA RAG pour BrainBoost et IAVIA : microservices Python/Spring, ingestion documentaire, recherche hybride et interfaces conversationnelles.",
         "icon": "solar:code-bold",
         "iconBgClass": "bg-blue-500",
         "cardClass": "from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 border-blue-200/50 dark:border-blue-800/30",
@@ -155,9 +155,9 @@
       },
       {
         "title": "Data Scientist",
-        "company": "DIGITAL PLACE",
+        "company": "Digital Place",
         "period": "06/2024 - 09/2024",
-        "description": "Assistant conversationnel vocal et textuel bilingue avec composants IA et backend pour fluidifier l'expérience client.",
+        "description": "Prototype d'assistant vocal bilingue français/darija avec pipeline multimodal, RAG documentaire, FastAPI, React Native et déploiement AWS.",
         "icon": "solar:hospital-bold",
         "iconBgClass": "bg-green-500",
         "cardClass": "from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 border-green-200/50 dark:border-green-800/30",
@@ -170,17 +170,17 @@
     "achievements": [
       {
         "icon": "solar:graph-up-bold",
-        "text": "AUC fraude 0,91 et 0,94",
+        "text": "Plateforme fraude temps réel avec ML explicable",
         "colorClass": "text-yellow-600"
       },
       {
         "icon": "solar:bolt-bold",
-        "text": "1M+ transactions/jour en moins de 100 ms",
+        "text": "RAG multi-sources, Slack/Teams et backoffice IA",
         "colorClass": "text-blue-600"
       },
       {
         "icon": "solar:cpu-bolt-bold-duotone",
-        "text": "RAG, multi-agents et data pipelines industrialisés",
+        "text": "Agents LangGraph, MCP, MLOps et observabilité",
         "colorClass": "text-green-600"
       }
     ],
@@ -219,14 +219,14 @@
         "valueClass": "text-blue-600 dark:text-blue-400"
       },
       {
-        "value": "8",
-        "label": "Projets IA & Data",
+        "value": "4",
+        "label": "Produits IA livrés",
         "cardClass": "from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30",
         "valueClass": "text-green-600 dark:text-green-400"
       },
       {
-        "value": "1M+/jour",
-        "label": "Transactions traitées",
+        "value": "15",
+        "label": "Services orchestrés",
         "cardClass": "from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30",
         "valueClass": "text-purple-600 dark:text-purple-400"
       }
@@ -240,33 +240,35 @@
         "companyIcon": "mdi:bank",
         "companyColor": "from-orange-500 to-red-600",
         "location": "Casablanca, Maroc",
-        "description": "Conception et industrialisation d'une plateforme de détection de fraude en temps réel pour les virements instantanés, de l'ingestion des flux au déploiement sécurisé.",
+        "description": "Conception et industrialisation d'une plateforme de détection de fraude bancaire en temps réel pour virements instantanés : scoring ML, microservices, sécurité Zero Trust, assistant IA et monitoring.",
         "achievements": [
-          "Développement de deux modèles de scoring fraude avec AUC 0,91 et 0,94, réentraînement quotidien automatisé et réduction des faux positifs de 15 %.",
-          "Conception d'un pipeline temps réel Kafka / Spark / Airflow pour la détection de fraude sur 1M+ transactions intra-bancaires par jour avec latence inférieure à 100 ms.",
-          "Mise en place d'un monitoring de dérive et de performance avec Prometheus / Grafana, déploiement sur Azure AKS et sécurisation des accès via Red Hat SSO / Keycloak.",
-          "Conception d'une architecture multi-agents avec MCP, LangGraph et LLM pour assister les analystes fraude et générer des rapports métier reproductibles."
+          "Développement d'un scoring hybride Isolation Forest + XGBoost avec explicabilité SHAP, entraîné sur un dataset synthétique de 100 000 transactions.",
+          "Mise en place d'un pipeline événementiel Kafka avec enrichissement comportemental Redis, décisions automatiques et boucle de feedback analyste.",
+          "Conception d'un assistant analyste basé sur LangGraph et MCP : 13 outils, 12 cas d'usage, actions critiques protégées par Human-in-the-Loop et filtrage des données sensibles.",
+          "Industrialisation MLOps et observabilité avec Airflow, MLflow, Prometheus, Grafana et LangSmith, plus déploiement Docker/GitLab CI sur VM Azure."
         ],
         "technologies": [
           "Python",
           "Kafka",
-          "Spark",
-          "PySpark",
           "Airflow",
           "MLflow",
           "Redis",
           "PostgreSQL",
+          "FastAPI",
+          "Spring Boot",
+          "React",
+          "Next.js",
           "Docker",
-          "Azure AKS",
+          "Azure VM",
           "GitLab CI/CD",
           "Keycloak",
-          "Red Hat SSO",
           "Prometheus",
           "Grafana",
           "LangChain",
           "LangGraph",
           "MCP",
-          "LLM"
+          "LangSmith",
+          "SHAP"
         ]
       },
       {
@@ -277,45 +279,40 @@
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-blue-500 to-blue-600",
         "location": "Remote",
-        "description": "Conception de workflows GenAI, systèmes RAG et pipelines data pour la recherche documentaire, l'éducation et l'analyse de flux temps réel.",
+        "description": "Développement de solutions GenAI livrées en production autour de deux produits : BrainBoost, plateforme EdTech avec assistants IA, et IAVIA, agent documentaire multi-sources pour entreprises.",
         "projects": [
           {
-            "name": "IAVIA - optimisation d'un système RAG pour la recherche documentaire",
-            "description": "Workflow RAG documentaire multi-sources avec recherche hybride et optimisation d'inférence.",
+            "name": "BrainBoost - assistants IA éducatifs",
+            "description": "Plateforme EdTech avec application mobile, espace parent et backoffice d'administration pour configurer des assistants IA.",
             "achievements": [
-              "Conception et optimisation d'un workflow RAG avec amélioration de la pertinence de 35 % et réduction de la latence de 3,5 s à 0,9 s.",
-              "Orchestration de l'ingestion documentaire multi-sources et des interactions utilisateurs via Slack / Teams, avec réduction du temps d'indexation de 60 %.",
-              "Structuration d'un process de recherche documentaire assistée par IA avec batching, cache intelligent et optimisation d'inférence réduisant la charge CPU / GPU de 55 %."
+              "Conception du microservice IA Python / Django / LangChain / Qdrant pour traiter PDF, images et audio via un pipeline RAG.",
+              "Développement du microservice Spring Boot / Spring Cloud pour la gestion des assistants, des utilisateurs et de l'orchestration métier.",
+              "Livraison de 2 microservices en production avec tests d'intégration et backoffice de paramétrage IA validé par les équipes métier."
             ]
           },
           {
-            "name": "BrainBoost - assistants IA et RAG éducatif",
-            "description": "Application éducative avec assistants IA et amélioration continue du module RAG.",
+            "name": "IAVIA - agent documentaire multi-sources",
+            "description": "Agent IA documentaire pour connecter les sources d'entreprise, indexer les documents et répondre via web chat, Slack ou Teams.",
             "achievements": [
-              "Conception d'une application éducative avec assistants IA pour accompagner les enfants dans leurs exercices et devoirs.",
-              "Amélioration de la pertinence du module RAG de 28 %, développement du backend et des interfaces des assistants IA.",
-              "Mise en place d'un monitoring des modèles réduisant les erreurs de réponse de 20 %."
-            ]
-          },
-          {
-            "name": "Zyra - système IA temps réel pour flux et décision",
-            "description": "Pipeline Big Data temps réel pour l'ingestion, le traitement et le monitoring de flux financiers.",
-            "achievements": [
-              "Développement d'un pipeline Big Data temps réel pour ingestion et traitement de flux de marchés financiers.",
-              "Obtention d'une latence inférieure à 250 ms, amélioration de la fiabilité de 20 % et réduction des erreurs d'exécution de 25 %."
+              "Livraison de connecteurs Google Drive, S3 et SharePoint avec OAuth2 et sélection de dossiers en moins de 30 secondes.",
+              "Optimisation d'un RAG hybride Qdrant + BM25 avec indexation GPU batch : indexation accélérée d'environ 60 % et retrieval amélioré d'environ 25 %.",
+              "Développement des interfaces React et des intégrations Slack / Microsoft Teams connectées au même backend FastAPI."
             ]
           }
         ],
         "technologies": [
           "Python",
+          "Django",
           "LangChain",
           "Qdrant",
           "FastAPI",
-          "Redis",
-          "Docker",
+          "Spring Boot",
+          "Spring Cloud",
+          "React",
           "n8n",
           "PostgreSQL",
-          "Grafana",
+          "Docker",
+          "GitLab CI/CD",
           "Slack",
           "Teams",
           "S3",
@@ -323,27 +320,34 @@
         ]
       },
       {
-        "role": "Data Scientist",
-        "company": "DIGITAL PLACE",
+        "role": "Data Scientist Intern",
+        "company": "Digital Place",
         "period": "06/2024 - 09/2024",
         "type": "Stage",
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-green-500 to-green-600",
         "location": "Tanger, Maroc",
-        "description": "Développement d'un assistant conversationnel vocal et textuel bilingue pour améliorer l'interaction client.",
+        "description": "Prototype complet d'assistant virtuel bilingue français/darija pour services financiers, combinant voix, traduction, RAG documentaire et application mobile.",
         "achievements": [
-          "Conception d'un assistant conversationnel vocal et textuel bilingue, avec optimisation du temps de réponse de 40 %.",
-          "Développement et intégration des composants IA et backend pour améliorer la qualité et la fluidité des interactions.",
-          "Stack : Python, LLM, RAG, LangChain, FastAPI, Docker, Slack."
+          "Benchmark de 6 technologies IA générative et validation d'une stack SeamlessM4T, LLaMA 3.1, LangChain et Qdrant.",
+          "Développement d'un pipeline multimodal S2T, T2T, T2S et S2S avec latence vocale réduite de plus d'une minute à moins de 10 secondes.",
+          "Mise en place d'un chatbot RAG bilingue sur documents PDF avec réponses contextuelles améliorées d'environ 35 % et réponse textuelle sous 3 secondes via GROQ.",
+          "Livraison d'un prototype mobile React Native déployé sur AWS EC2 avec API FastAPI et pipeline GitLab CI/CD."
         ],
         "technologies": [
           "Python",
+          "SeamlessM4T",
+          "LLaMA",
           "LLM",
           "RAG",
           "LangChain",
+          "Qdrant",
           "FastAPI",
+          "React Native",
+          "AWS EC2",
           "Docker",
-          "Slack"
+          "GitLab CI/CD",
+          "Jira"
         ]
       }
     ]
@@ -492,26 +496,32 @@
       },
       {
         "domain": "Data",
-        "title": "Zyra - Système IA temps réel pour flux financiers",
-        "subtitle": "Streaming data, faible latence et observabilité",
-        "description": "Système orienté flux pour l'ingestion, le traitement et le monitoring de données de marchés financiers avec une forte contrainte de latence et de fiabilité.",
+        "title": "BCP Shield - Plateforme fraude temps réel",
+        "subtitle": "Kafka, scoring ML explicable, MLOps et assistant analyste",
+        "description": "Plateforme bancaire de détection de fraude sur virements instantanés, combinant pipeline événementiel, scoring hybride, sécurité Zero Trust, monitoring et assistant IA pour les analystes.",
         "features": [
-          "Pipeline temps réel pour ingestion et traitement de flux financiers",
-          "Latence de streaming inférieure à 250 ms",
-          "Fiabilité améliorée de 20 %",
-          "Erreurs d'exécution réduites de 25 % avec monitoring Grafana"
+          "Pipeline Kafka avec enrichissement comportemental Redis et décisions automatiques auditables",
+          "Modèle hybride Isolation Forest + XGBoost avec explication SHAP des décisions",
+          "Assistant LangGraph / MCP avec 13 outils et validation humaine obligatoire sur les actions critiques",
+          "Cycle MLOps Airflow / MLflow, dashboards Prometheus / Grafana et traçabilité LangSmith"
         ],
         "tech": [
           "Python",
-          "Redis Streams",
+          "Kafka",
+          "FastAPI",
+          "Spring Boot",
+          "Redis",
           "PostgreSQL",
+          "Airflow",
+          "MLflow",
+          "LangGraph",
+          "MCP",
           "Grafana",
-          "Docker",
-          "Streaming Data"
+          "Docker"
         ],
         "github": "#",
         "live": "#",
-        "gradient": "from-cyan-500 to-blue-600"
+        "gradient": "from-orange-500 to-red-600"
       },
       {
         "domain": "Blockchain",
@@ -1011,11 +1021,11 @@
           "yearsUsed": 1
         },
         {
-          "name": "Azure AKS",
+          "name": "Azure VM",
           "icon": "logos:microsoft-azure",
           "level": "Intermediate",
           "category": "Cloud & DevOps",
-          "description": "Service Kubernetes managé d'Azure pour déployer des plateformes data et IA",
+          "description": "Déploiement de services IA et microservices conteneurisés sur machine virtuelle Azure",
           "yearsUsed": 1
         },
         {
