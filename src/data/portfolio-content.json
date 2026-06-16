@@ -33,7 +33,7 @@
     ]
   },
   "navigation": {
-    "themeToggleAriaLabel": "Changer le thème",
+    "themeToggleAriaLabel": "Change theme",
     "items": [
       {
         "label": "Overview",
@@ -67,52 +67,52 @@
       "Data Engineer Junior",
       "Agentic AI, RAG, Streaming & MLOps"
     ],
-    "scrollText": "Faites défiler pour plus"
+    "scrollText": "Scroll for more"
   },
   "about": {
-    "title": "Profil",
+    "title": "Profile",
     "paragraphs": [
-      "Bonjour, je suis Zakariae Yahya, élève ingénieur en Big Data & Intelligence Artificielle à l'ENSA Tétouan. Je conçois des systèmes IA utiles en production : assistants RAG, workflows agentiques, APIs backend et pipelines data.",
-      "Mes expériences chez Banque Centrale Populaire, Izemx et Digital Place m'ont amené à livrer des solutions concrètes : détection de fraude bancaire en temps réel, agents documentaires multi-sources, assistants éducatifs et assistant vocal bilingue français/darija.",
-      "Je recherche des opportunités AI Engineer / Data Engineer où je peux combiner Python, LLM, RAG, microservices, MLOps et observabilité pour transformer un besoin métier en produit fiable."
+      "Hi, I am Zakariae Yahya, an engineer in Big Data and Artificial Intelligence. I build production-oriented software systems across backend engineering, applied AI and data platforms.",
+      "My experience at Banque Centrale Populaire, Izemx and Digital Place has focused on real business systems: fraud detection platforms, RAG assistants, document intelligence workflows, backend APIs and data pipelines.",
+      "I am looking for Software Engineer, AI Engineer or Data Engineer opportunities where I can combine Python, backend services, LLMs, RAG, data engineering, MLOps and observability to ship reliable products."
     ]
   },
   "overview": {
     "sectionHeader": {
-      "tagText": "Faites ma connaissance",
+      "tagText": "Get to know me",
       "tagIcon": "solar:user-heart-bold",
-      "heading": "À propos de moi",
-      "description": "Systèmes IA, pipelines data et workflows robustes pour la production"
+      "heading": "About me",
+      "description": "Backend systems, applied AI and data workflows built for production"
     },
     "greetingEmoji": "👋",
-    "title": "Bonjour, je suis",
+    "title": "Hi, I am",
     "introParts": [
       {
-        "text": "Étudiant ingénieur en "
+        "text": "A "
       },
       {
-        "text": "5ème année Big Data et Intelligence Artificielle",
+        "text": "Software Engineer",
         "className": "font-bold text-blue-600 dark:text-blue-400"
       },
       {
-        "text": ", orienté "
+        "text": " focused on "
       },
       {
-        "text": "orchestration d'agents IA",
+        "text": "backend engineering",
         "className": "font-bold text-purple-600 dark:text-purple-400"
       },
       {
-        "text": ", pipelines "
+        "text": ", "
       },
       {
-        "text": "data temps réel",
+        "text": "applied AI",
         "className": "font-bold text-green-600 dark:text-green-400"
       },
       {
-        "text": " et "
+        "text": " and "
       },
       {
-        "text": "industrialisation GenAI",
+        "text": "data engineering",
         "className": "font-bold text-green-600 dark:text-green-400"
       },
       {
@@ -120,10 +120,10 @@
       }
     ],
     "paragraphs": [
-      "Je travaille à l'intersection de l'AI Engineering et du Data Engineering, avec un fort intérêt pour les systèmes multi-agents, les pipelines batch/streaming et la mise en production d'applications LLM.",
-      "J'aime réduire la complexité : partir d'un besoin métier, choisir l'architecture juste, livrer un prototype robuste, puis l'améliorer avec des métriques, des tests, de l'observabilité et des retours utilisateurs."
+      "I work at the intersection of backend development, AI engineering and data engineering, with a strong interest in RAG systems, LLM applications, batch and streaming pipelines, and production-ready APIs.",
+      "I like turning business needs into reliable software: choosing the right architecture, building clean backend services, connecting data and AI components, then improving the product with metrics, tests and observability."
     ],
-    "skillsHeading": "Technologies clés",
+    "skillsHeading": "Key technologies",
     "skills": [
       "Agentic AI",
       "Python",
@@ -137,7 +137,7 @@
         "title": "AI Software Engineer / Data Engineer",
         "company": "Banque Centrale Populaire",
         "period": "02/2026 - 08/2026",
-        "description": "Plateforme de détection de fraude bancaire en temps réel avec scoring ML, microservices sécurisés, monitoring et assistant IA pour analystes.",
+        "description": "Real-time banking fraud detection platform combining backend microservices, ML scoring, data pipelines, monitoring and AI assistance for analysts.",
         "icon": "solar:buildings-bold",
         "iconBgClass": "bg-orange-500",
         "cardClass": "from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 border-orange-200/50 dark:border-orange-800/30",
@@ -147,7 +147,7 @@
         "title": "AI Software Engineer",
         "company": "Izemx",
         "period": "02/2025 - 01/2026",
-        "description": "Livraison d'assistants IA RAG pour BrainBoost et IAVIA : microservices Python/Spring, ingestion documentaire, recherche hybride et interfaces conversationnelles.",
+        "description": "Delivered RAG-based AI assistants for BrainBoost and IAVIA with Python/Spring microservices, document ingestion, hybrid search and conversational interfaces.",
         "icon": "solar:code-bold",
         "iconBgClass": "bg-blue-500",
         "cardClass": "from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 border-blue-200/50 dark:border-blue-800/30",
@@ -157,76 +157,76 @@
         "title": "Data Scientist",
         "company": "Digital Place",
         "period": "06/2024 - 09/2024",
-        "description": "Prototype d'assistant vocal bilingue français/darija avec pipeline multimodal, RAG documentaire, FastAPI, React Native et déploiement AWS.",
+        "description": "Built a bilingual French/Darija voice assistant prototype with multimodal AI, document RAG, FastAPI, React Native and AWS deployment.",
         "icon": "solar:hospital-bold",
         "iconBgClass": "bg-green-500",
         "cardClass": "from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 border-green-200/50 dark:border-green-800/30",
         "companyTextClass": "text-green-600 dark:text-green-400"
       }
     ],
-    "contactHeading": "Restons en contact",
-    "achievementsHeading": "Réalisations",
-    "availabilityHeading": "Disponibilité",
+    "contactHeading": "Let us connect",
+    "achievementsHeading": "Highlights",
+    "availabilityHeading": "Availability",
     "achievements": [
       {
         "icon": "solar:graph-up-bold",
-        "text": "Plateforme fraude temps réel avec ML explicable",
+        "text": "Real-time fraud platform with explainable ML",
         "colorClass": "text-yellow-600"
       },
       {
         "icon": "solar:bolt-bold",
-        "text": "RAG multi-sources, Slack/Teams et backoffice IA",
+        "text": "Multi-source RAG, Slack/Teams and AI backoffice",
         "colorClass": "text-blue-600"
       },
       {
         "icon": "solar:cpu-bolt-bold-duotone",
-        "text": "Agents LangGraph, MCP, MLOps et observabilité",
+        "text": "LangGraph agents, MCP, MLOps and observability",
         "colorClass": "text-green-600"
       }
     ],
     "availability": [
       {
         "icon": "solar:calendar-bold",
-        "text": "Disponible à partir de septembre 2026",
+        "text": "Available from September 2026",
         "colorClass": "text-green-600"
       },
       {
         "icon": "solar:planet-2-bold",
-        "text": "Mobile au Maroc et en remote Europe",
+        "text": "Based in Morocco, open to remote Europe",
         "colorClass": "text-cyan-600"
       },
       {
         "icon": "solar:clock-circle-bold",
-        "text": "Ouvert au remote, hybride et sur site",
+        "text": "Open to remote, hybrid and on-site roles",
         "colorClass": "text-blue-600"
       }
     ]
   },
   "experience": {
     "sectionHeader": {
-      "tagText": "Parcours professionnel",
+      "tagText": "Professional background",
       "tagIcon": "solar:case-bold",
-      "heading": "Expérience"
+      "heading": "Experience"
     },
-    "projectsLabel": "Projets réalisés",
-    "achievementsLabel": "Principales réalisations",
-    "technologiesLabel": "Technologies et compétences",
+    "projectsLabel": "Projects delivered",
+    "achievementsLabel": "Key contributions",
+    "technologiesLabel": "Technologies and skills",
     "stats": [
       {
         "value": "24+",
-        "label": "Mois d'expérience",
+        "label": "Months of experience",
         "cardClass": "from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30",
         "valueClass": "text-blue-600 dark:text-blue-400"
       },
       {
         "value": "4",
-        "label": "Produits IA livrés",
+        "label": "AI products delivered",
         "cardClass": "from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30",
         "valueClass": "text-green-600 dark:text-green-400"
       },
       {
         "value": "15",
-        "label": "Services orchestrés",
+        "label": "Services orchestrated",
         "cardClass": "from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30",
         "valueClass": "text-purple-600 dark:text-purple-400"
       }
@@ -236,16 +236,16 @@
         "role": "AI Software Engineer / Data Engineer",
         "company": "Banque Centrale Populaire - Architecture et Innovation Groupe",
         "period": "02/2026 - 08/2026",
-        "type": "Stage",
+        "type": "Internship",
         "companyIcon": "mdi:bank",
         "companyColor": "from-orange-500 to-red-600",
-        "location": "Casablanca, Maroc",
-        "description": "Conception et industrialisation d'une plateforme de détection de fraude bancaire en temps réel pour virements instantanés : scoring ML, microservices, sécurité Zero Trust, assistant IA et monitoring.",
+        "location": "Casablanca, Morocco",
+        "description": "Backend, AI and data engineering work on a real-time banking fraud detection platform for instant transfers.",
         "achievements": [
-          "Développement d'un scoring hybride Isolation Forest + XGBoost avec explicabilité SHAP, entraîné sur un dataset synthétique de 100 000 transactions.",
-          "Mise en place d'un pipeline événementiel Kafka avec enrichissement comportemental Redis, décisions automatiques et boucle de feedback analyste.",
-          "Conception d'un assistant analyste basé sur LangGraph et MCP : 13 outils, 12 cas d'usage, actions critiques protégées par Human-in-the-Loop et filtrage des données sensibles.",
-          "Industrialisation MLOps et observabilité avec Airflow, MLflow, Prometheus, Grafana et LangSmith, plus déploiement Docker/GitLab CI sur VM Azure."
+          "Built backend microservices and APIs for transaction ingestion, fraud scoring, alerts, simulation and analyst workflows.",
+          "Designed data pipelines with Kafka, Redis and PostgreSQL to enrich transactions and support real-time decisioning.",
+          "Developed ML scoring components with explainability, model tracking and automated retraining workflows.",
+          "Added monitoring, deployment and observability practices with Docker, GitLab CI/CD, Airflow, MLflow, Prometheus and Grafana."
         ],
         "technologies": [
           "Python",
@@ -275,28 +275,28 @@
         "role": "AI Software Engineer",
         "company": "Izemx",
         "period": "02/2025 - 01/2026",
-        "type": "Stage",
+        "type": "Internship",
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-blue-500 to-blue-600",
         "location": "Remote",
-        "description": "Développement de solutions GenAI livrées en production autour de deux produits : BrainBoost, plateforme EdTech avec assistants IA, et IAVIA, agent documentaire multi-sources pour entreprises.",
+        "description": "Backend and AI engineering work on production GenAI products, mainly BrainBoost and IAVIA.",
         "projects": [
           {
-            "name": "BrainBoost - assistants IA éducatifs",
-            "description": "Plateforme EdTech avec application mobile, espace parent et backoffice d'administration pour configurer des assistants IA.",
+            "name": "BrainBoost - educational AI assistants",
+            "description": "EdTech platform with mobile app, parent space and admin backoffice for configuring AI assistants.",
             "achievements": [
-              "Conception du microservice IA Python / Django / LangChain / Qdrant pour traiter PDF, images et audio via un pipeline RAG.",
-              "Développement du microservice Spring Boot / Spring Cloud pour la gestion des assistants, des utilisateurs et de l'orchestration métier.",
-              "Livraison de 2 microservices en production avec tests d'intégration et backoffice de paramétrage IA validé par les équipes métier."
+              "Built the Python AI microservice for document, image and audio processing with RAG and vector search.",
+              "Developed Spring Boot backend services for assistant management, user workflows and business orchestration.",
+              "Delivered production-ready services with API contracts, integration tests and an AI configuration backoffice."
             ]
           },
           {
-            "name": "IAVIA - agent documentaire multi-sources",
-            "description": "Agent IA documentaire pour connecter les sources d'entreprise, indexer les documents et répondre via web chat, Slack ou Teams.",
+            "name": "IAVIA - multi-source document agent",
+            "description": "Enterprise document AI agent connecting cloud sources, indexing documents and answering through web chat, Slack or Teams.",
             "achievements": [
-              "Livraison de connecteurs Google Drive, S3 et SharePoint avec OAuth2 et sélection de dossiers en moins de 30 secondes.",
-              "Optimisation d'un RAG hybride Qdrant + BM25 avec indexation GPU batch : indexation accélérée d'environ 60 % et retrieval amélioré d'environ 25 %.",
-              "Développement des interfaces React et des intégrations Slack / Microsoft Teams connectées au même backend FastAPI."
+              "Implemented cloud document connectors and backend ingestion workflows for Google Drive, S3 and SharePoint.",
+              "Optimized a hybrid RAG pipeline with Qdrant, BM25 and batch indexing for faster retrieval.",
+              "Built React interfaces and Slack / Microsoft Teams integrations connected to the same FastAPI backend."
             ]
           }
         ],
@@ -323,16 +323,16 @@
         "role": "Data Scientist Intern",
         "company": "Digital Place",
         "period": "06/2024 - 09/2024",
-        "type": "Stage",
+        "type": "Internship",
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-green-500 to-green-600",
-        "location": "Tanger, Maroc",
-        "description": "Prototype complet d'assistant virtuel bilingue français/darija pour services financiers, combinant voix, traduction, RAG documentaire et application mobile.",
+        "location": "Tangier, Morocco",
+        "description": "AI and backend prototype for a bilingual French/Darija virtual assistant for financial services.",
         "achievements": [
-          "Benchmark de 6 technologies IA générative et validation d'une stack SeamlessM4T, LLaMA 3.1, LangChain et Qdrant.",
-          "Développement d'un pipeline multimodal S2T, T2T, T2S et S2S avec latence vocale réduite de plus d'une minute à moins de 10 secondes.",
-          "Mise en place d'un chatbot RAG bilingue sur documents PDF avec réponses contextuelles améliorées d'environ 35 % et réponse textuelle sous 3 secondes via GROQ.",
-          "Livraison d'un prototype mobile React Native déployé sur AWS EC2 avec API FastAPI et pipeline GitLab CI/CD."
+          "Evaluated GenAI, speech and RAG technologies to define the assistant architecture.",
+          "Built FastAPI services for speech, translation, document retrieval and response generation.",
+          "Implemented a bilingual RAG workflow over PDF documents using LangChain and Qdrant.",
+          "Delivered a React Native prototype deployed on AWS EC2 with GitLab CI/CD."
         ],
         "technologies": [
           "Python",
@@ -356,23 +356,23 @@
     "sectionHeader": {
       "tagText": "Portfolio",
       "tagIcon": "solar:code-square-bold",
-      "heading": "Projets sélectionnés",
-      "description": "Une sélection alignée avec mes CV AI Engineer et Data Engineer"
+      "heading": "Selected Projects",
+      "description": "A selection aligned with my AI Engineer and Data Engineer profiles"
     },
-    "filterLabel": "Filtrer par domaine",
-    "allDomainsLabel": "Tous les domaines",
-    "emptyState": "Aucun projet ne correspond à ce domaine pour le moment.",
+    "filterLabel": "Filter by domain",
+    "allDomainsLabel": "All domains",
+    "emptyState": "No project matches this domain yet.",
     "items": [
       {
-        "domain": "IA",
-        "title": "SAFIA - Plateforme de planification voyage multi-agents",
-        "subtitle": "Orchestrateur, sous-agents spécialisés et API FastAPI",
-        "description": "Plateforme de planification de voyage basée sur une architecture multi-agents avec orchestrateur, sous-agents spécialisés et workflows reproductibles pour générer des parcours personnalisés.",
+        "domain": "AI",
+        "title": "SAFIA - Multi-agent travel planning platform",
+        "subtitle": "Orchestrator, specialized sub-agents and FastAPI API",
+        "description": "Travel planning platform based on a multi-agent architecture with an orchestrator, specialized sub-agents and reproducible workflows for generating personalized itineraries.",
         "features": [
-          "Architecture multi-agents avec orchestrateur et sous-agents spécialisés",
-          "Workflows agents pour itinéraires, recommandations locales, budgets et optimisation des trajets",
-          "API Python / FastAPI exposant les services IA et la génération de brochures PDF",
-          "Orchestration MCP et déploiement conteneurisé sur AWS EC2"
+          "Multi-agent architecture with an orchestrator and specialized sub-agents",
+          "Agent workflows for itineraries, local recommendations, budgets and route optimization",
+          "Python / FastAPI API exposing AI services and PDF brochure generation",
+          "MCP orchestration and containerized deployment on AWS EC2"
         ],
         "tech": [
           "Python",
@@ -389,43 +389,15 @@
         "gradient": "from-sky-500 to-cyan-600"
       },
       {
-        "domain": "IA",
-        "title": "IAVIA - Optimisation RAG pour la recherche documentaire",
-        "subtitle": "Recherche hybride, ingestion multi-sources et optimisation d'inférence",
-        "description": "Projet de recherche documentaire assistée par IA combinant vector search, orchestration d'ingestion multi-sources et optimisation des performances en production.",
-        "features": [
-          "Pertinence du workflow RAG améliorée de 35 %",
-          "Latence réduite de 3,5 s à 0,9 s",
-          "Temps d'indexation réduit de 60 % sur des sources Google Drive, S3 et SharePoint",
-          "Charge CPU / GPU réduite de 55 % via batching, cache et optimisation d'inférence"
-        ],
-        "tech": [
-          "Python",
-          "LangChain",
-          "Qdrant",
-          "FastAPI",
-          "Redis",
-          "Docker",
-          "n8n",
-          "Slack",
-          "Teams",
-          "S3",
-          "SharePoint"
-        ],
-        "github": "#",
-        "live": "#",
-        "gradient": "from-blue-500 to-indigo-600"
-      },
-      {
         "domain": "Data",
-        "title": "Pipeline Data Engineering End-to-End sur Azure Databricks",
+        "title": "End-to-end Data Engineering Pipeline on Azure Databricks",
         "subtitle": "Lakehouse e-commerce Bronze / Silver / Gold",
-        "description": "Pipeline Lakehouse automatisé sur Azure Databricks pour traiter des datasets e-commerce, avec ingestion incrémentale, transformation Delta et gouvernance des données.",
+        "description": "Automated Lakehouse pipeline on Azure Databricks for processing e-commerce datasets with incremental ingestion, Delta transformations and data governance.",
         "features": [
-          "Ingestion incrémentale avec Auto Loader et checkpoints",
-          "Tables Silver nettoyées et modèle Gold analytique avec dimensions et faits",
+          "Incremental ingestion with Auto Loader and checkpoints",
+          "Cleaned Silver tables and analytical Gold model with dimensions and facts",
           "Upserts Delta et orchestration Databricks Workflows",
-          "Traitement de plusieurs datasets dont 10k+ produits"
+          "Processing of multiple datasets including 10k+ products"
         ],
         "tech": [
           "Azure Databricks",
@@ -444,14 +416,14 @@
       },
       {
         "domain": "Data",
-        "title": "Pipeline d'analyse e-commerce sur AWS avec architecture Medallion",
-        "subtitle": "ETL / ELT de bout en bout vers Redshift",
-        "description": "Architecture data AWS reliant RDS MySQL, DMS, S3, Glue, Redshift et Step Functions pour structurer un pipeline analytique fiable et exploitable par les équipes métier.",
+        "title": "E-commerce analytics pipeline on AWS with Medallion architecture",
+        "subtitle": "End-to-end ETL / ELT to Redshift",
+        "description": "AWS data architecture connecting RDS MySQL, DMS, S3, Glue, Redshift and Step Functions to build a reliable analytics pipeline for business teams.",
         "features": [
-          "Ingestion de données depuis Amazon RDS MySQL via AWS DMS",
-          "Couches Bronze / Silver sur S3 avec transformations Glue / PySpark",
-          "Chargement analytique dans Amazon Redshift",
-          "Orchestration métier et technique avec Step Functions et dashboards interactifs"
+          "Data ingestion from Amazon RDS MySQL via AWS DMS",
+          "Bronze / Silver layers on S3 with Glue / PySpark transformations",
+          "Analytical loading into Amazon Redshift",
+          "Business and technical orchestration with Step Functions and interactive dashboards"
         ],
         "tech": [
           "AWS DMS",
@@ -470,15 +442,15 @@
         "gradient": "from-purple-500 to-pink-600"
       },
       {
-        "domain": "IA",
-        "title": "Plateforme IA d'analyse de sentiment crypto en temps réel",
-        "subtitle": "Airflow, RoBERTa, RAG et analyse de données sociales",
-        "description": "Plateforme d'analyse de sentiment crypto combinant pipeline de données, fine-tuning NLP et système RAG temps réel pour transformer les flux sociaux en signaux décisionnels.",
+        "domain": "AI",
+        "title": "Real-time crypto sentiment analysis AI platform",
+        "subtitle": "Airflow, RoBERTa, RAG and social data analysis",
+        "description": "Crypto sentiment analysis platform combining data pipelines, NLP fine-tuning and real-time RAG to turn social streams into decision signals.",
         "features": [
-          "Pipeline Bronze / Silver / Gold orchestré avec Airflow",
-          "Fine-tuning d'un modèle RoBERTa sur 19M de tweets avec accuracy 0,86",
-          "Ingestion et structuration de données Reddit et Kaggle",
-          "Déploiement d'un système RAG temps réel sur Qdrant avec interactions vocales"
+          "Bronze / Silver / Gold pipeline orchestrated with Airflow",
+          "Fine-tuned a RoBERTa model on 19M tweets with 0.86 accuracy",
+          "Ingested and structured Reddit and Kaggle data",
+          "Deployed a real-time RAG system on Qdrant with voice interactions"
         ],
         "tech": [
           "Python",
@@ -495,44 +467,15 @@
         "gradient": "from-emerald-500 to-teal-600"
       },
       {
-        "domain": "Data",
-        "title": "BCP Shield - Plateforme fraude temps réel",
-        "subtitle": "Kafka, scoring ML explicable, MLOps et assistant analyste",
-        "description": "Plateforme bancaire de détection de fraude sur virements instantanés, combinant pipeline événementiel, scoring hybride, sécurité Zero Trust, monitoring et assistant IA pour les analystes.",
-        "features": [
-          "Pipeline Kafka avec enrichissement comportemental Redis et décisions automatiques auditables",
-          "Modèle hybride Isolation Forest + XGBoost avec explication SHAP des décisions",
-          "Assistant LangGraph / MCP avec 13 outils et validation humaine obligatoire sur les actions critiques",
-          "Cycle MLOps Airflow / MLflow, dashboards Prometheus / Grafana et traçabilité LangSmith"
-        ],
-        "tech": [
-          "Python",
-          "Kafka",
-          "FastAPI",
-          "Spring Boot",
-          "Redis",
-          "PostgreSQL",
-          "Airflow",
-          "MLflow",
-          "LangGraph",
-          "MCP",
-          "Grafana",
-          "Docker"
-        ],
-        "github": "#",
-        "live": "#",
-        "gradient": "from-orange-500 to-red-600"
-      },
-      {
         "domain": "Blockchain",
-        "title": "DONE Food Delivery - Plateforme décentralisée de livraison",
-        "subtitle": "Smart contracts, paiements automatisés et traçabilité on-chain",
-        "description": "Plateforme de livraison de repas décentralisée sur Ethereum / Polygon, avec automatisation du cycle commande-paiement-livraison via smart contracts et intégration Web2/Web3.",
+        "title": "DONE Food Delivery - Decentralized delivery platform",
+        "subtitle": "Smart contracts, automated payments and on-chain traceability",
+        "description": "Decentralized food delivery platform on Ethereum / Polygon, automating the order-payment-delivery cycle through smart contracts and Web2/Web3 integration.",
         "features": [
-          "Gestion décentralisée des commandes et paiements on-chain",
-          "Répartition automatique des fonds entre restaurant, livreur et plateforme",
-          "Staking des livreurs, gestion de litiges et preuves sur IPFS",
-          "Oracles Chainlink et fallback de paiement par carte bancaire via Stripe"
+          "Decentralized order management and on-chain payments",
+          "Automatic fund distribution between restaurant, courier and platform",
+          "Courier staking, dispute management and IPFS-based proofs",
+          "Chainlink oracles and card-payment fallback via Stripe"
         ],
         "tech": [
           "Node.js",
@@ -558,10 +501,10 @@
   },
   "techStack": {
     "sectionHeader": {
-      "tagText": "technologiques",
+      "tagText": "Technology",
       "tagIcon": "solar:settings-bold",
-      "heading": "Compétences techniques",
-      "description": "Technologies que j'utilise pour donner vie à mes idées"
+      "heading": "Technical Skills",
+      "description": "Technologies I use to build backend, AI and data products"
     },
     "allLabel": "All",
     "categories": {
@@ -603,7 +546,7 @@
           "icon": "logos:postgresql",
           "level": "Expert",
           "category": "Databases",
-          "description": "Système de base de données relationnelle avancé pour applications data et backend",
+          "description": "Advanced relational database system for data and backend applications",
           "yearsUsed": 2
         }
       ],
@@ -669,7 +612,7 @@
           "icon": "logos:apache-spark",
           "level": "Expert",
           "category": "Big Data & Storage",
-          "description": "API Python de Spark pour le traitement distribué et l'ingénierie des données",
+          "description": "Spark Python API for distributed processing and data engineering",
           "yearsUsed": 2
         },
         {
@@ -677,7 +620,7 @@
           "icon": "logos:microsoft-azure",
           "level": "Intermediate",
           "category": "Big Data & Storage",
-          "description": "Plateforme Lakehouse pour pipelines data, notebooks et traitements distribués",
+          "description": "Lakehouse platform for data pipelines, notebooks and distributed processing",
           "yearsUsed": 1
         },
         {
@@ -685,7 +628,7 @@
           "icon": "logos:databricks-icon",
           "level": "Intermediate",
           "category": "Big Data & Storage",
-          "description": "Storage layer fiable pour Lakehouse avec support des upserts et de la qualité des données",
+          "description": "Reliable Lakehouse storage layer with support for upserts and data quality",
           "yearsUsed": 1
         },
         {
@@ -693,7 +636,7 @@
           "icon": "logos:microsoft-azure",
           "level": "Intermediate",
           "category": "Big Data & Storage",
-          "description": "Stockage Azure pour architectures data lake et pipelines analytiques",
+          "description": "Azure storage for data lake architectures and analytics pipelines",
           "yearsUsed": 1
         },
         {
@@ -701,7 +644,7 @@
           "icon": "logos:aws-redshift",
           "level": "Intermediate",
           "category": "Big Data & Storage",
-          "description": "Entrepôt de données cloud pour reporting analytique et modélisation métier",
+          "description": "Cloud data warehouse for analytics reporting and business modeling",
           "yearsUsed": 1
         },
         {
@@ -709,7 +652,7 @@
           "icon": "logos:redis",
           "level": "Intermediate",
           "category": "Big Data & Storage",
-          "description": "Mécanisme de streaming Redis pour ingestion et traitement temps réel",
+          "description": "Redis streaming mechanism for real-time ingestion and processing",
           "yearsUsed": 1
         }
       ],
@@ -751,7 +694,7 @@
           "icon": "logos:n8n",
           "level": "Intermediate",
           "category": "Orchestration & Indexing",
-          "description": "Outil d'automatisation de workflows pour orchestrer des intégrations et des pipelines",
+          "description": "Workflow automation tool for orchestrating integrations and pipelines",
           "yearsUsed": 1
         },
         {
@@ -759,7 +702,7 @@
           "icon": "logos:databricks-icon",
           "level": "Intermediate",
           "category": "Orchestration & Indexing",
-          "description": "Mécanisme Databricks pour ingestion incrémentale de fichiers à grande échelle",
+          "description": "Databricks mechanism for large-scale incremental file ingestion",
           "yearsUsed": 1
         },
         {
@@ -767,7 +710,7 @@
           "icon": "logos:databricks-icon",
           "level": "Intermediate",
           "category": "Orchestration & Indexing",
-          "description": "Orchestration déclarative de pipelines data sur Databricks",
+          "description": "Declarative orchestration for data pipelines on Databricks",
           "yearsUsed": 1
         },
         {
@@ -775,7 +718,7 @@
           "icon": "logos:aws-step-functions",
           "level": "Intermediate",
           "category": "Orchestration & Indexing",
-          "description": "Service AWS pour orchestrer des workflows et automatiser des traitements distribués",
+          "description": "AWS service for orchestrating workflows and automating distributed processing",
           "yearsUsed": 1
         }
       ],
@@ -867,7 +810,7 @@
           "icon": "logos:aws-quicksight",
           "level": "Intermediate",
           "category": "Data Visualization",
-          "description": "Service de visualisation AWS pour dashboards analytiques et restitution métier",
+          "description": "AWS visualization service for analytics dashboards and business reporting",
           "yearsUsed": 1
         }
       ],
@@ -877,7 +820,7 @@
           "icon": "logos:python",
           "level": "Expert",
           "category": "Programming Languages",
-          "description": "Langage de programmation principal pour la data science et l'IA",
+          "description": "Main programming language for data science and AI",
           "yearsUsed": 4
         },
         {
@@ -885,7 +828,7 @@
           "icon": "logos:java",
           "level": "Intermediate",
           "category": "Programming Languages",
-          "description": "Langage de programmation orienté objet",
+          "description": "Object-oriented programming language",
           "yearsUsed": 2
         },
         {
@@ -893,7 +836,7 @@
           "icon": "logos:sql-datasource",
           "level": "Expert",
           "category": "Programming Languages",
-          "description": "Langage standard pour la gestion des bases de données relationnelles",
+          "description": "Standard language for managing relational databases",
           "yearsUsed": 3
         },
         {
@@ -901,7 +844,7 @@
           "icon": "logos:javascript",
           "level": "Intermediate",
           "category": "Programming Languages",
-          "description": "Langage de programmation pour le développement web",
+          "description": "Programming language for web development",
           "yearsUsed": 2
         },
         {
@@ -909,7 +852,7 @@
           "icon": "logos:typescript-icon",
           "level": "Intermediate",
           "category": "Programming Languages",
-          "description": "Superset typé de JavaScript pour le développement robuste",
+          "description": "Typed superset of JavaScript for robust development",
           "yearsUsed": 1
         }
       ],
@@ -919,7 +862,7 @@
           "icon": "logos:fastapi",
           "level": "Expert",
           "category": "Frameworks",
-          "description": "Framework web moderne et rapide pour construire des APIs",
+          "description": "Modern, fast web framework for building APIs",
           "yearsUsed": 2
         },
         {
@@ -927,7 +870,7 @@
           "icon": "logos:django-icon",
           "level": "Expert",
           "category": "Frameworks",
-          "description": "Framework web Python de haut niveau pour le développement backend",
+          "description": "High-level Python web framework for backend development",
           "yearsUsed": 2
         },
         {
@@ -935,7 +878,7 @@
           "icon": "logos:spring-icon",
           "level": "Intermediate",
           "category": "Frameworks",
-          "description": "Framework Java pour applications d'entreprise",
+          "description": "Java framework for enterprise applications",
           "yearsUsed": 1
         },
         {
@@ -943,7 +886,7 @@
           "icon": "logos:react",
           "level": "Intermediate",
           "category": "Frameworks",
-          "description": "Bibliothèque JavaScript pour construire des interfaces utilisateur",
+          "description": "JavaScript library for building user interfaces",
           "yearsUsed": 1
         },
         {
@@ -951,7 +894,7 @@
           "icon": "logos:react",
           "level": "Intermediate",
           "category": "Frameworks",
-          "description": "Framework pour développer des applications mobiles cross-platform",
+          "description": "Framework for building cross-platform mobile applications",
           "yearsUsed": 1
         },
         {
@@ -959,7 +902,7 @@
           "icon": "logos:streamlit",
           "level": "Expert",
           "category": "Frameworks",
-          "description": "Framework pour créer des applications de data science",
+          "description": "Framework for creating data science applications",
           "yearsUsed": 2
         }
       ],
@@ -1025,7 +968,7 @@
           "icon": "logos:microsoft-azure",
           "level": "Intermediate",
           "category": "Cloud & DevOps",
-          "description": "Déploiement de services IA et microservices conteneurisés sur machine virtuelle Azure",
+          "description": "Deployment of AI services and containerized microservices on Azure virtual machines",
           "yearsUsed": 1
         },
         {
@@ -1033,7 +976,7 @@
           "icon": "logos:prometheus",
           "level": "Expert",
           "category": "Cloud & DevOps",
-          "description": "Collecte de métriques et monitoring pour systèmes distribués et plateformes ML",
+          "description": "Metrics collection and monitoring for distributed systems and ML platforms",
           "yearsUsed": 2
         },
         {
@@ -1041,7 +984,7 @@
           "icon": "logos:keycloak",
           "level": "Intermediate",
           "category": "Cloud & DevOps",
-          "description": "Gestion des identités et des accès pour sécuriser les applications et APIs",
+          "description": "Identity and access management for securing applications and APIs",
           "yearsUsed": 1
         },
         {
@@ -1049,7 +992,7 @@
           "icon": "logos:aws-ec2",
           "level": "Intermediate",
           "category": "Cloud & DevOps",
-          "description": "Machines virtuelles cloud pour héberger services IA, APIs et environnements de test",
+          "description": "Cloud virtual machines for hosting AI services, APIs and test environments",
           "yearsUsed": 1
         }
       ],
@@ -1059,7 +1002,7 @@
           "icon": "logos:langchain",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Framework pour développer des applications avec des modèles de langage",
+          "description": "Framework for building applications with language models",
           "yearsUsed": 2
         },
         {
@@ -1067,7 +1010,7 @@
           "icon": "logos:llama",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Framework de données pour les applications LLM",
+          "description": "Data framework for LLM applications",
           "yearsUsed": 2
         },
         {
@@ -1075,7 +1018,7 @@
           "icon": "logos:mlflow",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Plateforme pour gérer le cycle de vie du ML",
+          "description": "Platform for managing the ML lifecycle",
           "yearsUsed": 2
         },
         {
@@ -1083,7 +1026,7 @@
           "icon": "logos:openai",
           "level": "Intermediate",
           "category": "Tools & Techniques",
-          "description": "Modèle de reconnaissance vocale par OpenAI",
+          "description": "Speech recognition model by OpenAI",
           "yearsUsed": 1
         },
         {
@@ -1091,7 +1034,7 @@
           "icon": "logos:huggingface",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Bibliothèque pour les modèles de transformation de phrases",
+          "description": "Library for sentence transformer models",
           "yearsUsed": 2
         },
         {
@@ -1099,7 +1042,7 @@
           "icon": "logos:postman",
           "level": "Intermediate",
           "category": "Tools & Techniques",
-          "description": "Outil de développement et test d'APIs",
+          "description": "Tool for API development and testing",
           "yearsUsed": 2
         },
         {
@@ -1107,7 +1050,7 @@
           "icon": "logos:langchain",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Framework pour orchestrer des graphes d'agents et workflows LLM complexes",
+          "description": "Framework for orchestrating agent graphs and complex LLM workflows",
           "yearsUsed": 1
         },
         {
@@ -1115,7 +1058,7 @@
           "icon": "logos:graphql",
           "level": "Intermediate",
           "category": "Tools & Techniques",
-          "description": "Protocol d'intégration d'outils et de contexte pour systèmes multi-agents",
+          "description": "Tool and context integration protocol for multi-agent systems",
           "yearsUsed": 1
         },
         {
@@ -1123,7 +1066,7 @@
           "icon": "logos:openai",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Approche Retrieval-Augmented Generation pour assistants IA et recherche documentaire",
+          "description": "Retrieval-Augmented Generation approach for AI assistants and document search",
           "yearsUsed": 2
         },
         {
@@ -1131,7 +1074,7 @@
           "icon": "logos:qdrant",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Recherche sémantique par embeddings pour systèmes de recherche et assistants IA",
+          "description": "Embedding-based semantic search for search systems and AI assistants",
           "yearsUsed": 2
         },
         {
@@ -1139,7 +1082,7 @@
           "icon": "logos:openai",
           "level": "Expert",
           "category": "Tools & Techniques",
-          "description": "Conception et intégration d'applications basées sur des large language models",
+          "description": "Design and integration of applications based on large language models",
           "yearsUsed": 2
         }
       ]
@@ -1150,7 +1093,7 @@
       "tagText": "Certifications",
       "tagIcon": "solar:verified-check-bold",
       "heading": "Certifications",
-      "description": "Certifications et titres professionnels qui valident mon expertise dans les technologies modernes et les pratiques de développement."
+      "description": "Certifications and professional credentials that validate my expertise in modern technologies and development practices."
     },
     "verifiedLabel": "Verified",
     "labels": {
@@ -1402,36 +1345,36 @@
     "sectionHeader": {
       "tagText": "Contact",
       "tagIcon": "solar:chat-line-bold",
-      "heading": "Envoyez-moi un message"
+      "heading": "Send me a message"
     },
     "form": {
-      "nameLabel": "Nom *",
-      "namePlaceholder": "Votre nom complet",
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your full name",
       "emailLabel": "Email *",
-      "emailPlaceholder": "votre.email@example.com",
+      "emailPlaceholder": "your.email@example.com",
       "messageLabel": "Message *",
-      "messagePlaceholder": "Parlez-moi de votre projet ou idée...",
-      "submitText": "Envoyer le Message",
-      "sendingText": "Envoi en cours..."
+      "messagePlaceholder": "Tell me about your project or idea...",
+      "submitText": "Send Message",
+      "sendingText": "Sending..."
     },
     "success": {
-      "title": "Message envoyé avec succès !",
-      "description": "Merci de m'avoir contacté. Je vous répondrai bientôt !"
+      "title": "Message sent successfully!",
+      "description": "Thank you for reaching out. I will get back to you soon!"
     },
     "error": {
-      "title": "Échec de l'envoi du message",
-      "description": "Veuillez réessayer ou me contacter directement à l'adresse"
+      "title": "Message failed to send",
+      "description": "Please try again or contact me directly at"
     },
-    "alternateLabel": "Ou contactez-moi directement :",
+    "alternateLabel": "Or contact me directly:",
     "alternateActions": [
       {
         "type": "email",
-        "label": "Envoyer un Email",
+        "label": "Send an Email",
         "icon": "solar:mailbox-bold-duotone"
       },
       {
         "type": "resume",
-        "label": "Télécharger CV",
+        "label": "Download Resume",
         "icon": "solar:download-outline"
       }
     ]
@@ -1440,7 +1383,7 @@
     "sectionHeader": {
       "tagText": "Client Stories",
       "tagIcon": "solar:users-group-rounded-outline",
-      "heading": "Mur de témoignages"
+      "heading": "Testimonials"
     },
     "featuredBadge": "Featured Review",
     "gridTitle": "Client Testimonials",
