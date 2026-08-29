@@ -1435,6 +1435,25 @@
         "providerIconSize": 64,
         "platformIconSize": 88,
         "verifyUrl": "https://www.udemy.com/certificate/UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be/"
+      },
+      {
+        "title": "Data Structures & Backend with Java",
+        "provider": "Board Infinity",
+        "platform": "Coursera",
+        "issued": "August 2026",
+        "credentialId": "T08BK89CT7UF",
+        "skills": [
+          "Data Structures",
+          "Java",
+          "Backend Development"
+        ],
+        "providerIcon": "logos:java",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Data Structures and Backend with Java.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/T08BK89CT7UF"
       }
     ]
   },
