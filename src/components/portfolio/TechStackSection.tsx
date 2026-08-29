@@ -13,6 +13,7 @@ interface TechItem {
   category: string;
   description: string;
   yearsUsed?: number;
+  proficiency?: number;
 }
 
 export default function TechStackSection() {
@@ -125,6 +126,12 @@ function TechCard({ tech, index }: { tech: TechItem; index: number }) {
     return "text-amber-600 dark:text-amber-400";
   };
 
+  const RING_RADIUS = 34;
+  const RING_STROKE = 5;
+  const RING_CIRCUMFERENCE = 2 * Math.PI * RING_RADIUS;
+  const proficiency = tech.proficiency ?? 50;
+  const ringOffset = RING_CIRCUMFERENCE * (1 - proficiency / 100);
+
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.8, y: 20 }}
@@ -164,18 +171,39 @@ function TechCard({ tech, index }: { tech: TechItem; index: number }) {
           </div>
           <div className="p-4 relative">
             <div className="flex justify-center mb-3">
-              <div className="relative group/icon">
-                <div className="relative bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-3 rounded-xl border border-gray-200/50 dark:border-gray-600/50 group-hover:border-gray-300/70 dark:group-hover:border-gray-500/70 transition-all duration-300">
+              <div className="relative group/icon w-[84px] h-[84px] flex items-center justify-center">
+                <svg viewBox="0 0 84 84" className="absolute inset-0 w-full h-full -rotate-90">
+                  <circle
+                    cx="42"
+                    cy="42"
+                    r={RING_RADIUS}
+                    fill="none"
+                    strokeWidth={RING_STROKE}
+                    className="stroke-gray-200 dark:stroke-gray-800"
+                  />
+                  <circle
+                    cx="42"
+                    cy="42"
+                    r={RING_RADIUS}
+                    fill="none"
+                    strokeWidth={RING_STROKE}
+                    strokeLinecap="round"
+                    strokeDasharray={RING_CIRCUMFERENCE}
+                    strokeDashoffset={ringOffset}
+                    className="stroke-[#2a78d6] dark:stroke-[#3987e5] transition-all duration-700 ease-out"
+                  />
+                </svg>
+                <div className="relative bg-white dark:bg-gray-900 p-2 rounded-full border border-gray-100 dark:border-gray-700 shadow-sm">
                   <Icon
                     icon={tech.icon}
-                    className="group-hover/icon:scale-110 group-hover/icon:rotate-3 transition-all duration-300"
-                    width={36}
-                    height={36}
-                  />
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-br ${getLevelGradient(tech.level)} rounded-xl opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                    className="group-hover/icon:scale-110 transition-all duration-300"
+                    width={38}
+                    height={38}
                   />
                 </div>
+                <span className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-full px-2 py-0.5 text-[10px] font-bold text-blue-600 dark:text-blue-400 tabular-nums shadow-sm">
+                  {proficiency}%
+                </span>
               </div>
             </div>
             <h3 className="text-sm font-bold text-gray-900 dark:text-gray-100 text-center mb-2 group-hover:text-gray-700 dark:group-hover:text-gray-200 transition-colors tracking-tight">
