@@ -137,7 +137,11 @@
         "title": "AI Software Engineer / Data Engineer",
         "company": "Banque Centrale Populaire",
         "period": "02/2026 - 08/2026",
+<<<<<<< HEAD
         "description": "Real-time fraud detection platform processing 50,000+ transactions/day at sub-100ms latency, with ML scoring reaching 0.94 AUC and a 15% cut in false positives.",
+=======
+        "description": "Real-time banking fraud detection platform combining backend microservices, ML scoring, data pipelines, monitoring and AI assistance for analysts.",
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
         "icon": "solar:buildings-bold",
         "iconBgClass": "bg-orange-500",
         "cardClass": "from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 border-orange-200/50 dark:border-orange-800/30",
@@ -147,7 +151,11 @@
         "title": "AI Software Engineer",
         "company": "Izemx",
         "period": "02/2025 - 01/2026",
+<<<<<<< HEAD
         "description": "Shipped two production GenAI platforms (BrainBoost, IAVIA): hybrid RAG pipelines, Python/Spring microservices and multi-channel assistants, cutting indexing time by 60% and boosting retrieval accuracy by 25%.",
+=======
+        "description": "Delivered RAG-based AI assistants for BrainBoost and IAVIA with Python/Spring microservices, document ingestion, hybrid search and conversational interfaces.",
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
         "icon": "solar:code-bold",
         "iconBgClass": "bg-blue-500",
         "cardClass": "from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 border-blue-200/50 dark:border-blue-800/30",
@@ -157,7 +165,11 @@
         "title": "Data Scientist",
         "company": "Digital Place",
         "period": "06/2024 - 09/2024",
+<<<<<<< HEAD
         "description": "Delivered a bilingual French/Darija voice assistant end-to-end in 3 months, cutting speech-to-speech latency from over a minute to under 2 seconds.",
+=======
+        "description": "Built a bilingual French/Darija voice assistant prototype with multimodal AI, document RAG, FastAPI, React Native and AWS deployment.",
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
         "icon": "solar:hospital-bold",
         "iconBgClass": "bg-green-500",
         "cardClass": "from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 border-green-200/50 dark:border-green-800/30",
@@ -240,6 +252,7 @@
         "companyIcon": "mdi:bank",
         "companyColor": "from-orange-500 to-red-600",
         "location": "Casablanca, Morocco",
+<<<<<<< HEAD
         "description": "Designed and industrialized a real-time banking fraud detection platform, processing 50,000+ transactions per day at under 100ms latency as sole AI Expert on the architecture track.",
         "achievements": [
           "Built a Kafka to Spark streaming pipeline for real-time ingestion and enrichment of financial transactions, achieving under 100ms processing latency on the scoring flow for 50,000+ transactions per day.",
@@ -249,6 +262,14 @@
           "Built backend microservices and APIs for transaction ingestion, fraud scoring, alerts, simulation and analyst workflows, secured with Keycloak, OAuth2, JWT and RBAC.",
           "Designed an AI investigation assistant (LangChain, LangGraph, MCP) to speed up fraud analysts' workflows.",
           "Industrialized the solution with CI/CD, monitoring and observability (Prometheus, Grafana)."
+=======
+        "description": "Backend, AI and data engineering work on a real-time banking fraud detection platform for instant transfers.",
+        "achievements": [
+          "Built backend microservices and APIs for transaction ingestion, fraud scoring, alerts, simulation and analyst workflows.",
+          "Designed data pipelines with Kafka, Redis and PostgreSQL to enrich transactions and support real-time decisioning.",
+          "Developed ML scoring components with explainability, model tracking and automated retraining workflows.",
+          "Added monitoring, deployment and observability practices with Docker, GitLab CI/CD, Airflow, MLflow, Prometheus and Grafana."
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
         ],
         "technologies": [
           "Python",
@@ -282,6 +303,7 @@
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-blue-500 to-blue-600",
         "location": "Remote",
+<<<<<<< HEAD
         "description": "Backend and AI engineering work on two production GenAI products, BrainBoost and IAVIA, from architecture design to deployment.",
         "projects": [
           {
@@ -292,15 +314,34 @@
               "Built the Python AI microservice (Django, LangChain, Qdrant) for PDF, image and audio ingestion with vector search, keeping response latency under 4 seconds.",
               "Developed Spring Boot / Spring Cloud backend services for assistant management, user workflows and business orchestration across student, parent and admin profiles.",
               "Delivered an admin backoffice for no-code assistant configuration, cutting client review round-trips by an estimated 50%."
+=======
+        "description": "Backend and AI engineering work on production GenAI products, mainly BrainBoost and IAVIA.",
+        "projects": [
+          {
+            "name": "BrainBoost - educational AI assistants",
+            "description": "EdTech platform with mobile app, parent space and admin backoffice for configuring AI assistants.",
+            "achievements": [
+              "Built the Python AI microservice for document, image and audio processing with RAG and vector search.",
+              "Developed Spring Boot backend services for assistant management, user workflows and business orchestration.",
+              "Delivered production-ready services with API contracts, integration tests and an AI configuration backoffice."
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
             ]
           },
           {
             "name": "IAVIA - multi-source document agent",
+<<<<<<< HEAD
             "description": "Enterprise SaaS multi-agent platform connecting cloud sources, indexing documents and answering through web chat, Slack or Teams.",
             "achievements": [
               "Built OAuth2-secured connectors for Google Drive, S3 and SharePoint, cutting source connection time to under 30 seconds.",
               "Designed a hybrid RAG pipeline (dense + BM25 sparse retrieval) with GPU batch indexing, improving retrieval accuracy by ~25% and indexing speed by ~60%.",
               "Built React chat interfaces and Slack / Microsoft Teams integrations on a single FastAPI backend, reaching sub-3-second average response time across all channels."
+=======
+            "description": "Enterprise document AI agent connecting cloud sources, indexing documents and answering through web chat, Slack or Teams.",
+            "achievements": [
+              "Implemented cloud document connectors and backend ingestion workflows for Google Drive, S3 and SharePoint.",
+              "Optimized a hybrid RAG pipeline with Qdrant, BM25 and batch indexing for faster retrieval.",
+              "Built React interfaces and Slack / Microsoft Teams integrations connected to the same FastAPI backend."
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
             ]
           }
         ],
@@ -331,12 +372,21 @@
         "companyIcon": "mdi:briefcase",
         "companyColor": "from-green-500 to-green-600",
         "location": "Tangier, Morocco",
+<<<<<<< HEAD
         "description": "Designed and delivered a bilingual French/Darija multimodal virtual assistant for financial services, from technology benchmark to production-ready mobile prototype.",
         "achievements": [
           "Benchmarked 6 GenAI, speech and RAG technologies in 2 weeks and selected the SeamlessM4T + LLaMA 3.1 + LangChain + Qdrant stack.",
           "Built FastAPI services for speech-to-text, text-to-speech, translation and response generation, cutting voice latency from over a minute to under 10 seconds.",
           "Implemented a bilingual RAG workflow over partner PDF documents with LangChain, Qdrant and LLaMA 3.1 70B via GROQ, improving answer accuracy by ~35% over the LLM alone.",
           "Delivered a React Native prototype deployed on AWS EC2 with GitLab CI/CD, reaching sub-2-second speech-to-speech response time and cutting manual deployment time by ~60%."
+=======
+        "description": "AI and backend prototype for a bilingual French/Darija virtual assistant for financial services.",
+        "achievements": [
+          "Evaluated GenAI, speech and RAG technologies to define the assistant architecture.",
+          "Built FastAPI services for speech, translation, document retrieval and response generation.",
+          "Implemented a bilingual RAG workflow over PDF documents using LangChain and Qdrant.",
+          "Delivered a React Native prototype deployed on AWS EC2 with GitLab CI/CD."
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
         ],
         "technologies": [
           "Python",
@@ -500,6 +550,7 @@
         "github": "https://github.com/zakariaeyahya/done-food-delivery.git",
         "live": "https://www.youtube.com/watch?v=KrxfQ_f6xAo",
         "gradient": "from-emerald-500 to-teal-500"
+<<<<<<< HEAD
       },
       {
         "domain": "AI",
@@ -523,6 +574,8 @@
         "github": "https://github.com/zakariaeyahya/Classification-des-Genres-Musicaux",
         "live": "https://youtu.be/iYvwxq49_D0",
         "gradient": "from-fuchsia-500 to-purple-600"
+=======
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
       }
     ]
   },
@@ -1458,4 +1511,8 @@
   "footer": {
     "copyright": "© 2025 Zakariae Yahya."
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> f150e4195a7f5fd231209aae82833b31a138c2f3
