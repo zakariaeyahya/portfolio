@@ -3,6 +3,7 @@
 import portfolioContent from "@/data/portfolio-content";
 import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeader from "./SectionHeader";
 
 export default function ExperienceSection() {
@@ -78,19 +79,35 @@ export default function ExperienceSection() {
             <motion.div key={index} variants={itemVariants} className="relative group">
               <div className="flex flex-col sm:flex-row sm:items-start gap-6 md:gap-8 lg:gap-12">
                 <div className="flex-shrink-0 flex flex-col items-center sm:items-start">
-                  <motion.div
-                    variants={iconVariants}
-                    whileHover={{ scale: 1.1, rotate: 5 }}
-                    className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
-                  >
-                    <Icon
-                      icon={exp.companyIcon}
-                      className="text-white w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 relative z-10"
-                      width={40}
-                      height={40}
-                    />
-                    <div className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
-                  </motion.div>
+                  {exp.companyLogo ? (
+                    <motion.div
+                      variants={iconVariants}
+                      whileHover={{ scale: 1.05 }}
+                      className="w-24 h-16 sm:w-28 sm:h-18 md:w-32 md:h-20 rounded-2xl md:rounded-3xl bg-white dark:bg-white flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500 border border-gray-200/60 dark:border-gray-700/60 p-3"
+                    >
+                      <Image
+                        src={exp.companyLogo}
+                        alt={`${exp.company} logo`}
+                        width={200}
+                        height={100}
+                        className="w-full h-full object-contain"
+                      />
+                    </motion.div>
+                  ) : (
+                    <motion.div
+                      variants={iconVariants}
+                      whileHover={{ scale: 1.1, rotate: 5 }}
+                      className={`w-16 h-16 sm:w-18 sm:h-18 md:w-20 md:h-20 rounded-2xl md:rounded-3xl bg-gradient-to-br ${exp.companyColor} flex items-center justify-center shadow-xl md:shadow-2xl mb-3 md:mb-4 relative overflow-hidden group-hover:shadow-2xl md:group-hover:shadow-3xl transition-all duration-500`}
+                    >
+                      <Icon
+                        icon={exp.companyIcon}
+                        className="text-white w-8 h-8 sm:w-9 sm:h-9 md:w-10 md:h-10 relative z-10"
+                        width={40}
+                        height={40}
+                      />
+                      <div className={`absolute inset-0 bg-gradient-to-br ${exp.companyColor} opacity-0 group-hover:opacity-20 transition-opacity duration-500`} />
+                    </motion.div>
+                  )}
                 </div>
 
                 <div className="flex-1 space-y-4 md:space-y-6 min-w-0">
