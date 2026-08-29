@@ -500,6 +500,29 @@
         "github": "https://github.com/zakariaeyahya/done-food-delivery.git",
         "live": "https://www.youtube.com/watch?v=KrxfQ_f6xAo",
         "gradient": "from-emerald-500 to-teal-500"
+      },
+      {
+        "domain": "AI",
+        "title": "Moroccan Music Genre Classification",
+        "subtitle": "CNN and RNN-LSTM on audio features with a Streamlit demo",
+        "description": "Deep learning system classifying 8 Moroccan music genres (Amazigh, Chaabi, Gnawa, Malhun, Andalusian, Rap/Hip-Hop, Rai, Reggada, Sufi) from audio features, with an interactive prediction app.",
+        "features": [
+          "Audio feature extraction pipeline built with Librosa and PyDub",
+          "CNN and RNN-LSTM models trained and compared on 8 Moroccan music genres",
+          "Custom dataset of 100 audio clips per genre curated for the task",
+          "Interactive Streamlit app for real-time genre prediction from uploaded audio"
+        ],
+        "tech": [
+          "Python",
+          "TensorFlow",
+          "Keras",
+          "Librosa",
+          "Streamlit",
+          "PyDub"
+        ],
+        "github": "https://github.com/zakariaeyahya/Classification-des-Genres-Musicaux",
+        "live": "https://youtu.be/iYvwxq49_D0",
+        "gradient": "from-fuchsia-500 to-purple-600"
       }
     ]
   },
