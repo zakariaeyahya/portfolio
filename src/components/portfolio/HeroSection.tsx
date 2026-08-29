@@ -5,7 +5,7 @@ import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import twooImage from "./twoo_.png";
+import twooImage from "./Photo.jpg";
 import TypewriterRole from "./TypewriterRole";
 
 export default function HeroSection() {

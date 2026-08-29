@@ -1,1 +1,1434 @@
-
+{
+  "profile": {
+    "fullName": "Zakariae Yahya",
+    "displayName": "Zakariae Yahya",
+    "initials": "ZY",
+    "email": "zakariae.yh@gmail.com",
+    "phone": "+212 648 151 446",
+    "phoneHref": "tel:+212648151446",
+    "websiteLabel": "zakariaeyahya.ma",
+    "websiteUrl": "https://zakariaeyahya.ma",
+    "location": "Maroc | Remote Europe",
+    "resumeUrl": "/chatbot/referentiel.pdf",
+    "imageAlt": "D:\\2\\portfolio\\portfolio\\public\\Photo.jpg",
+    "socialLinks": [
+      {
+        "href": "https://github.com/zakariaeyahya",
+        "icon": "simple-icons:github",
+        "label": "GitHub",
+        "colorClass": "hover:text-gray-900 dark:hover:text-white"
+      },
+      {
+        "href": "https://www.linkedin.com/in/zakariae-yahya/",
+        "icon": "skill-icons:linkedin",
+        "label": "LinkedIn",
+        "colorClass": "hover:text-blue-600"
+      },
+      {
+        "href": "mailto:zakariae.yh@gmail.com",
+        "icon": "material-icon-theme:email",
+        "label": "Email",
+        "colorClass": "hover:text-green-600"
+      }
+    ]
+  },
+  "navigation": {
+    "themeToggleAriaLabel": "Change theme",
+    "items": [
+      {
+        "label": "Overview",
+        "href": "#overview"
+      },
+      {
+        "label": "Experience",
+        "href": "#experience"
+      },
+      {
+        "label": "Projects",
+        "href": "#projects"
+      },
+      {
+        "label": "Stack",
+        "href": "#stack"
+      },
+      {
+        "label": "Certifications",
+        "href": "#certifications"
+      },
+      {
+        "label": "Contact",
+        "href": "#contact"
+      }
+    ]
+  },
+  "hero": {
+    "roles": [
+      "AI Engineer Junior",
+      "Data Engineer Junior",
+      "Agentic AI, RAG, Streaming & MLOps"
+    ],
+    "scrollText": "Scroll for more"
+  },
+  "about": {
+    "title": "Profile",
+    "paragraphs": [
+      "Hi, I am Zakariae Yahya, an engineer in Big Data and Artificial Intelligence. I build production-oriented software systems across backend engineering, applied AI and data platforms.",
+      "My experience at Banque Centrale Populaire, Izemx and Digital Place has focused on real business systems: fraud detection platforms, RAG assistants, document intelligence workflows, backend APIs and data pipelines.",
+      "I am looking for Software Engineer, AI Engineer or Data Engineer opportunities where I can combine Python, backend services, LLMs, RAG, data engineering, MLOps and observability to ship reliable products."
+    ]
+  },
+  "overview": {
+    "sectionHeader": {
+      "tagText": "Get to know me",
+      "tagIcon": "solar:user-heart-bold",
+      "heading": "About me",
+      "description": "Backend systems, applied AI and data workflows built for production"
+    },
+    "greetingEmoji": "👋",
+    "title": "Hi, I am",
+    "introParts": [
+      {
+        "text": "A "
+      },
+      {
+        "text": "Software Engineer",
+        "className": "font-bold text-blue-600 dark:text-blue-400"
+      },
+      {
+        "text": " focused on "
+      },
+      {
+        "text": "backend engineering",
+        "className": "font-bold text-purple-600 dark:text-purple-400"
+      },
+      {
+        "text": ", "
+      },
+      {
+        "text": "applied AI",
+        "className": "font-bold text-green-600 dark:text-green-400"
+      },
+      {
+        "text": " and "
+      },
+      {
+        "text": "data engineering",
+        "className": "font-bold text-green-600 dark:text-green-400"
+      },
+      {
+        "text": "."
+      }
+    ],
+    "paragraphs": [
+      "I work at the intersection of backend development, AI engineering and data engineering, with a strong interest in RAG systems, LLM applications, batch and streaming pipelines, and production-ready APIs.",
+      "I like turning business needs into reliable software: choosing the right architecture, building clean backend services, connecting data and AI components, then improving the product with metrics, tests and observability."
+    ],
+    "skillsHeading": "Key technologies",
+    "skills": [
+      "Agentic AI",
+      "Python",
+      "Kafka",
+      "Spark",
+      "Airflow",
+      "Qdrant"
+    ],
+    "roles": [
+      {
+        "title": "AI Software Engineer / Data Engineer",
+        "company": "Banque Centrale Populaire",
+        "period": "02/2026 - 08/2026",
+        "description": "Real-time banking fraud detection platform combining backend microservices, ML scoring, data pipelines, monitoring and AI assistance for analysts.",
+        "icon": "solar:buildings-bold",
+        "iconBgClass": "bg-orange-500",
+        "cardClass": "from-orange-50/80 to-amber-100/50 dark:from-orange-950/30 dark:to-amber-900/20 border-orange-200/50 dark:border-orange-800/30",
+        "companyTextClass": "text-orange-600 dark:text-orange-400"
+      },
+      {
+        "title": "AI Software Engineer",
+        "company": "Izemx",
+        "period": "02/2025 - 01/2026",
+        "description": "Delivered RAG-based AI assistants for BrainBoost and IAVIA with Python/Spring microservices, document ingestion, hybrid search and conversational interfaces.",
+        "icon": "solar:code-bold",
+        "iconBgClass": "bg-blue-500",
+        "cardClass": "from-blue-50/80 to-blue-100/50 dark:from-blue-950/30 dark:to-blue-900/20 border-blue-200/50 dark:border-blue-800/30",
+        "companyTextClass": "text-blue-600 dark:text-blue-400"
+      },
+      {
+        "title": "Data Scientist",
+        "company": "Digital Place",
+        "period": "06/2024 - 09/2024",
+        "description": "Built a bilingual French/Darija voice assistant prototype with multimodal AI, document RAG, FastAPI, React Native and AWS deployment.",
+        "icon": "solar:hospital-bold",
+        "iconBgClass": "bg-green-500",
+        "cardClass": "from-green-50/80 to-green-100/50 dark:from-green-950/30 dark:to-green-900/20 border-green-200/50 dark:border-green-800/30",
+        "companyTextClass": "text-green-600 dark:text-green-400"
+      }
+    ],
+    "contactHeading": "Let us connect",
+    "achievementsHeading": "Highlights",
+    "availabilityHeading": "Availability",
+    "achievements": [
+      {
+        "icon": "solar:graph-up-bold",
+        "text": "Real-time fraud platform with explainable ML",
+        "colorClass": "text-yellow-600"
+      },
+      {
+        "icon": "solar:bolt-bold",
+        "text": "Multi-source RAG, Slack/Teams and AI backoffice",
+        "colorClass": "text-blue-600"
+      },
+      {
+        "icon": "solar:cpu-bolt-bold-duotone",
+        "text": "LangGraph agents, MCP, MLOps and observability",
+        "colorClass": "text-green-600"
+      }
+    ],
+    "availability": [
+      {
+        "icon": "solar:calendar-bold",
+        "text": "Available from September 2026",
+        "colorClass": "text-green-600"
+      },
+      {
+        "icon": "solar:planet-2-bold",
+        "text": "Based in Morocco, open to remote Europe",
+        "colorClass": "text-cyan-600"
+      },
+      {
+        "icon": "solar:clock-circle-bold",
+        "text": "Open to remote, hybrid and on-site roles",
+        "colorClass": "text-blue-600"
+      }
+    ]
+  },
+  "experience": {
+    "sectionHeader": {
+      "tagText": "Professional background",
+      "tagIcon": "solar:case-bold",
+      "heading": "Experience"
+    },
+    "projectsLabel": "Projects delivered",
+    "achievementsLabel": "Key contributions",
+    "technologiesLabel": "Technologies and skills",
+    "stats": [
+      {
+        "value": "24+",
+        "label": "Months of experience",
+        "cardClass": "from-blue-50/50 to-blue-100/30 dark:from-blue-950/20 dark:to-blue-900/10 border-blue-200/30 dark:border-blue-800/20 hover:border-blue-300/50 dark:hover:border-blue-600/30",
+        "valueClass": "text-blue-600 dark:text-blue-400"
+      },
+      {
+        "value": "4",
+        "label": "AI products delivered",
+        "cardClass": "from-green-50/50 to-green-100/30 dark:from-green-950/20 dark:to-green-900/10 border-green-200/30 dark:border-green-800/20 hover:border-green-300/50 dark:hover:border-green-600/30",
+        "valueClass": "text-green-600 dark:text-green-400"
+      },
+      {
+        "value": "15",
+        "label": "Services orchestrated",
+        "cardClass": "from-purple-50/50 to-purple-100/30 dark:from-purple-950/20 dark:to-purple-900/10 border-purple-200/30 dark:border-purple-800/20 hover:border-purple-300/50 dark:hover:border-purple-600/30",
+        "valueClass": "text-purple-600 dark:text-purple-400"
+      }
+    ],
+    "items": [
+      {
+        "role": "AI Software Engineer / Data Engineer",
+        "company": "Banque Centrale Populaire - Architecture et Innovation Groupe",
+        "period": "02/2026 - 08/2026",
+        "type": "Internship",
+        "companyIcon": "mdi:bank",
+        "companyColor": "from-orange-500 to-red-600",
+        "location": "Casablanca, Morocco",
+        "description": "Backend, AI and data engineering work on a real-time banking fraud detection platform for instant transfers.",
+        "achievements": [
+          "Built backend microservices and APIs for transaction ingestion, fraud scoring, alerts, simulation and analyst workflows.",
+          "Designed data pipelines with Kafka, Redis and PostgreSQL to enrich transactions and support real-time decisioning.",
+          "Developed ML scoring components with explainability, model tracking and automated retraining workflows.",
+          "Added monitoring, deployment and observability practices with Docker, GitLab CI/CD, Airflow, MLflow, Prometheus and Grafana."
+        ],
+        "technologies": [
+          "Python",
+          "Kafka",
+          "Airflow",
+          "MLflow",
+          "Redis",
+          "PostgreSQL",
+          "FastAPI",
+          "Spring Boot",
+          "React",
+          "Next.js",
+          "Docker",
+          "Azure VM",
+          "GitLab CI/CD",
+          "Keycloak",
+          "Prometheus",
+          "Grafana",
+          "LangChain",
+          "LangGraph",
+          "MCP",
+          "LangSmith",
+          "SHAP"
+        ]
+      },
+      {
+        "role": "AI Software Engineer",
+        "company": "Izemx",
+        "period": "02/2025 - 01/2026",
+        "type": "Internship",
+        "companyIcon": "mdi:briefcase",
+        "companyColor": "from-blue-500 to-blue-600",
+        "location": "Remote",
+        "description": "Backend and AI engineering work on production GenAI products, mainly BrainBoost and IAVIA.",
+        "projects": [
+          {
+            "name": "BrainBoost - educational AI assistants",
+            "description": "EdTech platform with mobile app, parent space and admin backoffice for configuring AI assistants.",
+            "achievements": [
+              "Built the Python AI microservice for document, image and audio processing with RAG and vector search.",
+              "Developed Spring Boot backend services for assistant management, user workflows and business orchestration.",
+              "Delivered production-ready services with API contracts, integration tests and an AI configuration backoffice."
+            ]
+          },
+          {
+            "name": "IAVIA - multi-source document agent",
+            "description": "Enterprise document AI agent connecting cloud sources, indexing documents and answering through web chat, Slack or Teams.",
+            "achievements": [
+              "Implemented cloud document connectors and backend ingestion workflows for Google Drive, S3 and SharePoint.",
+              "Optimized a hybrid RAG pipeline with Qdrant, BM25 and batch indexing for faster retrieval.",
+              "Built React interfaces and Slack / Microsoft Teams integrations connected to the same FastAPI backend."
+            ]
+          }
+        ],
+        "technologies": [
+          "Python",
+          "Django",
+          "LangChain",
+          "Qdrant",
+          "FastAPI",
+          "Spring Boot",
+          "Spring Cloud",
+          "React",
+          "n8n",
+          "PostgreSQL",
+          "Docker",
+          "GitLab CI/CD",
+          "Slack",
+          "Teams",
+          "S3",
+          "SharePoint"
+        ]
+      },
+      {
+        "role": "Data Scientist Intern",
+        "company": "Digital Place",
+        "period": "06/2024 - 09/2024",
+        "type": "Internship",
+        "companyIcon": "mdi:briefcase",
+        "companyColor": "from-green-500 to-green-600",
+        "location": "Tangier, Morocco",
+        "description": "AI and backend prototype for a bilingual French/Darija virtual assistant for financial services.",
+        "achievements": [
+          "Evaluated GenAI, speech and RAG technologies to define the assistant architecture.",
+          "Built FastAPI services for speech, translation, document retrieval and response generation.",
+          "Implemented a bilingual RAG workflow over PDF documents using LangChain and Qdrant.",
+          "Delivered a React Native prototype deployed on AWS EC2 with GitLab CI/CD."
+        ],
+        "technologies": [
+          "Python",
+          "SeamlessM4T",
+          "LLaMA",
+          "LLM",
+          "RAG",
+          "LangChain",
+          "Qdrant",
+          "FastAPI",
+          "React Native",
+          "AWS EC2",
+          "Docker",
+          "GitLab CI/CD",
+          "Jira"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "sectionHeader": {
+      "tagText": "Portfolio",
+      "tagIcon": "solar:code-square-bold",
+      "heading": "Selected Projects",
+      "description": "A selection aligned with my AI Engineer and Data Engineer profiles"
+    },
+    "filterLabel": "Filter by domain",
+    "allDomainsLabel": "All domains",
+    "emptyState": "No project matches this domain yet.",
+    "items": [
+      {
+        "domain": "AI",
+        "title": "SAFIA - Multi-agent travel planning platform",
+        "subtitle": "Orchestrator, specialized sub-agents and FastAPI API",
+        "description": "Travel planning platform based on a multi-agent architecture with an orchestrator, specialized sub-agents and reproducible workflows for generating personalized itineraries.",
+        "features": [
+          "Multi-agent architecture with an orchestrator and specialized sub-agents",
+          "Agent workflows for itineraries, local recommendations, budgets and route optimization",
+          "Python / FastAPI API exposing AI services and PDF brochure generation",
+          "MCP orchestration and containerized deployment on AWS EC2"
+        ],
+        "tech": [
+          "Python",
+          "FastAPI",
+          "LangGraph",
+          "LangChain",
+          "MCP",
+          "PostgreSQL",
+          "AWS EC2",
+          "Docker"
+        ],
+        "github": "#",
+        "live": "#",
+        "gradient": "from-sky-500 to-cyan-600"
+      },
+      {
+        "domain": "Data",
+        "title": "End-to-end Data Engineering Pipeline on Azure Databricks",
+        "subtitle": "Lakehouse e-commerce Bronze / Silver / Gold",
+        "description": "Automated Lakehouse pipeline on Azure Databricks for processing e-commerce datasets with incremental ingestion, Delta transformations and data governance.",
+        "features": [
+          "Incremental ingestion with Auto Loader and checkpoints",
+          "Cleaned Silver tables and analytical Gold model with dimensions and facts",
+          "Upserts Delta et orchestration Databricks Workflows",
+          "Processing of multiple datasets including 10k+ products"
+        ],
+        "tech": [
+          "Azure Databricks",
+          "ADLS Gen2",
+          "PySpark",
+          "Delta Lake",
+          "Unity Catalog",
+          "Auto Loader",
+          "Delta Live Tables",
+          "Lakeflow",
+          "SQL"
+        ],
+        "github": "https://github.com/zakariaeyahya/Azure-Databricks-End-To-End",
+        "live": "#",
+        "gradient": "from-orange-500 to-amber-600"
+      },
+      {
+        "domain": "Data",
+        "title": "E-commerce analytics pipeline on AWS with Medallion architecture",
+        "subtitle": "End-to-end ETL / ELT to Redshift",
+        "description": "AWS data architecture connecting RDS MySQL, DMS, S3, Glue, Redshift and Step Functions to build a reliable analytics pipeline for business teams.",
+        "features": [
+          "Data ingestion from Amazon RDS MySQL via AWS DMS",
+          "Bronze / Silver layers on S3 with Glue / PySpark transformations",
+          "Analytical loading into Amazon Redshift",
+          "Business and technical orchestration with Step Functions and interactive dashboards"
+        ],
+        "tech": [
+          "AWS DMS",
+          "Amazon S3",
+          "AWS Glue",
+          "PySpark",
+          "Amazon Redshift",
+          "Step Functions",
+          "QuickSight",
+          "RDS MySQL",
+          "Python",
+          "SQL"
+        ],
+        "github": "#",
+        "live": "#",
+        "gradient": "from-purple-500 to-pink-600"
+      },
+      {
+        "domain": "AI",
+        "title": "Real-time crypto sentiment analysis AI platform",
+        "subtitle": "Airflow, RoBERTa, RAG and social data analysis",
+        "description": "Crypto sentiment analysis platform combining data pipelines, NLP fine-tuning and real-time RAG to turn social streams into decision signals.",
+        "features": [
+          "Bronze / Silver / Gold pipeline orchestrated with Airflow",
+          "Fine-tuned a RoBERTa model on 19M tweets with 0.86 accuracy",
+          "Ingested and structured Reddit and Kaggle data",
+          "Deployed a real-time RAG system on Qdrant with voice interactions"
+        ],
+        "tech": [
+          "Python",
+          "Apache Airflow",
+          "PostgreSQL",
+          "Docker",
+          "Qdrant",
+          "Hugging Face Transformers",
+          "PyTorch",
+          "RAG"
+        ],
+        "github": "https://github.com/zakariaeyahya/Crypto_Analysis.git",
+        "live": "https://crypto-analysis-s8p1.vercel.app/",
+        "gradient": "from-emerald-500 to-teal-600"
+      },
+      {
+        "domain": "Blockchain",
+        "title": "DONE Food Delivery - Decentralized delivery platform",
+        "subtitle": "Smart contracts, automated payments and on-chain traceability",
+        "description": "Decentralized food delivery platform on Ethereum / Polygon, automating the order-payment-delivery cycle through smart contracts and Web2/Web3 integration.",
+        "features": [
+          "Decentralized order management and on-chain payments",
+          "Automatic fund distribution between restaurant, courier and platform",
+          "Courier staking, dispute management and IPFS-based proofs",
+          "Chainlink oracles and card-payment fallback via Stripe"
+        ],
+        "tech": [
+          "Node.js",
+          "Express",
+          "MongoDB Atlas",
+          "Polygon Mumbai",
+          "Solidity",
+          "Hardhat",
+          "Ethers.js",
+          "Chainlink",
+          "Socket.io",
+          "IPFS",
+          "Stripe",
+          "JWT",
+          "Docker",
+          "React"
+        ],
+        "github": "https://github.com/zakariaeyahya/done-food-delivery.git",
+        "live": "https://www.youtube.com/watch?v=KrxfQ_f6xAo",
+        "gradient": "from-emerald-500 to-teal-500"
+      }
+    ]
+  },
+  "techStack": {
+    "sectionHeader": {
+      "tagText": "Technology",
+      "tagIcon": "solar:settings-bold",
+      "heading": "Technical Skills",
+      "description": "Technologies I use to build backend, AI and data products"
+    },
+    "allLabel": "All",
+    "categories": {
+      "Databases": [
+        {
+          "name": "SQL",
+          "icon": "logos:mysql",
+          "level": "Expert",
+          "category": "Databases",
+          "description": "Structured Query Language for relational databases",
+          "yearsUsed": 2
+        },
+        {
+          "name": "MySQL",
+          "icon": "logos:mysql",
+          "level": "Expert",
+          "category": "Databases",
+          "description": "Popular open-source relational database",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Oracle",
+          "icon": "logos:oracle",
+          "level": "Intermediate",
+          "category": "Databases",
+          "description": "Multimodel database management system",
+          "yearsUsed": 1
+        },
+        {
+          "name": "NoSQL",
+          "icon": "logos:mongodb",
+          "level": "Expert",
+          "category": "Databases",
+          "description": "Non-relational database systems",
+          "yearsUsed": 2
+        },
+        {
+          "name": "PostgreSQL",
+          "icon": "logos:postgresql",
+          "level": "Expert",
+          "category": "Databases",
+          "description": "Advanced relational database system for data and backend applications",
+          "yearsUsed": 2
+        }
+      ],
+      "Big Data & Storage": [
+        {
+          "name": "Hadoop",
+          "icon": "logos:apache-hadoop",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Framework for distributed storage and processing",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Apache Spark",
+          "icon": "logos:apache-spark",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Analytics engine for large-scale data processing",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Kafka",
+          "icon": "logos:kafka",
+          "level": "Expert",
+          "category": "Big Data & Storage",
+          "description": "Distributed event streaming platform",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Redis",
+          "icon": "logos:redis",
+          "level": "Expert",
+          "category": "Big Data & Storage",
+          "description": "In-memory data structure store and streaming",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Snowflake",
+          "icon": "logos:snowflake-icon",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Cloud-based data warehousing",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Amazon S3",
+          "icon": "logos:aws-s3",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Scalable storage in the cloud",
+          "yearsUsed": 1
+        },
+        {
+          "name": "AWS Glue",
+          "icon": "logos:aws-glue",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Serverless data integration service",
+          "yearsUsed": 1
+        },
+        {
+          "name": "PySpark",
+          "icon": "logos:apache-spark",
+          "level": "Expert",
+          "category": "Big Data & Storage",
+          "description": "Spark Python API for distributed processing and data engineering",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Azure Databricks",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Lakehouse platform for data pipelines, notebooks and distributed processing",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Delta Lake",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Reliable Lakehouse storage layer with support for upserts and data quality",
+          "yearsUsed": 1
+        },
+        {
+          "name": "ADLS Gen2",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Azure storage for data lake architectures and analytics pipelines",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Amazon Redshift",
+          "icon": "logos:aws-redshift",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Cloud data warehouse for analytics reporting and business modeling",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Redis Streams",
+          "icon": "logos:redis",
+          "level": "Intermediate",
+          "category": "Big Data & Storage",
+          "description": "Redis streaming mechanism for real-time ingestion and processing",
+          "yearsUsed": 1
+        }
+      ],
+      "Orchestration & Indexing": [
+        {
+          "name": "Apache Airflow",
+          "icon": "logos:apache-airflow",
+          "level": "Expert",
+          "category": "Orchestration & Indexing",
+          "description": "Platform to programmatically author, schedule, and monitor workflows",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Qdrant",
+          "icon": "logos:qdrant",
+          "level": "Expert",
+          "category": "Orchestration & Indexing",
+          "description": "Vector similarity search engine",
+          "yearsUsed": 2
+        },
+        {
+          "name": "ChromaDB",
+          "icon": "logos:chromadb",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "AI-native open-source vector database",
+          "yearsUsed": 2
+        },
+        {
+          "name": "FAISS",
+          "icon": "logos:meta",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Library for efficient similarity search",
+          "yearsUsed": 1
+        },
+        {
+          "name": "n8n",
+          "icon": "logos:n8n",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Workflow automation tool for orchestrating integrations and pipelines",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Auto Loader",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Databricks mechanism for large-scale incremental file ingestion",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Delta Live Tables",
+          "icon": "logos:databricks-icon",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "Declarative orchestration for data pipelines on Databricks",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Step Functions",
+          "icon": "logos:aws-step-functions",
+          "level": "Intermediate",
+          "category": "Orchestration & Indexing",
+          "description": "AWS service for orchestrating workflows and automating distributed processing",
+          "yearsUsed": 1
+        }
+      ],
+      "Machine Learning": [
+        {
+          "name": "Supervised Learning",
+          "icon": "logos:scikit-learn",
+          "level": "Expert",
+          "category": "Machine Learning",
+          "description": "Machine learning models with labeled data",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Unsupervised Learning",
+          "icon": "logos:scikit-learn",
+          "level": "Expert",
+          "category": "Machine Learning",
+          "description": "Machine learning models with unlabeled data",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Deep Learning",
+          "icon": "logos:tensorflow",
+          "level": "Expert",
+          "category": "Machine Learning",
+          "description": "Neural networks with multiple layers",
+          "yearsUsed": 3
+        },
+        {
+          "name": "PyTorch",
+          "icon": "logos:pytorch",
+          "level": "Expert",
+          "category": "Machine Learning",
+          "description": "Open-source machine learning library",
+          "yearsUsed": 3
+        },
+        {
+          "name": "TensorFlow",
+          "icon": "logos:tensorflow",
+          "level": "Expert",
+          "category": "Machine Learning",
+          "description": "End-to-end open-source platform for machine learning",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Hugging Face",
+          "icon": "logos:huggingface",
+          "level": "Intermediate",
+          "category": "Machine Learning",
+          "description": "Platform for building, training, and deploying ML models",
+          "yearsUsed": 2
+        }
+      ],
+      "Data Visualization": [
+        {
+          "name": "PowerBI",
+          "icon": "logos:power-bi",
+          "level": "Expert",
+          "category": "Data Visualization",
+          "description": "Business analytics service by Microsoft",
+          "yearsUsed": 4
+        },
+        {
+          "name": "Tableau",
+          "icon": "logos:tableau-icon",
+          "level": "Expert",
+          "category": "Data Visualization",
+          "description": "Interactive data visualization software",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Matplotlib",
+          "icon": "logos:python",
+          "level": "Expert",
+          "category": "Data Visualization",
+          "description": "Plotting library for the Python programming language",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Seaborn",
+          "icon": "logos:python",
+          "level": "Expert",
+          "category": "Data Visualization",
+          "description": "Statistical data visualization library",
+          "yearsUsed": 3
+        },
+        {
+          "name": "Amazon QuickSight",
+          "icon": "logos:aws-quicksight",
+          "level": "Intermediate",
+          "category": "Data Visualization",
+          "description": "AWS visualization service for analytics dashboards and business reporting",
+          "yearsUsed": 1
+        }
+      ],
+      "Programming Languages": [
+        {
+          "name": "Python",
+          "icon": "logos:python",
+          "level": "Expert",
+          "category": "Programming Languages",
+          "description": "Main programming language for data science and AI",
+          "yearsUsed": 4
+        },
+        {
+          "name": "Java",
+          "icon": "logos:java",
+          "level": "Intermediate",
+          "category": "Programming Languages",
+          "description": "Object-oriented programming language",
+          "yearsUsed": 2
+        },
+        {
+          "name": "SQL",
+          "icon": "logos:sql-datasource",
+          "level": "Expert",
+          "category": "Programming Languages",
+          "description": "Standard language for managing relational databases",
+          "yearsUsed": 3
+        },
+        {
+          "name": "JavaScript",
+          "icon": "logos:javascript",
+          "level": "Intermediate",
+          "category": "Programming Languages",
+          "description": "Programming language for web development",
+          "yearsUsed": 2
+        },
+        {
+          "name": "TypeScript",
+          "icon": "logos:typescript-icon",
+          "level": "Intermediate",
+          "category": "Programming Languages",
+          "description": "Typed superset of JavaScript for robust development",
+          "yearsUsed": 1
+        }
+      ],
+      "Frameworks": [
+        {
+          "name": "FastAPI",
+          "icon": "logos:fastapi",
+          "level": "Expert",
+          "category": "Frameworks",
+          "description": "Modern, fast web framework for building APIs",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Django",
+          "icon": "logos:django-icon",
+          "level": "Expert",
+          "category": "Frameworks",
+          "description": "High-level Python web framework for backend development",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Spring Boot",
+          "icon": "logos:spring-icon",
+          "level": "Intermediate",
+          "category": "Frameworks",
+          "description": "Java framework for enterprise applications",
+          "yearsUsed": 1
+        },
+        {
+          "name": "React",
+          "icon": "logos:react",
+          "level": "Intermediate",
+          "category": "Frameworks",
+          "description": "JavaScript library for building user interfaces",
+          "yearsUsed": 1
+        },
+        {
+          "name": "React Native",
+          "icon": "logos:react",
+          "level": "Intermediate",
+          "category": "Frameworks",
+          "description": "Framework for building cross-platform mobile applications",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Streamlit",
+          "icon": "logos:streamlit",
+          "level": "Expert",
+          "category": "Frameworks",
+          "description": "Framework for creating data science applications",
+          "yearsUsed": 2
+        }
+      ],
+      "Cloud & DevOps": [
+        {
+          "name": "AWS",
+          "icon": "logos:aws",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Comprehensive cloud computing platform",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Docker",
+          "icon": "logos:docker-icon",
+          "level": "Expert",
+          "category": "Cloud & DevOps",
+          "description": "Platform for developing, shipping, and running applications",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "logos:kubernetes",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Container orchestration platform",
+          "yearsUsed": 1
+        },
+        {
+          "name": "GitLab CI/CD",
+          "icon": "logos:gitlab",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Continuous Integration and Continuous Deployment",
+          "yearsUsed": 2
+        },
+        {
+          "name": "GitHub Actions",
+          "icon": "logos:github-actions",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Automated workflows for CI/CD",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Grafana",
+          "icon": "logos:grafana",
+          "level": "Expert",
+          "category": "Cloud & DevOps",
+          "description": "Monitoring and observability platform",
+          "yearsUsed": 2
+        },
+        {
+          "name": "CloudWatch",
+          "icon": "logos:aws-cloudwatch",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "AWS monitoring and logging service",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Azure VM",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Deployment of AI services and containerized microservices on Azure virtual machines",
+          "yearsUsed": 1
+        },
+        {
+          "name": "Prometheus",
+          "icon": "logos:prometheus",
+          "level": "Expert",
+          "category": "Cloud & DevOps",
+          "description": "Metrics collection and monitoring for distributed systems and ML platforms",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Keycloak",
+          "icon": "logos:keycloak",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Identity and access management for securing applications and APIs",
+          "yearsUsed": 1
+        },
+        {
+          "name": "AWS EC2",
+          "icon": "logos:aws-ec2",
+          "level": "Intermediate",
+          "category": "Cloud & DevOps",
+          "description": "Cloud virtual machines for hosting AI services, APIs and test environments",
+          "yearsUsed": 1
+        }
+      ],
+      "Tools & Techniques": [
+        {
+          "name": "LangChain",
+          "icon": "logos:langchain",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Framework for building applications with language models",
+          "yearsUsed": 2
+        },
+        {
+          "name": "LlamaIndex",
+          "icon": "logos:llama",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Data framework for LLM applications",
+          "yearsUsed": 2
+        },
+        {
+          "name": "MLflow",
+          "icon": "logos:mlflow",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Platform for managing the ML lifecycle",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Whisper",
+          "icon": "logos:openai",
+          "level": "Intermediate",
+          "category": "Tools & Techniques",
+          "description": "Speech recognition model by OpenAI",
+          "yearsUsed": 1
+        },
+        {
+          "name": "sentence-transformers",
+          "icon": "logos:huggingface",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Library for sentence transformer models",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Postman",
+          "icon": "logos:postman",
+          "level": "Intermediate",
+          "category": "Tools & Techniques",
+          "description": "Tool for API development and testing",
+          "yearsUsed": 2
+        },
+        {
+          "name": "LangGraph",
+          "icon": "logos:langchain",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Framework for orchestrating agent graphs and complex LLM workflows",
+          "yearsUsed": 1
+        },
+        {
+          "name": "MCP",
+          "icon": "logos:graphql",
+          "level": "Intermediate",
+          "category": "Tools & Techniques",
+          "description": "Tool and context integration protocol for multi-agent systems",
+          "yearsUsed": 1
+        },
+        {
+          "name": "RAG",
+          "icon": "logos:openai",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Retrieval-Augmented Generation approach for AI assistants and document search",
+          "yearsUsed": 2
+        },
+        {
+          "name": "Vector Search",
+          "icon": "logos:qdrant",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Embedding-based semantic search for search systems and AI assistants",
+          "yearsUsed": 2
+        },
+        {
+          "name": "LLM",
+          "icon": "logos:openai",
+          "level": "Expert",
+          "category": "Tools & Techniques",
+          "description": "Design and integration of applications based on large language models",
+          "yearsUsed": 2
+        }
+      ]
+    }
+  },
+  "certifications": {
+    "sectionHeader": {
+      "tagText": "Certifications",
+      "tagIcon": "solar:verified-check-bold",
+      "heading": "Certifications",
+      "description": "Certifications and professional credentials that validate my expertise in modern technologies and development practices."
+    },
+    "verifiedLabel": "Verified",
+    "labels": {
+      "provider": "Provider:",
+      "platform": "Platform:",
+      "issued": "Issued:",
+      "skills": "Skills Validated",
+      "credentialId": "Credential ID:"
+    },
+    "actions": {
+      "view": "View",
+      "close": "Close",
+      "download": "Download"
+    },
+    "items": [
+      {
+        "title": "Python Project for Data Science",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "6SSNJSNWVTM3",
+        "skills": [
+          "Python",
+          "Data Science",
+          "Data Analysis"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Python Project for Data Science.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/6SSNJSNWVTM3"
+      },
+      {
+        "title": "Data Analysis with Python",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "ECTUSQ4WQUMB",
+        "skills": [
+          "Data Analysis",
+          "Python",
+          "Data Visualization"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Data Analysis with Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/ECTUSQ4WQUMB"
+      },
+      {
+        "title": "Machine Learning with Python",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "EP43GH74SZ4D",
+        "skills": [
+          "Machine Learning",
+          "Python",
+          "Data Science"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Machine Learning with Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/EP43GH74SZ4D"
+      },
+      {
+        "title": "Python for Data Science, AI & Development",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "L6C4P39PTHJG",
+        "skills": [
+          "Python",
+          "Data Science",
+          "AI",
+          "Development"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Python for Data Science, AI & Development.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/L6C4P39PTHJG"
+      },
+      {
+        "title": "Data Analysis and Visualization with Power BI",
+        "provider": "Microsoft",
+        "platform": "Coursera",
+        "issued": "April 2024",
+        "credentialId": "RXMBKJENLHNR",
+        "skills": [
+          "Data Analysis",
+          "Power BI",
+          "Data Visualization"
+        ],
+        "providerIcon": "logos:microsoft-icon",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-purple-600",
+        "certificatePreview": "/certificates/Data Analysis and Visualization with Power BI.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/RXMBKJENLHNR"
+      },
+      {
+        "title": "Data Visualization with Python",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "April 2024",
+        "credentialId": "VTYL5J2K7KV2",
+        "skills": [
+          "Data Visualization",
+          "Python",
+          "Data Analysis"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Data Visualization with Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/VTYL5J2K7KV2"
+      },
+      {
+        "title": "Data Visualization with R",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "April 2024",
+        "credentialId": "SA839VQJT79C",
+        "skills": [
+          "Data Visualization",
+          "R",
+          "Data Analysis"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Data Visualization with R.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/SA839VQJT79C"
+      },
+      {
+        "title": "Introduction to Machine Learning with Python",
+        "provider": "Arizona State University",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "UAUAQBW42XTC",
+        "skills": [
+          "Machine Learning",
+          "Python",
+          "Data Science"
+        ],
+        "providerIcon": "logos:asu",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-purple-600",
+        "certificatePreview": "/certificates/Introduction to Machine Learning with Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/UAUAQBW42XTC"
+      },
+      {
+        "title": "Databases and SQL for Data Science with Python",
+        "provider": "IBM",
+        "platform": "Coursera",
+        "issued": "January 2024",
+        "credentialId": "XXLM6THB9GWN",
+        "skills": [
+          "Databases",
+          "SQL",
+          "Data Science",
+          "Python"
+        ],
+        "providerIcon": "lineicons:ibm",
+        "platformIcon": "logos:coursera",
+        "color": "from-blue-500 to-blue-600",
+        "certificatePreview": "/certificates/Databases and SQL for Data Science with Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://coursera.org/verify/XXLM6THB9GWN"
+      },
+      {
+        "title": "Data Visualization in Tableau & Python",
+        "provider": "Udemy",
+        "platform": "Udemy",
+        "issued": "April 2024",
+        "credentialId": "UC-4b8cfb83-a413-4573-a761-4c5f3792f084",
+        "skills": [
+          "Data Visualization",
+          "Tableau",
+          "Python"
+        ],
+        "providerIcon": "logos:udemy-icon",
+        "platformIcon": "logos:udemy-icon",
+        "color": "from-purple-500 to-pink-600",
+        "certificatePreview": "/certificates/Data Visualization in Tableau & Python.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://www.udemy.com/certificate/UC-4b8cfb83-a413-4573-a761-4c5f3792f084/"
+      },
+      {
+        "title": "Python Web Scraping: Data Extraction with Beautiful Soup",
+        "provider": "Meta Brains",
+        "platform": "Udemy",
+        "issued": "March 2024",
+        "credentialId": "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
+        "skills": [
+          "Web Scraping",
+          "Python",
+          "Beautiful Soup"
+        ],
+        "providerIcon": "logos:meta-icon",
+        "platformIcon": "logos:udemy-icon",
+        "color": "from-blue-500 to-purple-600",
+        "certificatePreview": "/certificates/Python Web Scraping Data Extraction with Beautiful Soup.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://www.udemy.com/certificate/UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be/"
+      },
+      {
+        "title": "Deep Learning Mastery",
+        "provider": "Raj Chhabria",
+        "platform": "Udemy",
+        "issued": "March 2024",
+        "credentialId": "UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be",
+        "skills": [
+          "Deep Learning",
+          "Neural Networks",
+          "Machine Learning"
+        ],
+        "providerIcon": "logos:udemy-icon",
+        "platformIcon": "logos:udemy-icon",
+        "color": "from-purple-500 to-pink-600",
+        "certificatePreview": "/certificates/Deep Learning Mastery.pdf",
+        "providerIconSize": 64,
+        "platformIconSize": 88,
+        "verifyUrl": "https://www.udemy.com/certificate/UC-f5ed7ab6-0fe0-4649-ad22-b0319339c3be/"
+      }
+    ]
+  },
+  "contact": {
+    "sectionHeader": {
+      "tagText": "Contact",
+      "tagIcon": "solar:chat-line-bold",
+      "heading": "Send me a message"
+    },
+    "form": {
+      "nameLabel": "Name *",
+      "namePlaceholder": "Your full name",
+      "emailLabel": "Email *",
+      "emailPlaceholder": "your.email@example.com",
+      "messageLabel": "Message *",
+      "messagePlaceholder": "Tell me about your project or idea...",
+      "submitText": "Send Message",
+      "sendingText": "Sending..."
+    },
+    "success": {
+      "title": "Message sent successfully!",
+      "description": "Thank you for reaching out. I will get back to you soon!"
+    },
+    "error": {
+      "title": "Message failed to send",
+      "description": "Please try again or contact me directly at"
+    },
+    "alternateLabel": "Or contact me directly:",
+    "alternateActions": [
+      {
+        "type": "email",
+        "label": "Send an Email",
+        "icon": "solar:mailbox-bold-duotone"
+      },
+      {
+        "type": "resume",
+        "label": "Download Resume",
+        "icon": "solar:download-outline"
+      }
+    ]
+  },
+  "testimonials": {
+    "sectionHeader": {
+      "tagText": "Client Stories",
+      "tagIcon": "solar:users-group-rounded-outline",
+      "heading": "Testimonials"
+    },
+    "featuredBadge": "Featured Review",
+    "gridTitle": "Client Testimonials",
+    "gridDescription": "Honest feedback from clients I've had the pleasure to work with",
+    "items": [
+      {
+        "content": "Ramzan is great! He is very skillful and fast learner, just what you need in a developer.",
+        "author": "Mohammed Swellam",
+        "role": "CEO",
+        "company": "Geeky Air",
+        "rating": 5,
+        "project": "Events based Web App",
+        "avatar": "MS",
+        "featured": true
+      },
+      {
+        "content": "Ramzan produced some really amazing work on the backend. He demonstrated his proficiency and efficiency by using Node.js and Javascript to successfully import a very large dataset into a MySQL database.",
+        "author": "Arnel Bisnar",
+        "role": "Product Manager",
+        "company": "Solid Lift Parts Inc",
+        "rating": 5,
+        "project": "Backend Development",
+        "avatar": "AB"
+      },
+      {
+        "content": "It's been great to work with him! Fast, active and hardworking! Ramzan architected checkersvip.com from ground up with great attention to detail and great design. He is a great team player and a great developer.",
+        "author": "Gilberto Cisneros",
+        "role": "CEO",
+        "company": "Checkersvip.com",
+        "rating": 5,
+        "project": "JavaScript Applications",
+        "avatar": "MR"
+      },
+      {
+        "content": "We had a fantastic experience working with him on a recent project. He consistently delivered high-quality work, showed exceptional attention to detail, and communicated effectively throughout the process.",
+        "author": "Jacek Jllaskowski",
+        "role": "Project Manager",
+        "company": "Golem",
+        "rating": 5,
+        "project": "Full Stack Development",
+        "avatar": "ED"
+      }
+    ]
+  },
+  "footer": {
+    "copyright": "© 2025 Zakariae Yahya."
+  }
+}
