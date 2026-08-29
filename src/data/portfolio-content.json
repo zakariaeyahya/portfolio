@@ -535,68 +535,12 @@
     },
     "allLabel": "All",
     "categories": {
-      "Databases": [
-        {
-          "name": "SQL",
-          "icon": "logos:mysql",
-          "level": "Expert",
-          "category": "Databases",
-          "description": "Structured Query Language for relational databases",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "MySQL",
-          "icon": "logos:mysql",
-          "level": "Expert",
-          "category": "Databases",
-          "description": "Popular open-source relational database",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Oracle",
-          "icon": "logos:oracle",
-          "level": "Intermediate",
-          "category": "Databases",
-          "description": "Multimodel database management system",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "NoSQL",
-          "icon": "logos:mongodb",
-          "level": "Expert",
-          "category": "Databases",
-          "description": "Non-relational database systems",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "PostgreSQL",
-          "icon": "logos:postgresql",
-          "level": "Expert",
-          "category": "Databases",
-          "description": "Advanced relational database system for data and backend applications",
-          "yearsUsed": 2,
-          "proficiency": 90
-        }
-      ],
-      "Big Data & Storage": [
-        {
-          "name": "Hadoop",
-          "icon": "logos:apache-hadoop",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Framework for distributed storage and processing",
-          "yearsUsed": 2,
-          "proficiency": 65
-        },
+      "Data Engineering & Big Data": [
         {
           "name": "Apache Spark",
           "icon": "logos:apache-spark",
           "level": "Intermediate",
-          "category": "Big Data & Storage",
+          "category": "Data Engineering & Big Data",
           "description": "Analytics engine for large-scale data processing",
           "yearsUsed": 2,
           "proficiency": 65
@@ -605,201 +549,37 @@
           "name": "Kafka",
           "icon": "logos:kafka",
           "level": "Expert",
-          "category": "Big Data & Storage",
+          "category": "Data Engineering & Big Data",
           "description": "Distributed event streaming platform",
           "yearsUsed": 2,
           "proficiency": 90
         },
         {
-          "name": "Redis",
-          "icon": "logos:redis",
-          "level": "Expert",
-          "category": "Big Data & Storage",
-          "description": "In-memory data structure store and streaming",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Snowflake",
-          "icon": "logos:snowflake-icon",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Cloud-based data warehousing",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Amazon S3",
-          "icon": "logos:aws-s3",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Scalable storage in the cloud",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "AWS Glue",
-          "icon": "logos:aws-glue",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Serverless data integration service",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "PySpark",
-          "icon": "logos:apache-spark",
-          "level": "Expert",
-          "category": "Big Data & Storage",
-          "description": "Spark Python API for distributed processing and data engineering",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Azure Databricks",
-          "icon": "logos:microsoft-azure",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Lakehouse platform for data pipelines, notebooks and distributed processing",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Delta Lake",
-          "icon": "logos:databricks-icon",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Reliable Lakehouse storage layer with support for upserts and data quality",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "ADLS Gen2",
-          "icon": "logos:microsoft-azure",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Azure storage for data lake architectures and analytics pipelines",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Amazon Redshift",
-          "icon": "logos:aws-redshift",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Cloud data warehouse for analytics reporting and business modeling",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Redis Streams",
-          "icon": "logos:redis",
-          "level": "Intermediate",
-          "category": "Big Data & Storage",
-          "description": "Redis streaming mechanism for real-time ingestion and processing",
-          "yearsUsed": 1,
-          "proficiency": 65
-        }
-      ],
-      "Orchestration & Indexing": [
-        {
           "name": "Apache Airflow",
           "icon": "logos:apache-airflow",
           "level": "Expert",
-          "category": "Orchestration & Indexing",
+          "category": "Data Engineering & Big Data",
           "description": "Platform to programmatically author, schedule, and monitor workflows",
           "yearsUsed": 2,
           "proficiency": 90
-        },
-        {
-          "name": "Qdrant",
-          "icon": "logos:qdrant",
-          "level": "Expert",
-          "category": "Orchestration & Indexing",
-          "description": "Vector similarity search engine",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "ChromaDB",
-          "icon": "logos:chromadb",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "AI-native open-source vector database",
-          "yearsUsed": 2,
-          "proficiency": 65
-        },
-        {
-          "name": "FAISS",
-          "icon": "logos:meta",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "Library for efficient similarity search",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "n8n",
-          "icon": "logos:n8n",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "Workflow automation tool for orchestrating integrations and pipelines",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Auto Loader",
-          "icon": "logos:databricks-icon",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "Databricks mechanism for large-scale incremental file ingestion",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Delta Live Tables",
-          "icon": "logos:databricks-icon",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "Declarative orchestration for data pipelines on Databricks",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Step Functions",
-          "icon": "logos:aws-step-functions",
-          "level": "Intermediate",
-          "category": "Orchestration & Indexing",
-          "description": "AWS service for orchestrating workflows and automating distributed processing",
-          "yearsUsed": 1,
-          "proficiency": 65
         }
       ],
-      "Machine Learning": [
+      "Machine Learning & Data Science": [
         {
-          "name": "Supervised Learning",
-          "icon": "logos:scikit-learn",
+          "name": "Python",
+          "icon": "logos:python",
           "level": "Expert",
-          "category": "Machine Learning",
-          "description": "Machine learning models with labeled data",
-          "yearsUsed": 3,
-          "proficiency": 92
+          "category": "Machine Learning & Data Science",
+          "description": "Main programming language for data science and AI",
+          "yearsUsed": 4,
+          "proficiency": 94
         },
         {
-          "name": "Unsupervised Learning",
-          "icon": "logos:scikit-learn",
-          "level": "Expert",
-          "category": "Machine Learning",
-          "description": "Machine learning models with unlabeled data",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "Deep Learning",
+          "name": "TensorFlow",
           "icon": "logos:tensorflow",
           "level": "Expert",
-          "category": "Machine Learning",
-          "description": "Neural networks with multiple layers",
+          "category": "Machine Learning & Data Science",
+          "description": "End-to-end open-source platform for machine learning",
           "yearsUsed": 3,
           "proficiency": 92
         },
@@ -807,287 +587,18 @@
           "name": "PyTorch",
           "icon": "logos:pytorch",
           "level": "Expert",
-          "category": "Machine Learning",
+          "category": "Machine Learning & Data Science",
           "description": "Open-source machine learning library",
           "yearsUsed": 3,
           "proficiency": 92
-        },
-        {
-          "name": "TensorFlow",
-          "icon": "logos:tensorflow",
-          "level": "Expert",
-          "category": "Machine Learning",
-          "description": "End-to-end open-source platform for machine learning",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "Hugging Face",
-          "icon": "logos:huggingface",
-          "level": "Intermediate",
-          "category": "Machine Learning",
-          "description": "Platform for building, training, and deploying ML models",
-          "yearsUsed": 2,
-          "proficiency": 65
         }
       ],
-      "Data Visualization": [
-        {
-          "name": "PowerBI",
-          "icon": "logos:power-bi",
-          "level": "Expert",
-          "category": "Data Visualization",
-          "description": "Business analytics service by Microsoft",
-          "yearsUsed": 4,
-          "proficiency": 94
-        },
-        {
-          "name": "Tableau",
-          "icon": "logos:tableau-icon",
-          "level": "Expert",
-          "category": "Data Visualization",
-          "description": "Interactive data visualization software",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "Matplotlib",
-          "icon": "logos:python",
-          "level": "Expert",
-          "category": "Data Visualization",
-          "description": "Plotting library for the Python programming language",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "Seaborn",
-          "icon": "logos:python",
-          "level": "Expert",
-          "category": "Data Visualization",
-          "description": "Statistical data visualization library",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "Amazon QuickSight",
-          "icon": "logos:aws-quicksight",
-          "level": "Intermediate",
-          "category": "Data Visualization",
-          "description": "AWS visualization service for analytics dashboards and business reporting",
-          "yearsUsed": 1,
-          "proficiency": 65
-        }
-      ],
-      "Programming Languages": [
-        {
-          "name": "Python",
-          "icon": "logos:python",
-          "level": "Expert",
-          "category": "Programming Languages",
-          "description": "Main programming language for data science and AI",
-          "yearsUsed": 4,
-          "proficiency": 94
-        },
-        {
-          "name": "Java",
-          "icon": "logos:java",
-          "level": "Intermediate",
-          "category": "Programming Languages",
-          "description": "Object-oriented programming language",
-          "yearsUsed": 2,
-          "proficiency": 65
-        },
-        {
-          "name": "SQL",
-          "icon": "logos:sql-datasource",
-          "level": "Expert",
-          "category": "Programming Languages",
-          "description": "Standard language for managing relational databases",
-          "yearsUsed": 3,
-          "proficiency": 92
-        },
-        {
-          "name": "JavaScript",
-          "icon": "logos:javascript",
-          "level": "Intermediate",
-          "category": "Programming Languages",
-          "description": "Programming language for web development",
-          "yearsUsed": 2,
-          "proficiency": 65
-        },
-        {
-          "name": "TypeScript",
-          "icon": "logos:typescript-icon",
-          "level": "Intermediate",
-          "category": "Programming Languages",
-          "description": "Typed superset of JavaScript for robust development",
-          "yearsUsed": 1,
-          "proficiency": 65
-        }
-      ],
-      "Frameworks": [
-        {
-          "name": "FastAPI",
-          "icon": "logos:fastapi",
-          "level": "Expert",
-          "category": "Frameworks",
-          "description": "Modern, fast web framework for building APIs",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Django",
-          "icon": "logos:django-icon",
-          "level": "Expert",
-          "category": "Frameworks",
-          "description": "High-level Python web framework for backend development",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Spring Boot",
-          "icon": "logos:spring-icon",
-          "level": "Intermediate",
-          "category": "Frameworks",
-          "description": "Java framework for enterprise applications",
-          "yearsUsed": 1,
-          "proficiency": 80
-        },
-        {
-          "name": "React",
-          "icon": "logos:react",
-          "level": "Intermediate",
-          "category": "Frameworks",
-          "description": "JavaScript library for building user interfaces",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "React Native",
-          "icon": "logos:react",
-          "level": "Intermediate",
-          "category": "Frameworks",
-          "description": "Framework for building cross-platform mobile applications",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Streamlit",
-          "icon": "logos:streamlit",
-          "level": "Expert",
-          "category": "Frameworks",
-          "description": "Framework for creating data science applications",
-          "yearsUsed": 2,
-          "proficiency": 90
-        }
-      ],
-      "Cloud & DevOps": [
-        {
-          "name": "AWS",
-          "icon": "logos:aws",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Comprehensive cloud computing platform",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Docker",
-          "icon": "logos:docker-icon",
-          "level": "Expert",
-          "category": "Cloud & DevOps",
-          "description": "Platform for developing, shipping, and running applications",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Kubernetes",
-          "icon": "logos:kubernetes",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Container orchestration platform",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "GitLab CI/CD",
-          "icon": "logos:gitlab",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Continuous Integration and Continuous Deployment",
-          "yearsUsed": 2,
-          "proficiency": 65
-        },
-        {
-          "name": "GitHub Actions",
-          "icon": "logos:github-actions",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Automated workflows for CI/CD",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Grafana",
-          "icon": "logos:grafana",
-          "level": "Expert",
-          "category": "Cloud & DevOps",
-          "description": "Monitoring and observability platform",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "CloudWatch",
-          "icon": "logos:aws-cloudwatch",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "AWS monitoring and logging service",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Azure VM",
-          "icon": "logos:microsoft-azure",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Deployment of AI services and containerized microservices on Azure virtual machines",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "Prometheus",
-          "icon": "logos:prometheus",
-          "level": "Expert",
-          "category": "Cloud & DevOps",
-          "description": "Metrics collection and monitoring for distributed systems and ML platforms",
-          "yearsUsed": 2,
-          "proficiency": 90
-        },
-        {
-          "name": "Keycloak",
-          "icon": "logos:keycloak",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Identity and access management for securing applications and APIs",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "AWS EC2",
-          "icon": "logos:aws-ec2",
-          "level": "Intermediate",
-          "category": "Cloud & DevOps",
-          "description": "Cloud virtual machines for hosting AI services, APIs and test environments",
-          "yearsUsed": 1,
-          "proficiency": 65
-        }
-      ],
-      "Tools & Techniques": [
+      "GenAI & Agents IA": [
         {
           "name": "LangChain",
           "icon": "logos:langchain",
           "level": "Expert",
-          "category": "Tools & Techniques",
+          "category": "GenAI & Agents IA",
           "description": "Framework for building applications with language models",
           "yearsUsed": 2,
           "proficiency": 90
@@ -1096,8 +607,93 @@
           "name": "LlamaIndex",
           "icon": "logos:llama",
           "level": "Expert",
-          "category": "Tools & Techniques",
+          "category": "GenAI & Agents IA",
           "description": "Data framework for LLM applications",
+          "yearsUsed": 2,
+          "proficiency": 90
+        },
+        {
+          "name": "RAG",
+          "icon": "logos:openai",
+          "level": "Expert",
+          "category": "GenAI & Agents IA",
+          "description": "Retrieval-Augmented Generation approach for AI assistants and document search",
+          "yearsUsed": 2,
+          "proficiency": 90
+        },
+        {
+          "name": "MCP",
+          "icon": "logos:graphql",
+          "level": "Intermediate",
+          "category": "GenAI & Agents IA",
+          "description": "Tool and context integration protocol for multi-agent systems",
+          "yearsUsed": 1,
+          "proficiency": 65
+        }
+      ],
+      "Backend & APIs": [
+        {
+          "name": "Java",
+          "icon": "logos:java",
+          "level": "Intermediate",
+          "category": "Backend & APIs",
+          "description": "Object-oriented programming language",
+          "yearsUsed": 2,
+          "proficiency": 65
+        },
+        {
+          "name": "Spring Boot",
+          "icon": "logos:spring-icon",
+          "level": "Intermediate",
+          "category": "Backend & APIs",
+          "description": "Java framework for enterprise applications",
+          "yearsUsed": 1,
+          "proficiency": 80
+        },
+        {
+          "name": "FastAPI",
+          "icon": "logos:fastapi",
+          "level": "Expert",
+          "category": "Backend & APIs",
+          "description": "Modern, fast web framework for building APIs",
+          "yearsUsed": 2,
+          "proficiency": 90
+        },
+        {
+          "name": "Django",
+          "icon": "logos:django-icon",
+          "level": "Expert",
+          "category": "Backend & APIs",
+          "description": "High-level Python web framework for backend development",
+          "yearsUsed": 2,
+          "proficiency": 90
+        }
+      ],
+      "Cloud, DevOps & MLOps": [
+        {
+          "name": "AWS",
+          "icon": "logos:aws",
+          "level": "Intermediate",
+          "category": "Cloud, DevOps & MLOps",
+          "description": "Comprehensive cloud computing platform",
+          "yearsUsed": 1,
+          "proficiency": 65
+        },
+        {
+          "name": "Azure Databricks",
+          "icon": "logos:microsoft-azure",
+          "level": "Intermediate",
+          "category": "Cloud, DevOps & MLOps",
+          "description": "Lakehouse platform for data pipelines, notebooks and distributed processing",
+          "yearsUsed": 1,
+          "proficiency": 65
+        },
+        {
+          "name": "Docker",
+          "icon": "logos:docker-icon",
+          "level": "Expert",
+          "category": "Cloud, DevOps & MLOps",
+          "description": "Platform for developing, shipping, and running applications",
           "yearsUsed": 2,
           "proficiency": 90
         },
@@ -1105,80 +701,113 @@
           "name": "MLflow",
           "icon": "logos:mlflow",
           "level": "Expert",
-          "category": "Tools & Techniques",
+          "category": "Cloud, DevOps & MLOps",
           "description": "Platform for managing the ML lifecycle",
           "yearsUsed": 2,
           "proficiency": 90
         },
         {
-          "name": "Whisper",
-          "icon": "logos:openai",
-          "level": "Intermediate",
-          "category": "Tools & Techniques",
-          "description": "Speech recognition model by OpenAI",
-          "yearsUsed": 1,
-          "proficiency": 65
-        },
-        {
-          "name": "sentence-transformers",
-          "icon": "logos:huggingface",
+          "name": "Prometheus",
+          "icon": "logos:prometheus",
           "level": "Expert",
-          "category": "Tools & Techniques",
-          "description": "Library for sentence transformer models",
+          "category": "Cloud, DevOps & MLOps",
+          "description": "Metrics collection and monitoring for distributed systems and ML platforms",
           "yearsUsed": 2,
           "proficiency": 90
         },
         {
-          "name": "Postman",
-          "icon": "logos:postman",
-          "level": "Intermediate",
-          "category": "Tools & Techniques",
-          "description": "Tool for API development and testing",
+          "name": "Grafana",
+          "icon": "logos:grafana",
+          "level": "Expert",
+          "category": "Cloud, DevOps & MLOps",
+          "description": "Monitoring and observability platform",
           "yearsUsed": 2,
-          "proficiency": 65
-        },
-        {
-          "name": "LangGraph",
-          "icon": "logos:langchain",
-          "level": "Expert",
-          "category": "Tools & Techniques",
-          "description": "Framework for orchestrating agent graphs and complex LLM workflows",
-          "yearsUsed": 1,
           "proficiency": 90
-        },
+        }
+      ],
+      "Security & IAM": [
         {
-          "name": "MCP",
-          "icon": "logos:graphql",
+          "name": "Keycloak",
+          "icon": "logos:keycloak",
           "level": "Intermediate",
-          "category": "Tools & Techniques",
-          "description": "Tool and context integration protocol for multi-agent systems",
+          "category": "Security & IAM",
+          "description": "Identity and access management for securing applications and APIs",
           "yearsUsed": 1,
           "proficiency": 65
-        },
+        }
+      ],
+      "Databases & BI": [
         {
-          "name": "RAG",
-          "icon": "logos:openai",
+          "name": "PostgreSQL",
+          "icon": "logos:postgresql",
           "level": "Expert",
-          "category": "Tools & Techniques",
-          "description": "Retrieval-Augmented Generation approach for AI assistants and document search",
+          "category": "Databases & BI",
+          "description": "Advanced relational database system for data and backend applications",
           "yearsUsed": 2,
           "proficiency": 90
         },
         {
-          "name": "Vector Search",
+          "name": "MySQL",
+          "icon": "logos:mysql",
+          "level": "Expert",
+          "category": "Databases & BI",
+          "description": "Popular open-source relational database",
+          "yearsUsed": 2,
+          "proficiency": 90
+        },
+        {
+          "name": "Redis",
+          "icon": "logos:redis",
+          "level": "Expert",
+          "category": "Databases & BI",
+          "description": "In-memory data structure store and streaming",
+          "yearsUsed": 2,
+          "proficiency": 90
+        },
+        {
+          "name": "Qdrant",
           "icon": "logos:qdrant",
           "level": "Expert",
-          "category": "Tools & Techniques",
-          "description": "Embedding-based semantic search for search systems and AI assistants",
+          "category": "Databases & BI",
+          "description": "Vector similarity search engine",
           "yearsUsed": 2,
           "proficiency": 90
+        }
+      ],
+      "Frontend & Mobile": [
+        {
+          "name": "React",
+          "icon": "logos:react",
+          "level": "Intermediate",
+          "category": "Frontend & Mobile",
+          "description": "JavaScript library for building user interfaces",
+          "yearsUsed": 1,
+          "proficiency": 65
         },
         {
-          "name": "LLM",
-          "icon": "logos:openai",
+          "name": "React Native",
+          "icon": "logos:react",
+          "level": "Intermediate",
+          "category": "Frontend & Mobile",
+          "description": "Framework for building cross-platform mobile applications",
+          "yearsUsed": 1,
+          "proficiency": 65
+        },
+        {
+          "name": "TypeScript",
+          "icon": "logos:typescript-icon",
+          "level": "Intermediate",
+          "category": "Frontend & Mobile",
+          "description": "Typed superset of JavaScript for robust development",
+          "yearsUsed": 1,
+          "proficiency": 65
+        },
+        {
+          "name": "Streamlit",
+          "icon": "logos:streamlit",
           "level": "Expert",
-          "category": "Tools & Techniques",
-          "description": "Design and integration of applications based on large language models",
+          "category": "Frontend & Mobile",
+          "description": "Framework for creating data science applications",
           "yearsUsed": 2,
           "proficiency": 90
         }
